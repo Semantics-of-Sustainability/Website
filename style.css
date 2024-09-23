@@ -7,8 +7,8 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #ADD8E6; /* Light Blue Background */
-    color: #333;
+    background-color: #F2F2F2; /* Light Gray Background */
+    color: #333333; /* Dark Charcoal Text */
     line-height: 1.8;
     padding: 20px;
     font-size: 18px;
@@ -16,7 +16,7 @@ body {
 
 /* Navigation Bar */
 header {
-    background-color: #2E8B57; /* Sea Green */
+    background-color: #003366; /* Deep Blue */
     padding: 20px 0;
 }
 
@@ -40,7 +40,7 @@ header {
 }
 
 .navbar ul li a:hover {
-    background-color: #90EE90; /* Light Green */
+    background-color: #5dade2; /* Light Blue Hover */
     border-radius: 5px;
 }
 
@@ -59,13 +59,13 @@ header {
 .hero-content h1 {
     font-size: 3.5rem;
     font-weight: bold;
-    color: #5dade2; /* Soft Blue tone for the title */
+    color: #5dade2; /* Light Blue tone for the title */
 }
 
 .hero-content p {
     font-size: 1.5rem;
     margin-top: 20px;
-    color: #90EE90; /* Light Green tone for the subtitle */
+    color: #6BAA75; /* Soft Green for subtitle */
 }
 
 .hero::before {
@@ -105,12 +105,12 @@ header {
 /* Adjust content text for both sections */
 .content-box h2 {
     font-size: 1.8rem;
-    color: #003366;
+    color: #003366; /* Deep Blue for section titles */
 }
 
 .content-box p, .content-box ul {
     font-size: 1.1rem;
-    color: #333;
+    color: #333333; /* Dark Charcoal for text */
 }
 
 #updates ul {
@@ -124,19 +124,19 @@ header {
 
 #updates ul li a {
     text-decoration: none;
-    color: #2E8B57; /* Sea Green for links */
+    color: #003366; /* Deep Blue for links */
     font-weight: 500;
 }
 
 #updates ul li a:hover {
-    color: #87CEEB; /* Sky Blue on hover */
+    color: #5dade2; /* Light Blue on hover */
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #2E8B57; /* Sea Green */
+    background-color: #003366; /* Deep Blue */
     color: white;
     margin-top: 60px;
 }
