@@ -7,8 +7,8 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #F2F2F2; /* Light Gray Background */
-    color: #333333; /* Dark Charcoal Text */
+    background-color: #F2F2F2;
+    color: #333333;
     line-height: 1.8;
     padding: 20px;
     font-size: 18px;
@@ -16,7 +16,7 @@ body {
 
 /* Navigation Bar */
 header {
-    background-color: #002244; /* Deeper Blue */
+    background-color: #002244;
     padding: 20px 0;
 }
 
@@ -27,115 +27,54 @@ header {
     gap: 20px;
 }
 
-.navbar ul li {
-    margin: 0;
-}
-
 .navbar ul li a {
     text-decoration: none;
     color: white;
-    font-weight: 500;
     padding: 10px 20px;
-    transition: background-color 0.3s ease;
+    font-weight: 500;
 }
 
 .navbar ul li a:hover {
-    background-color: #5dade2; /* Light Blue Hover */
+    background-color: #5dade2;
     border-radius: 5px;
 }
 
-/* Hero Section */
-.hero {
-    background: url('assets/Background_Image_Website.png') no-repeat center center;
-    background-size: cover;
-    padding: 100px 20px;
-    text-align: center;
-    margin-bottom: 40px;
-    position: relative;
-}
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-}
-
-.hero-text-box {
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black box */
-    padding: 30px;
-    display: inline-block;
-    border-radius: 8px;
-    text-align: center;
-}
-
-.hero-text-box h1,
-.hero-text-box p {
-    color: #ffffff; /* Make all text white for readability */
-}
-
-.hero-text-box h1 {
-    font-size: 4rem; /* Larger font for distinction */
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.hero-text-box p {
-    font-size: 1.5rem; /* Consistent text color */
-}
-
-/* Content Wrapper for Flexbox Layout */
-.content-wrapper {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;  /* Space between the boxes */
+/* Blog Section */
+.blog-section {
     max-width: 1200px;
     margin: 40px auto;
-    padding-top: 40px; /* Extra space between hero and content */
+    padding: 20px;
 }
 
-/* Content Boxes */
-.content-box {
+.blog-post {
     background-color: white;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    width: 48%;  /* Each box takes 48% of the width */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Adjust content text for both sections */
-.content-box h2 {
+.blog-post h2 {
     font-size: 1.8rem;
-    color: #003366; /* Deep Blue for section titles */
-}
-
-.content-box p, .content-box ul {
-    font-size: 1.1rem;
-    color: #333333; /* Dark Charcoal for text */
-}
-
-#updates ul {
-    list-style: none;
-    padding: 0;
-}
-
-#updates ul li {
+    color: #003366;
     margin-bottom: 10px;
 }
 
-#updates ul li a {
-    text-decoration: none;
-    color: #003366; /* Deep Blue for links */
-    font-weight: 500;
+.blog-post p {
+    color: #333333;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
 }
 
-#updates ul li a:hover {
-    color: #5dade2; /* Light Blue on hover */
+.blog-post strong {
+    font-weight: bold;
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #002244; /* Deeper Blue Footer */
+    background-color: #002244;
     color: white;
     margin-top: 60px;
 }
