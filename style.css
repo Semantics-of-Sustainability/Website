@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f5f5f5;
+    background-color: #ADD8E6; /* Light Blue Background */
     color: #333;
     line-height: 1.8;
     padding: 20px;
@@ -16,7 +16,7 @@ body {
 
 /* Navigation Bar */
 header {
-    background-color: #003366;
+    background-color: #2E8B57; /* Sea Green */
     padding: 20px 0;
 }
 
@@ -40,7 +40,7 @@ header {
 }
 
 .navbar ul li a:hover {
-    background-color: #5dade2;
+    background-color: #90EE90; /* Light Green */
     border-radius: 5px;
 }
 
@@ -59,13 +59,13 @@ header {
 .hero-content h1 {
     font-size: 3.5rem;
     font-weight: bold;
-    color: #5dade2; /* Soft blue tone for the title */
+    color: #5dade2; /* Soft Blue tone for the title */
 }
 
 .hero-content p {
     font-size: 1.5rem;
     margin-top: 20px;
-    color: #90ee90; /* Light green tone for the subtitle */
+    color: #90EE90; /* Light Green tone for the subtitle */
 }
 
 .hero::before {
@@ -99,7 +99,7 @@ header {
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    width: 48%; /* Each box takes 48% of the width */
+    width: 48%;
 }
 
 #updates ul {
@@ -113,19 +113,19 @@ header {
 
 #updates ul li a {
     text-decoration: none;
-    color: #003366;
+    color: #2E8B57; /* Sea Green for links */
     font-weight: 500;
 }
 
 #updates ul li a:hover {
-    color: #5dade2;
+    color: #87CEEB; /* Sky Blue on hover */
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #003366;
+    background-color: #2E8B57; /* Sea Green */
     color: white;
     margin-top: 60px;
 }
