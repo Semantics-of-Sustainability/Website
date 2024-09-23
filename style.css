@@ -36,10 +36,6 @@ nav ul {
     gap: 20px;
 }
 
-nav ul li {
-    margin: 0;
-}
-
 nav ul li a {
     color: white;
     text-decoration: none;
@@ -53,24 +49,36 @@ nav ul li a:hover {
 
 /* Hero section styling */
 section.hero {
+    position: relative;
     text-align: center;
-    padding: 60px 20px;
-    background: linear-gradient(to right, #2d89ef, #00a4e4);
-    color: white;
-    border-radius: 8px;
-    margin-bottom: 20px;
+    padding: 0;
 }
 
-section.hero h1 {
+.hero-banner {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: -4px;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    color: #fff;
 }
 
-section.hero p {
+.hero-content p {
     font-size: 1.25rem;
     color: #e0f7fa;
-    margin-bottom: 20px;
 }
 
 /* Content section styling */
@@ -82,19 +90,6 @@ section.content {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-section.content h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #003366;
-}
-
-section.content p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    margin-bottom: 20px;
-    color: #555;
-}
-
 /* Blog section */
 section.blog-section {
     padding: 40px;
@@ -102,33 +97,6 @@ section.blog-section {
     margin: 20px 0;
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.blog-list {
-    list-style: none;
-    padding-left: 0;
-}
-
-.blog-list li {
-    margin-bottom: 1.5rem;
-}
-
-.blog-list li a {
-    font-size: 1.2rem;
-    color: #2d89ef;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.blog-list li a:hover {
-    text-decoration: underline;
-    color: #003366;
-}
-
-.blog-list span {
-    display: block;
-    font-size: 0.9rem;
-    color: #999;
 }
 
 /* Footer styling */
@@ -143,12 +111,8 @@ footer {
 
 /* Responsive design */
 @media (max-width: 768px) {
-    section.hero h1 {
+    .hero-content h1 {
         font-size: 2rem;
-    }
-
-    .team {
-        flex-direction: column;
     }
 
     nav ul {
