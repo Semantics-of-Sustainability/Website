@@ -9,88 +9,84 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #f5f5f5;
     color: #333;
-    background: url('assets/background.jpg') no-repeat center center fixed;
-    background-size: cover;
+    line-height: 1.6;
 }
 
-.background-overlay {
-    background-color: rgba(255, 255, 255, 0.8); /* A semi-transparent overlay on top of the background */
-    min-height: 100vh;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/* Navigation Bar */
+header {
+    background-color: #003366;
+    padding: 20px 0;
 }
 
-/* Navigation Box */
-.navigation-box {
-    background-color: rgba(93, 173, 226, 0.9); /* Light blue with some transparency */
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
+.navbar ul {
+    list-style: none;
     text-align: center;
 }
 
-.navigation-box nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.navigation-box nav ul li {
+.navbar ul li {
     display: inline;
     margin: 0 15px;
 }
 
-.navigation-box nav ul li a {
-    text-decoration: none;
+.navbar ul li a {
     color: white;
-    font-weight: 500;
+    text-decoration: none;
+    font-weight: bold;
     transition: color 0.3s ease;
 }
 
-.navigation-box nav ul li a:hover {
-    color: #d5dbdb;
+.navbar ul li a:hover {
+    color: #5dade2;
 }
 
-/* About Section in Stylized Box */
-.about-box {
-    background-color: rgba(93, 173, 226, 0.85); /* Soft blue matching the navigation box */
-    padding: 40px;
-    max-width: 800px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
-    color: white;
+/* Hero Section */
+.hero {
+    background-image: url('assets/background.jpg');
+    background-size: cover;
+    background-position: center;
     text-align: center;
+    padding: 80px 20px;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.about-box h2 {
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-top: 10px;
+}
+
+/* Content Section */
+.content {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
     font-size: 2rem;
     margin-bottom: 20px;
+    color: #003366;
 }
 
-.about-box p {
-    font-size: 1.2rem;
+.content p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #555;
     line-height: 1.8;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-    .navigation-box nav ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
-    
-    .about-box {
-        padding: 30px;
-    }
-
-    .about-box h2 {
-        font-size: 1.5rem;
-    }
-
-    .about-box p {
-        font-size: 1rem;
-    }
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #003366;
+    color: white;
 }
