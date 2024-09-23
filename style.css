@@ -9,14 +9,15 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #f5f5f5;
     color: #333;
-    line-height: 1.6;
+    line-height: 1.8;
     padding: 20px;
+    font-size: 18px;
 }
 
 /* Navigation Bar */
 header {
     background-color: #003366;
-    padding: 15px 0;
+    padding: 20px 0;
 }
 
 .navbar ul {
@@ -47,7 +48,7 @@ header {
 .hero {
     background: url('assets/background.jpg') no-repeat center center;
     background-size: cover;
-    padding: 80px 20px;
+    padding: 100px 20px;
     text-align: center;
     color: white;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -55,33 +56,33 @@ header {
 }
 
 .hero-content h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: bold;
 }
 
 .hero-content p {
-    font-size: 1.25rem;
-    margin-top: 10px;
+    font-size: 1.5rem;
+    margin-top: 20px;
 }
 
 /* Content Section */
 .content {
-    padding: 40px;
+    padding: 60px;
     max-width: 1200px;
     margin: 0 auto;
     background-color: white;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .content h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
     color: #003366;
 }
 
 .content p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-bottom: 20px;
     color: #555;
     line-height: 1.8;
@@ -93,6 +94,5 @@ footer {
     padding: 20px;
     background-color: #003366;
     color: white;
-    margin-top: 40px;
+    margin-top: 60px;
 }
-
