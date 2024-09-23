@@ -88,7 +88,7 @@ header {
 .content-wrapper {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 20px;  /* Space between the boxes */
     max-width: 1200px;
     margin: 40px auto;
 }
@@ -99,7 +99,18 @@ header {
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    width: 48%;
+    width: 48%;  /* Each box takes 48% of the width */
+}
+
+/* Adjust content text for both sections */
+.content-box h2 {
+    font-size: 1.8rem;
+    color: #003366;
+}
+
+.content-box p, .content-box ul {
+    font-size: 1.1rem;
+    color: #333;
 }
 
 #updates ul {
