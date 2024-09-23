@@ -58,6 +58,7 @@ section.hero {
     background: linear-gradient(to right, #2d89ef, #00a4e4);
     color: white;
     border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 section.hero h1 {
@@ -70,16 +71,6 @@ section.hero p {
     font-size: 1.25rem;
     color: #e0f7fa;
     margin-bottom: 20px;
-}
-
-/* Image styling */
-section.hero img {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    display: block;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Content section styling */
@@ -104,45 +95,37 @@ section.content p {
     color: #555;
 }
 
-.team {
-    display: flex;
-    gap: 20px;
+/* Blog section */
+section.blog-section {
+    padding: 40px;
+    background-color: #fff;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.team .member {
-    text-align: center;
-}
-
-.team .member img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-/* Blog list */
-ul.blog-list {
+.blog-list {
     list-style: none;
     padding-left: 0;
 }
 
-ul.blog-list li {
+.blog-list li {
     margin-bottom: 1.5rem;
 }
 
-ul.blog-list li a {
+.blog-list li a {
     font-size: 1.2rem;
     color: #2d89ef;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-ul.blog-list li a:hover {
+.blog-list li a:hover {
     text-decoration: underline;
     color: #003366;
 }
 
-ul.blog-list span {
+.blog-list span {
     display: block;
     font-size: 0.9rem;
     color: #999;
@@ -162,10 +145,6 @@ footer {
 @media (max-width: 768px) {
     section.hero h1 {
         font-size: 2rem;
-    }
-
-    section.hero img {
-        max-width: 100%;
     }
 
     .team {
