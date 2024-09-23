@@ -46,25 +46,40 @@ header {
 
 /* Hero Section */
 .hero {
-    background: #002244; /* Solid Blue Background */
+    background: url('assets/Background_Image_Website.png') no-repeat center center;
+    background-size: cover;
     padding: 100px 20px;
     text-align: center;
-    color: white;
     margin-bottom: 40px;
     position: relative;
 }
 
-.hero-content h1 {
-    font-size: 4rem; /* Increased font size */
-    font-weight: bold;
-    color: #ffffff; /* White color for clarity */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for distinction */
+.hero-content {
+    position: relative;
+    z-index: 2;
 }
 
-.hero-content p {
-    font-size: 1.5rem;
-    margin-top: 20px;
-    color: #6BAA75; /* Soft Green for subtitle */
+.hero-text-box {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black box */
+    padding: 30px;
+    display: inline-block;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.hero-text-box h1,
+.hero-text-box p {
+    color: #ffffff; /* Make all text white for readability */
+}
+
+.hero-text-box h1 {
+    font-size: 4rem; /* Larger font for distinction */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-text-box p {
+    font-size: 1.5rem; /* Consistent text color */
 }
 
 /* Content Wrapper for Flexbox Layout */
