@@ -27,10 +27,6 @@ header {
     gap: 20px;
 }
 
-.navbar ul li {
-    margin: 0;
-}
-
 .navbar ul li a {
     text-decoration: none;
     color: white;
@@ -101,34 +97,35 @@ header {
     width: 48%;  /* Each box takes 48% of the width */
 }
 
-/* Adjust content text for both sections */
-.content-box h2 {
+/* Blog Section Styling */
+.blog-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.blog-post {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h2 {
     font-size: 1.8rem;
-    color: #003366; /* Deep Blue for section titles */
-}
-
-.content-box p, .content-box ul {
-    font-size: 1.1rem;
-    color: #333333; /* Dark Charcoal for text */
-}
-
-#updates ul {
-    list-style: none;
-    padding: 0;
-}
-
-#updates ul li {
+    color: #003366;
     margin-bottom: 10px;
 }
 
-#updates ul li a {
-    text-decoration: none;
-    color: #003366; /* Deep Blue for links */
-    font-weight: 500;
+.blog-post p {
+    color: #333333;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
 }
 
-#updates ul li a:hover {
-    color: #5dade2; /* Light Blue on hover */
+.blog-post strong {
+    font-weight: bold;
 }
 
 /* Footer */
