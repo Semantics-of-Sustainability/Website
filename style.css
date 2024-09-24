@@ -158,29 +158,46 @@ footer {
     text-align: center;
 }
 
-.people-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.people-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
+    justify-items: center;
 }
 
-.person {
+.person-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 250px;
     text-align: center;
-    width: 200px;
 }
 
-.person img {
+.person-image {
     width: 100%;
     border-radius: 50%;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.person p {
-    margin-top: 10px;
+.person-card h2 {
+    font-size: 1.5rem;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.person-card .role {
     font-size: 1.1rem;
     color: #333;
+    margin-bottom: 10px;
 }
+
+.person-card .description {
+    font-size: 1rem;
+    color: #666;
+}
+
 
 /* =========================================
    Blog Subdirectory
