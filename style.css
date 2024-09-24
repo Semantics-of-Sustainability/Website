@@ -1,10 +1,27 @@
 /* =========================================
+   Global Styling (applies to all sections)
+========================================= */
+
+/* Global Font Styling */
+body {
+    font-family: Arial, sans-serif; /* Switch to a more readable font */
+    background-color: #F2F2F2; /* Light Gray Background */
+    color: #333333; /* Dark Charcoal Text */
+    line-height: 1.8;
+    padding: 20px;
+    font-size: 18px;
+}
+
+/* =========================================
    Global Navigation Bar Styling (applies to all sections)
 ========================================= */
 header {
     background-color: #002244; /* Dark Blue background */
     padding: 20px 0;
     text-align: center;
+    position: sticky; /* Stick to the top when scrolling */
+    top: 0;
+    z-index: 100;
 }
 
 .navbar ul {
@@ -18,8 +35,8 @@ header {
 .navbar ul li a {
     text-decoration: none;
     color: white;
-    font-family: 'Roboto', sans-serif; /* Ensure consistent font-family */
-    font-weight: 600 !important; /* Enforce bold font-weight */
+    font-family: 'Arial', sans-serif; /* More readable font */
+    font-weight: bold; /* Bold to improve readability */
     padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
@@ -30,7 +47,16 @@ header {
     border-radius: 5px;
 }
 
-
+/* =========================================
+   Global Footer Styling (applies to all sections)
+========================================= */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #002244; /* Dark Blue Footer */
+    color: white;
+    margin-top: 60px;
+}
 
 /* =========================================
    Main Directory Styling (Home, Hero, etc.)
@@ -92,14 +118,6 @@ header {
     width: 48%;  /* Each box takes 48% of the width */
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #002244; /* Dark Blue Footer */
-    color: white;
-    margin-top: 60px;
-}
 
 /* =========================================
    About Subdirectory
