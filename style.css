@@ -19,7 +19,7 @@ header {
     text-decoration: none;
     color: white;
     font-family: 'Roboto', sans-serif; /* Ensure consistent font-family */
-    font-weight: 500 !important; /* Ensure font-weight is applied */
+    font-weight: 600 !important; /* Enforce bold font-weight */
     padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
@@ -29,6 +29,7 @@ header {
     background-color: #5dade2; /* Light Blue Hover */
     border-radius: 5px;
 }
+
 
 
 /* =========================================
