@@ -162,6 +162,34 @@ header {
     font-weight: bold;
 }
 
+/* Updates & News Section */
+.updates-news-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.updates-news-list .update {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.updates-news-list .update h2 {
+    font-size: 1.8rem;
+    color: #003366;
+}
+
+.updates-news-list .update p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+
 /* Footer */
 footer {
     text-align: center;
