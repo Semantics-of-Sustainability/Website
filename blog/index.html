@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Blog Page for Semantics of Sustainability project.">
+    <meta name="description" content="Read blog posts and updates from the Semantics of Sustainability project.">
     <title>Blog - Semantics of Sustainability</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css"> <!-- Link to main style -->
+    <link rel="stylesheet" href="../style.css"> <!-- Link to main CSS -->
 </head>
 <body>
 
@@ -14,30 +14,56 @@
     <header>
         <div class="navbar">
             <ul>
-                <li><a href="/index.html">Home</a></li> <!-- Always points to the root Home page -->
-                <li><a href="/about/index.html">About</a></li> <!-- Always points to the About page in the /about subdirectory -->
-                <li><a href="/updates-news/index.html">Updates & News</a></li> <!-- Always points to Updates & News -->
-                <li><a href="/people/index.html">People</a></li> <!-- Always points to People page -->
-                <li><a href="/blog/index.html">Blog</a></li> <!-- Always points to Blog page -->
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about/index.html">About</a></li>
+                <li><a href="../updates-news/index.html">Updates & News</a></li>
+                <li><a href="../people/index.html">People</a></li>
+                <li><a href="#">Blog</a></li> <!-- Active Blog Link -->
             </ul>
         </div>
     </header>
 
-    <!-- Blog Section -->
-    <section class="blog-section">
-        <div class="content-box">
-            <h1>Blog</h1>
+    <!-- Hero Section -->
+    <section class="blog-hero">
+        <div class="hero-text-box">
+            <h1>Our Blog</h1>
+            <p>Stay updated with the latest insights, news, and developments in sustainability research.</p>
+        </div>
+    </section>
 
-            <!-- Blog Post Example -->
-            <article class="blog-post">
-                <h2>Title of Blog Post</h2>
-                <p><strong>Date:</strong> September 24, 2024</p>
-                <p><strong>Author:</strong> John Doe</p>
-                <p>This is the content of the blog post. It can include updates, news, or any other relevant information for the project.</p>
-            </article>
+    <!-- Blog Posts Section -->
+    <section class="blog-posts-list">
+        <div class="content-box">
+            <h2>Latest Blog Posts</h2>
+
+            <!-- Blog Post 1 -->
+            <div class="blog-post">
+                <h3>Post Title 1</h3>
+                <p class="date">September 24, 2024</p>
+                <p class="author">by John Doe</p>
+                <p class="summary">This is an excerpt from the first blog post. Learn more about sustainability and language evolution in our latest update.</p>
+                <a href="post1.html" class="read-more">Read More</a>
+            </div>
+
+            <!-- Blog Post 2 -->
+            <div class="blog-post">
+                <h3>Post Title 2</h3>
+                <p class="date">October 10, 2024</p>
+                <p class="author">by Jane Smith</p>
+                <p class="summary">In this post, we delve into the machine learning techniques used to track conceptual changes in sustainability.</p>
+                <a href="post2.html" class="read-more">Read More</a>
+            </div>
 
             <!-- Add more blog posts as needed -->
         </div>
+    </section>
+
+    <!-- Pagination Section (Optional) -->
+    <section class="pagination">
+        <a href="#" class="page">Previous</a>
+        <a href="#" class="page">1</a>
+        <a href="#" class="page active">2</a>
+        <a href="#" class="page">Next</a>
     </section>
 
     <!-- Footer -->
