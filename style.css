@@ -99,9 +99,10 @@ header {
 
 /* Blog Section Styling */
 .blog-section {
-    max-width: 1200px;
-    margin: 40px auto;
+    max-width: 800px;  /* Reduce width to center it more neatly */
+    margin: 40px auto; /* Center the blog section horizontally */
     padding: 20px;
+    text-align: center; /* Center-align the blog content */
 }
 
 .blog-post {
@@ -110,6 +111,7 @@ header {
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Keep the blog post text left-aligned */
 }
 
 .blog-post h2 {
