@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Improved Layout</title>
-    <link rel="stylesheet" href="style.css">
+    <title>About - Semantics of Sustainability</title>
+    <link rel="stylesheet" href="../style.css"> <!-- Make sure this path is correct -->
 </head>
 <body>
 
-    <!-- Header -->
+    <!-- Navigation Bar -->
     <header>
         <div class="navbar">
             <ul>
@@ -21,28 +21,34 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="about-hero">
-        <div class="hero-text-box">
-            <h1>About Us</h1>
-            <p>Learn more about the project.</p>
-        </div>
-    </section>
+    <!-- About Section -->
+    <div class="about-section">
+        <h1>About the Project</h1>
+        <p>This project explores the evolution of sustainability language using machine learning techniques.</p>
 
-    <!-- Main Content Section -->
-    <div class="container">
-        <div class="grid-container">
-            <div class="grid-item">
-                <h2>Project Overview</h2>
-                <p>Details about the project...</p>
+        <!-- Goals and Methodology -->
+        <h2>Goals & Methodology</h2>
+        <div class="about-methodology">
+            <div class="methodology-item">
+                <h3>Data Collection</h3>
+                <p>Gathering historical texts from various archives.</p>
             </div>
-            <div class="grid-item">
-                <h2>Goals & Methodology</h2>
-                <p>Details about the methodology...</p>
+            <div class="methodology-item">
+                <h3>Machine Learning Analysis</h3>
+                <p>Using BERT to analyze language changes over time.</p>
             </div>
-            <div class="grid-item">
-                <h2>Our Collaborators</h2>
-                <p>Details about the collaborators...</p>
+        </div>
+
+        <!-- Collaborators Section -->
+        <h2>Our Collaborators</h2>
+        <div class="about-collaborators">
+            <div class="collaborator">
+                <img src="logo1.png" alt="Collaborator 1">
+                <p>eScience Center</p>
+            </div>
+            <div class="collaborator">
+                <img src="logo2.png" alt="Collaborator 2">
+                <p>Utrecht University</p>
             </div>
         </div>
     </div>
