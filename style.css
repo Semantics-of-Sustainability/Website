@@ -1,22 +1,4 @@
 /* =========================================
-   General styling (applies to all sections)
-========================================= */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #F2F2F2; /* Light Gray Background */
-    color: #333333; /* Dark Charcoal Text */
-    line-height: 1.8;
-    padding: 20px;
-    font-size: 18px;
-}
-
-/* =========================================
    Global Navigation Bar Styling (applies to all sections)
 ========================================= */
 header {
@@ -36,11 +18,11 @@ header {
 .navbar ul li a {
     text-decoration: none;
     color: white;
-    font-weight: 500; /* Medium weight for better readability */
+    font-family: 'Roboto', sans-serif; /* Ensure consistent font-family */
+    font-weight: 500 !important; /* Ensure font-weight is applied */
     padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    font-family: 'Roboto', sans-serif; /* Ensure consistent font-family */
 }
 
 .navbar ul li a:hover {
