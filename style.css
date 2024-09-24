@@ -97,6 +97,38 @@ header {
     width: 48%;  /* Each box takes 48% of the width */
 }
 
+/* People Section */
+.people-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.people-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.person {
+    text-align: center;
+    width: 200px;
+}
+
+.person img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.person p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
 /* Blog Section Styling */
 .blog-section {
     max-width: 800px;  /* Reduce width to center it more neatly */
