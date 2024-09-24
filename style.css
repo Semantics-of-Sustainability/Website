@@ -122,31 +122,32 @@ footer {
     margin: 40px auto;
     padding: 20px;
     text-align: center;
-    background-color: #f9f9f9; /* Light background color for contrast */
+    background-color: #f9f9f9;
     border-radius: 10px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Headings within the About Section */
+/* Headings */
+.about-section h1, .about-section h2 {
+    color: #003366;
+}
+
 .about-section h1 {
     font-size: 2.5rem;
-    color: #003366; /* Dark blue for headings */
     margin-bottom: 20px;
 }
 
 .about-section h2 {
     font-size: 2rem;
-    color: #002244; /* Darker blue for subheadings */
     margin-bottom: 15px;
 }
 
-/* Paragraph Styling */
+/* Paragraphs */
 .about-section p {
     font-size: 1.2rem;
     line-height: 1.8;
-    color: #333; /* Dark gray for readability */
+    color: #333;
     margin-bottom: 20px;
-    padding: 0 20px;
 }
 
 /* Goals and Methodology Grid */
@@ -161,20 +162,8 @@ footer {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
-}
-
-.methodology-item h3 {
-    font-size: 1.5rem;
-    color: #003366;
-    margin-bottom: 10px;
-}
-
-.methodology-item p {
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 10px;
 }
 
 /* Collaborators Section */
@@ -185,10 +174,6 @@ footer {
     margin-top: 40px;
 }
 
-.collaborator {
-    text-align: center;
-}
-
 .collaborator img {
     max-width: 100px;
     margin-bottom: 10px;
@@ -197,34 +182,6 @@ footer {
 .collaborator p {
     font-size: 1.1rem;
     color: #003366;
-}
-
-
-/* Collaborators Section */
-.about-collaborators {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
-    text-align: center;
-}
-
-.collaborators-list {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.collaborator {
-    text-align: center;
-}
-
-.collaborator img {
-    max-width: 100px;
-    margin-bottom: 10px;
-}
-
-.collaborator p {
-    font-size: 1.1rem;
 }
 
 
