@@ -360,7 +360,7 @@ footer {
 
 
 /* =========================================
-   Updates & News Subdirectory
+   Updates & News Subdirectory Styling
 ========================================= */
 
 /* Hero Section for Updates & News */
@@ -393,17 +393,37 @@ footer {
 
 /* Updates & News Section */
 .updates-news-list {
-    max-width: 1200px;
+    max-width: 1000px; /* Reduce max-width to better center content */
     margin: 40px auto;
     padding: 20px;
 }
 
-.news-item {
+.content-box {
     background-color: white;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+}
+
+.content-box h2 {
+    font-size: 2.2rem;
+    color: #003366;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* News Items */
+.news-item {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.news-item:hover {
+    transform: translateY(-5px); /* Adds subtle hover effect */
 }
 
 .news-item h3 {
@@ -415,7 +435,7 @@ footer {
 .news-item .date {
     font-size: 0.9rem;
     color: #888;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .news-item .summary {
@@ -428,6 +448,8 @@ footer {
     font-size: 1rem;
     color: #0056b3;
     text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
 }
 
 .news-item .read-more:hover {
