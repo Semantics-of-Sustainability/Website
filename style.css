@@ -1,4 +1,6 @@
-/* General styling */
+/* =========================================
+   General styling (applies to all sections)
+========================================= */
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +16,9 @@ body {
     font-size: 18px;
 }
 
+/* =========================================
+   Main Directory Styling (Home, Hero, etc.)
+========================================= */
 /* Navigation Bar */
 header {
     background-color: #002244; /* Deeper Blue */
@@ -97,7 +102,55 @@ header {
     width: 48%;  /* Each box takes 48% of the width */
 }
 
-/* People Section */
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #002244; /* Deeper Blue Footer */
+    color: white;
+    margin-top: 60px;
+}
+
+
+/* =========================================
+   About Subdirectory
+========================================= */
+
+.about-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.about-section .content-box {
+    background-color: #f9f9f9; /* Light background for the about section */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h1 {
+    font-size: 2.5rem;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.about-section strong {
+    font-weight: bold;
+    color: #002244;
+}
+
+/* =========================================
+   People Subdirectory
+========================================= */
+
 .people-section {
     max-width: 1200px;
     margin: 40px auto;
@@ -129,7 +182,10 @@ header {
     color: #333;
 }
 
-/* Blog Section Styling */
+/* =========================================
+   Blog Subdirectory
+========================================= */
+
 .blog-section {
     max-width: 800px;  /* Reduce width to center it more neatly */
     margin: 40px auto; /* Center the blog section horizontally */
@@ -162,7 +218,10 @@ header {
     font-weight: bold;
 }
 
-/* Updates & News Section */
+/* =========================================
+   Updates & News Subdirectory
+========================================= */
+
 .updates-news-section {
     max-width: 1200px;
     margin: 40px auto;
@@ -189,12 +248,3 @@ header {
     color: #333;
 }
 
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #002244; /* Deeper Blue Footer */
-    color: white;
-    margin-top: 60px;
-}
