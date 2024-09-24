@@ -272,37 +272,100 @@ footer {
    Blog Subdirectory
 ========================================= */
 
-.blog-section {
-    max-width: 800px;  /* Reduce width to center it more neatly */
-    margin: 40px auto; /* Center the blog section horizontally */
+/* Blog Hero Section */
+.blog-hero {
+    background: url('../assets/blog-hero-image.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+}
+
+.blog-hero .hero-text-box {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black box */
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.blog-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.blog-hero p {
+    font-size: 1.5rem;
+}
+
+/* Blog Post List */
+.blog-posts-list {
+    max-width: 1200px;
+    margin: 40px auto;
     padding: 20px;
-    text-align: center; /* Center-align the blog content */
 }
 
 .blog-post {
     background-color: white;
     padding: 20px;
     margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: left; /* Keep the blog post text left-aligned */
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.blog-post h2 {
+.blog-post h3 {
     font-size: 1.8rem;
     color: #003366;
     margin-bottom: 10px;
 }
 
-.blog-post p {
-    color: #333333;
-    font-size: 1.1rem;
+.blog-post .date, .blog-post .author {
+    font-size: 0.9rem;
+    color: #888;
     margin-bottom: 10px;
 }
 
-.blog-post strong {
-    font-weight: bold;
+.blog-post .summary {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 15px;
 }
+
+.blog-post .read-more {
+    font-size: 1rem;
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.blog-post .read-more:hover {
+    text-decoration: underline;
+}
+
+/* Pagination */
+.pagination {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.pagination .page {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: #0056b3;
+    text-decoration: none;
+    margin: 0 5px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.pagination .page:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.pagination .page.active {
+    background-color: #0056b3;
+    color: white;
+}
+
 
 /* =========================================
    Updates & News Subdirectory
