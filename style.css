@@ -308,29 +308,73 @@ footer {
    Updates & News Subdirectory
 ========================================= */
 
-.updates-news-section {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
+/* Hero Section for Updates & News */
+.updates-hero {
+    background: url('path_to_background_image.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+}
+
+.updates-hero .hero-text-box {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black box */
+    padding: 30px;
+    border-radius: 8px;
+    display: inline-block;
     text-align: center;
 }
 
-.updates-news-list .update {
+.updates-hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.updates-hero p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+
+/* Updates & News Section */
+.updates-news-list {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.news-item {
     background-color: white;
     padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: left;
+    margin-bottom: 20px;
 }
 
-.updates-news-list .update h2 {
+.news-item h3 {
     font-size: 1.8rem;
     color: #003366;
+    margin-bottom: 10px;
 }
 
-.updates-news-list .update p {
+.news-item .date {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.news-item .summary {
     font-size: 1.1rem;
     color: #333;
+    margin-bottom: 15px;
 }
 
+.news-item .read-more {
+    font-size: 1rem;
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.news-item .read-more:hover {
+    text-decoration: underline;
+}
