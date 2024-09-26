@@ -209,7 +209,7 @@ footer {
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap into the next line */
     justify-content: center; /* Center the items horizontally */
-    gap: 40px; /* Space between items */
+    gap: 60px; /* Increased space between items */
 }
 
 /* Person Card Styling */
@@ -219,16 +219,18 @@ footer {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 250px; /* Fixed width for uniformity */
+    height: 300px; /* Increased height for all cards */
     text-align: center;
 }
 
 /* Positioning Person 4 and Person 5 on the second row */
 .people-grid > .person-card:nth-child(4) {
-    margin-left: calc((250px + 40px) / 2); /* Center under Person 1 and 2 */
+    margin-left: calc((250px + 60px) / 2); /* Center under Person 1 and 2 */
 }
 
 .people-grid > .person-card:nth-child(5) {
-    margin-left: calc((250px + 40px) / 2); /* Center under Person 2 and 3 */
+    margin-left: calc((250px + 60px) / 2); /* Center under Person 2 and 3 */
+    margin-top: 0; /* Reset any top margin to align properly */
 }
 
 /* Person Image */
@@ -255,7 +257,6 @@ footer {
     font-size: 1rem;
     color: #666;
 }
-
 
 /* =========================================
    Blog Subdirectory
