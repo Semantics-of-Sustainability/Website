@@ -176,6 +176,10 @@ footer {
    People Subdirectory
 ========================================= */
 
+/* =========================================
+   People Subdirectory
+========================================= */
+
 /* People Section Styling */
 .people-section {
     max-width: 1200px;
@@ -205,9 +209,22 @@ footer {
 /* People Grid */
 .people-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns in the first row */
-    gap: 40px; /* Equal spacing between rows and columns */
-    justify-content: center; /* Center the grid */
+    grid-template-columns: repeat(3, 1fr); /* Three columns for the first row */
+    gap: 40px;
+    justify-items: center; /* Center align all items */
+}
+
+.people-grid > .person-card:nth-child(4),
+.people-grid > .person-card:nth-child(5) {
+    grid-column: span 1; /* Ensures two boxes in the second row */
+    justify-self: center; /* Center the two boxes on the second row */
+}
+
+/* Adjusting grid for the second row (Person 4 and Person 5) */
+.people-grid {
+    grid-template-areas:
+        "person1 person2 person3"
+        ". person4 person5 ."; /* Centers Person 4 and Person 5 with a gap */
 }
 
 /* Person Card Styling */
@@ -217,15 +234,8 @@ footer {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 100%;
-    max-width: 250px; /* Ensure consistent width */
+    max-width: 250px;
     text-align: center;
-}
-
-/* Staggering the second row (two people under the gaps of the first row) */
-.people-grid > .person-card:nth-child(4),
-.people-grid > .person-card:nth-child(5) {
-    grid-column: span 1;
-    justify-self: center;
 }
 
 /* Person Image */
