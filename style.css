@@ -82,17 +82,35 @@ footer {
 /* Content Box Styling */
 .content-box {
     background-color: white;
-    padding: 20px; /* Consistent padding */
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Centered text for uniformity */
-    height: 200px; /* Fixed height to make boxes same size */
+    text-align: left;
+    position: relative;
 }
 
-/* Ensure all boxes in home page have the same size */
-.content-box h2 {
-    font-size: 1.5rem; /* Consistent heading size */
-    margin-bottom: 10px; /* Space below headings */
+/* About Section */
+.about-section {
+    grid-column: 1 / span 2; /* Full width of the grid */
+    text-align: left;
+}
+
+/* Latest Updates & News Section */
+.updates-section {
+    grid-column: 1 / span 1; /* Occupies half the grid */
+}
+
+.updates-list {
+    margin-bottom: 20px;
+}
+
+.update-item {
+    margin-bottom: 15px;
+}
+
+/* People and Blog Section */
+.people-section, .blog-section {
+    grid-column: 1 / span 1;
 }
 
 /* Button Styling */
@@ -100,7 +118,7 @@ footer {
     display: inline-block;
     background-color: #0056b3;
     color: white;
-    padding: 10px 20px; /* Consistent button size */
+    padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 10px;
@@ -113,7 +131,16 @@ footer {
 /* Centered Button */
 .centered-button {
     display: block;
-    margin: 0 auto; /* Center button */
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #002244;
+    color: white;
 }
 
 
@@ -519,6 +546,9 @@ footer {
     font-weight: bold;
 }
 
+.update-link:hover {
+    text-decoration: underline;
+}
 .update-link:hover {
     text-decoration: underline;
 }
