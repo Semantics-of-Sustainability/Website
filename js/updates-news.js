@@ -20,11 +20,12 @@ const updates = [
             <br><br>
             Check out the <a href="https://github.com/your-repo-link" target="_blank">GitHub page</a> 
             for more contributions to the project.
-        ` },
+        ` 
+    },
     { id: 2, 
-     title: 'Workshop on Dutch language models for historical research', 
-     date: '2022-11-30', 
-     summary: `
+        title: 'Workshop on Dutch language models for historical research', 
+        date: '2022-11-30', 
+        summary: `
             This workshop will be held on <strong>Dec 9th, 2022</strong> at the <strong>Netherlands eScience Center</strong>. 
             The aim of this workshop is to share knowledge on the state-of-the-art of language models for 
             historical research, and to coordinate and lay out a strategy for training language models for 
@@ -36,9 +37,9 @@ const updates = [
         ` 
     },
     { id: 3, 
-     title: 'BERTing the Humanities: Exploring the Potential of Large Language Models', 
-     date: '2023-03-04', 
-     summary:`
+        title: 'BERTing the Humanities: Exploring the Potential of Large Language Models', 
+        date: '2023-03-04', 
+        summary: `
             The Open eScience project <strong>Semantics of Sustainability</strong> (Utrecht University) organized a 
             workshop on <strong>December 9th, 2022</strong> at the <strong>Netherlands eScience Center</strong> in Amsterdam. 
             The aim of the workshop was to share knowledge on the state-of-the-art of large language models for historical 
@@ -46,10 +47,9 @@ const updates = [
             <br><br>
             The workshop was attended by <strong>data scientists</strong>, <strong>machine learning engineers</strong>, 
             and researchers interested in developing advanced natural language processing (NLP) models.
-        ` 
+        `
     },
     { id: 4, title: 'Space for Newest Update', date: '2024-12-15', summary: 'Example here' },
-    
 ];
 
 // Sort updates by date in descending order (newest first)
@@ -69,11 +69,26 @@ function renderUpdates(page = 1) {
             <h3>${update.title}</h3>
             <p class="date">${update.date}</p>
             <p class="summary">${update.summary}</p>
+            <button class="read-more">Read More</button>
         </div>
     `).join('');
 
     // Handle pagination
     renderPagination(Math.ceil(updates.length / itemsPerPage), page);
+
+    // Handle read more functionality
+    document.querySelectorAll('.read-more').forEach(button => {
+        button.addEventListener('click', function () {
+            const summary = this.previousElementSibling;
+            if (summary.style.maxHeight) {
+                summary.style.maxHeight = null;
+                this.textContent = "Read More";
+            } else {
+                summary.style.maxHeight = "1000px";
+                this.textContent = "Read Less";
+            }
+        });
+    });
 }
 
 // Function to render pagination
