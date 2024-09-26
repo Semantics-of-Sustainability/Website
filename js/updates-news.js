@@ -2,7 +2,7 @@
 const updates = [
     { id: 1, 
         title: 'Welcome to the project page of Semantics of Sustainability', 
-        date: '2022-11-30', 
+        date: '2022-11-29', 
         summary: `
             This project, funded by the <strong>NL eScience Center</strong>, uses state-of-the-art 
             <strong>machine learning techniques</strong> to study conceptual change over time. It builds 
