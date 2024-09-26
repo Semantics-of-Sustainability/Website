@@ -70,66 +70,79 @@ footer {
    Home Page Layout
 ========================================= */
 
-/* Main Content Wrapper */
+/* General Layout */
 .content-wrapper {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px; /* Space between the two sections */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+    gap: 20px;
     max-width: 1200px;
     margin: 40px auto;
-    padding: 20px 0;
 }
 
-/* Content Box (shared style for both sections) */
+/* Content Box Styling */
 .content-box {
     background-color: white;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
 }
 
-/* About Our Project Section */
-.about-box {
-    flex: 3; /* Takes up more space compared to the updates section */
+/* About Section */
+.about-section {
+    grid-column: 1 / span 2; /* Full width of the grid */
     text-align: left;
 }
 
 /* Latest Updates & News Section */
-.updates-box {
-    flex: 2; /* Takes up less space compared to the about section */
-    text-align: left;
+.updates-section {
+    grid-column: 1 / span 1; /* Occupies half the grid */
 }
 
-/* Latest Updates Styling */
-#latest-updates {
+.updates-list {
     margin-bottom: 20px;
 }
 
-.updates-link {
+.update-item {
+    margin-bottom: 15px;
+}
+
+/* People and Blog Section */
+.people-section, .blog-section {
+    grid-column: 1 / span 1;
+}
+
+/* Button Styling */
+.button {
     display: inline-block;
     background-color: #0056b3;
     color: white;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 10px 20px;
     text-decoration: none;
+    border-radius: 5px;
     margin-top: 10px;
-    transition: background-color 0.3s ease;
 }
 
-.updates-link:hover {
+.button:hover {
     background-color: #003366;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .content-wrapper {
-        flex-direction: column;
-    }
-
-    .about-box, .updates-box {
-        flex: 1;
-    }
+/* Centered Button */
+.centered-button {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
 }
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #002244;
+    color: white;
+}
+
 
 /* =========================================
    About Subdirectory
