@@ -11,6 +11,9 @@ const updates = [
     { id: 9, title: 'Update 9', date: '2025-05-12', summary: 'Our new publication is available for download.' }
 ];
 
+// Sort updates by date in descending order (newest first)
+updates.sort((a, b) => new Date(b.date) - new Date(a.date));
+
 // Set a maximum of 4 items per page
 const itemsPerPage = 4;
 
