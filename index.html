@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to the Semantics of Sustainability project homepage.">
-    <title>Semantics of Sustainability - Home</title>
+    <meta name="description" content="Semantics of Sustainability - Home">
+    <title>Semantics of Sustainability</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"> <!-- Link to main CSS -->
 </head>
@@ -14,7 +14,7 @@
     <header>
         <div class="navbar">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Home</a></li> <!-- Active Home Link -->
                 <li><a href="about/index.html">About</a></li>
                 <li><a href="updates-news/index.html">Updates & News</a></li>
                 <li><a href="people/index.html">People</a></li>
@@ -22,45 +22,36 @@
             </ul>
         </div>
     </header>
-  <!-- Hero Section (Banner) -->
-    <section class="hero">
-        <div class="hero-content">
-            <div class="hero-text-box">
-                <h1>Welcome to the Semantics of Sustainability</h1>
-                <p>We explore the conceptual history of sustainability using state-of-the-art machine learning techniques.</p>
+
+    <!-- Main Content Wrapper -->
+    <section class="content-wrapper">
+        <!-- About Our Project Section -->
+        <div class="content-box about-box">
+            <h2>About Our Project</h2>
+            <p>
+                This project, funded by the NL eScience Center, uses state-of-the-art machine learning techniques to study conceptual change over time. It builds on the seminal BERT infrastructure that has in recent years caused a breakthrough in the computational understanding of language. In this project, we will re-train the base model to create multiple, chronologically ordered models based on historical Dutch textual data. 
+            </p>
+            <p>
+                With the help of the Dutch National Library’s massive archive of historical newspapers, magazines, and books, this project will show how Dutch words have changed their meaning and connotation in public discourses from the Second World War until the present day. By doing so, this project aims to study the conceptual history of one of the most urgent issues of today: global sustainability.
+            </p>
+        </div>
+
+        <!-- Latest Updates & News Section -->
+        <div class="content-box updates-box">
+            <h2>Latest Updates & News</h2>
+            <div id="latest-updates">
+                <!-- Latest updates will be dynamically inserted here by JavaScript -->
             </div>
+            <a href="updates-news/index.html" class="updates-link">See all updates & news</a>
         </div>
     </section>
-    <!-- Main Content Section -->
-    <div class="content-wrapper">
-        <!-- About Section -->
-        <section class="about-section">
-            <div class="content-box">
-                <h2>About Our Project</h2>
-                <p>This project uses state-of-the-art machine learning techniques to study conceptual change over time, focusing on sustainability discourse.</p>
-                <a href="about/index.html" class="read-more">Read More</a>
-            </div>
-        </section>
-
-        <!-- Latest Updates Section -->
-        <section class="latest-updates">
-            <div class="content-box">
-                <h2>Latest Updates & News</h2>
-                <div id="latest-updates-container">
-                    <!-- Latest updates will be populated here by JS -->
-                </div>
-                <a href="updates-news/index.html" class="read-more">View All Updates</a>
-            </div>
-        </section>
-    </div>
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 Semantics of Sustainability. All Rights Reserved.</p>
     </footer>
 
-    <!-- JavaScript for Latest Updates -->
-    <script src="js/homepage-updates.js"></script>
-
+    <!-- JavaScript to dynamically add latest updates -->
+    <script src="js/home-latest-updates.js"></script>
 </body>
 </html>
