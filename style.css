@@ -59,6 +59,7 @@ footer {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 30px;
     display: inline-block;
+    border-radius: 8px;
 }
 
 .hero-text-box h1, .hero-text-box p {
@@ -81,17 +82,35 @@ footer {
 /* Content Box Styling */
 .content-box {
     background-color: white;
-    padding: 20px; /* Reduced padding for consistency */
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Centered text for uniformity */
-    height: 200px; /* Fixed height to make boxes same size */
+    text-align: left;
+    position: relative;
 }
 
-/* Updated font sizes */
-.content-box h2 {
-    font-size: 1.5rem; /* Consistent heading size */
-    margin-bottom: 10px; /* Space below headings */
+/* About Section */
+.about-section {
+    grid-column: 1 / span 2; /* Full width of the grid */
+    text-align: left;
+}
+
+/* Latest Updates & News Section */
+.updates-section {
+    grid-column: 1 / span 1; /* Occupies half the grid */
+}
+
+.updates-list {
+    margin-bottom: 20px;
+}
+
+.update-item {
+    margin-bottom: 15px;
+}
+
+/* People and Blog Section */
+.people-section, .blog-section {
+    grid-column: 1 / span 1;
 }
 
 /* Button Styling */
@@ -99,7 +118,7 @@ footer {
     display: inline-block;
     background-color: #0056b3;
     color: white;
-    padding: 10px 15px;
+    padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 10px;
@@ -112,7 +131,8 @@ footer {
 /* Centered Button */
 .centered-button {
     display: block;
-    margin: 10px auto; /* Center button */
+    margin: 0 auto;
+    text-align: center;
 }
 
 /* Footer Styling */
@@ -122,6 +142,7 @@ footer {
     background-color: #002244;
     color: white;
 }
+
 
 /* =========================================
    About Subdirectory
@@ -270,6 +291,7 @@ footer {
     font-size: 1rem;
     color: #666;
 }
+
 
 /* =========================================
    Blog Subdirectory
@@ -472,3 +494,58 @@ footer {
     color: white;
 }
 
+/* =========================================
+   Home Page Updates & News Section
+========================================= */
+
+/* Updates & News Section for Home Page */
+.home-updates-news {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.home-updates-list {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for the updates */
+    gap: 20px;
+}
+
+.home-news-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.home-news-item h3 {
+    font-size: 1.5rem;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.home-news-item .date {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.home-news-item .summary {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.update-link {
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.update-link:hover {
+    text-decoration: underline;
+}
