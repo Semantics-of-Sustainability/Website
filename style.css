@@ -396,7 +396,7 @@ footer {
 /* Updates & News Section */
 .updates-news-list {
     max-width: 1000px;
-    margin: 20px auto; /* Reduced margin */
+    margin: 20px auto;
     padding: 20px;
 }
 
@@ -405,14 +405,7 @@ footer {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: left; /* Align the text to the left */
-}
-
-.content-box h2 {
-    font-size: 2rem;
-    color: #003366;
-    margin-bottom: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 /* News Items */
@@ -422,33 +415,19 @@ footer {
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    max-height: 200px; /* Fixed height for uniform box size */
+    overflow: hidden;  /* Hide overflow content */
+    transition: max-height 0.3s ease, padding-bottom 0.3s ease; /* Smooth expansion */
+    position: relative;
 }
 
-.news-item:hover {
-    transform: translateY(-3px); /* Subtle hover effect */
+/* Expanded news-item */
+.news-item.expanded {
+    max-height: 1000px; /* Allow full expansion */
+    padding-bottom: 50px; /* Add padding when expanded */
 }
 
-.news-item h3 {
-    font-size: 1.8rem;
-    color: #003366;
-    margin-bottom: 10px;
-}
-
-.news-item .date {
-    font-size: 0.9rem;
-    color: #888;
-    margin-bottom: 10px;
-}
-
-.news-item .summary {
-    font-size: 1.1rem;
-    color: #333;
-    max-height: 100px; /* Set a max height for the initial summary */
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-}
-
+/* Read More Button */
 .read-more {
     background-color: #0056b3;
     color: white;
@@ -458,54 +437,10 @@ footer {
     cursor: pointer;
     margin-top: 10px;
     transition: background-color 0.3s ease;
+    position: absolute;
+    bottom: 10px;  /* Align to the bottom of the box */
 }
 
 .read-more:hover {
     background-color: #003366;
-}
-
-/* Pagination */
-.pagination {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.pagination .page {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: white;
-    color: #0056b3;
-    text-decoration: none;
-    margin: 0 5px;
-    border-radius: 5px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.pagination .page:hover {
-    background-color: #0056b3;
-    color: white;
-}
-
-.pagination .page.active {
-    background-color: #0056b3;
-    color: white;
-}
-
-/* Admin Section - Hidden for non-owners */
-.owner-section {
-    display: none;
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.owner-section input, .owner-section textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
 }
