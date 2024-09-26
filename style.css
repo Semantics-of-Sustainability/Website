@@ -228,7 +228,7 @@ footer {
     border-radius: 10px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 1000px; /* Adjusted width for centering */
+    max-width: 1000px;
     text-align: center;
 }
 
@@ -238,18 +238,19 @@ footer {
     margin-bottom: 40px;
 }
 
-/* People Grid with 3 people in the first row, staggered 2 in the second */
+/* People Grid */
 .people-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Three columns in the first row */
-    grid-auto-rows: auto; /* Automatically adjust row heights */
-    gap: 20px; /* Spacing between the boxes */
+    grid-auto-rows: auto;
+    gap: 40px; /* Increase gap to be consistent between rows and columns */
     justify-content: center; /* Center the grid */
 }
 
+/* Staggering the second row (two people under the gaps of the first row) */
 .people-grid > .person-card:nth-child(4),
 .people-grid > .person-card:nth-child(5) {
-    grid-column: span 2; /* Stagger the second row, moving them under two columns */
+    grid-column: span 2; /* These two people span across the gaps under the first row */
 }
 
 /* Person Card Styling */
@@ -258,7 +259,7 @@ footer {
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 100%; /* Full width within the grid column */
+    width: 100%;
     max-width: 250px; /* Ensure consistent width */
     text-align: center;
 }
@@ -286,6 +287,7 @@ footer {
     font-size: 1rem;
     color: #666;
 }
+
 
 /* =========================================
    Blog Subdirectory
