@@ -1,14 +1,55 @@
 // Simulated pagination data with 9 updates
 const updates = [
-    { id: 1, title: 'Update 1', date: '2024-09-24', summary: 'A new dataset has been added.' },
-    { id: 2, title: 'Update 2', date: '2024-10-10', summary: 'Our team refined the methodology.' },
-    { id: 3, title: 'Update 3', date: '2024-11-02', summary: 'We published a new research paper on sustainability trends.' },
-    { id: 4, title: 'Update 4', date: '2024-12-15', summary: 'Data visualization tools have been improved.' },
-    { id: 5, title: 'Update 5', date: '2025-01-20', summary: 'We presented our findings at a major conference.' },
-    { id: 6, title: 'Update 6', date: '2025-02-05', summary: 'New data integration features have been added.' },
-    { id: 7, title: 'Update 7', date: '2025-03-10', summary: 'We are working on a new machine learning model.' },
-    { id: 8, title: 'Update 8', date: '2025-04-01', summary: 'Sustainability concept tracking has been expanded.' },
-    { id: 9, title: 'Update 9', date: '2025-05-12', summary: 'Our new publication is available for download.' }
+    { id: 1, 
+        title: 'Welcome to the project page of Semantics of Sustainability', 
+        date: '2022-11-30', 
+        summary: `
+            This project, funded by the <strong>NL eScience Center</strong>, uses state-of-the-art 
+            <strong>machine learning techniques</strong> to study conceptual change over time. It builds 
+            on the seminal <em>BERT</em> infrastructure that has in recent years caused a breakthrough 
+            in the computational understanding of language. In this project, we will re-train the base 
+            model to create multiple, chronologically ordered models based on historical Dutch textual 
+            data. With the help of the Dutch National Library’s massive archive of historical newspapers, 
+            magazines, and books, this project will show how Dutch words have changed their meaning and 
+            connotation in public discourses from the Second World War until the present day.
+            <br><br>
+            By doing so, this project aims to study the conceptual history of one of the most urgent 
+            issues of today: global sustainability. With the help of this technique, we are able to trace 
+            continuities and breaks in this discourse to, ultimately, gain insights into the forces at 
+            play when it comes to sustainability.
+            <br><br>
+            Check out the <a href="https://github.com/your-repo-link" target="_blank">GitHub page</a> 
+            for more contributions to the project.
+        ` },
+    { id: 2, 
+     title: 'Workshop on Dutch language models for historical research', 
+     date: '2022-11-30', 
+     summary: `
+            This workshop will be held on <strong>Dec 9th, 2022</strong> at the <strong>Netherlands eScience Center</strong>. 
+            The aim of this workshop is to share knowledge on the state-of-the-art of language models for 
+            historical research, and to coordinate and lay out a strategy for training language models for 
+            historical Dutch.
+            <br><br>
+            This strategy includes plans on <strong>training corpora</strong>, <strong>model sizes and architectures</strong>, 
+            and <strong>model evaluation</strong>. The workshop is intended for researchers and practitioners 
+            developing or working with Dutch language models.
+        ` 
+    },
+    { id: 3, 
+     title: 'BERTing the Humanities: Exploring the Potential of Large Language Models', 
+     date: '2023-03-04', 
+     summary:`
+            The Open eScience project <strong>Semantics of Sustainability</strong> (Utrecht University) organized a 
+            workshop on <strong>December 9th, 2022</strong> at the <strong>Netherlands eScience Center</strong> in Amsterdam. 
+            The aim of the workshop was to share knowledge on the state-of-the-art of large language models for historical 
+            research, and to coordinate and lay out a strategy for training and developing transformer models for historical Dutch.
+            <br><br>
+            The workshop was attended by <strong>data scientists</strong>, <strong>machine learning engineers</strong>, 
+            and researchers interested in developing advanced natural language processing (NLP) models.
+        ` 
+    },
+    { id: 4, title: 'Space for Newest Update', date: '2024-12-15', summary: 'Example here' },
+    
 ];
 
 // Sort updates by date in descending order (newest first)
