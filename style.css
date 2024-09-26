@@ -375,56 +375,15 @@ footer {
    Updates & News Subdirectory Styling
 ========================================= */
 
-/* Hero Section for Updates & News */
-.updates-hero {
-    background: url('path_to_background_image.jpg') no-repeat center center;
-    background-size: cover;
-    padding: 100px 20px;
-    text-align: center;
-    color: white;
-}
-
-.updates-hero .hero-text-box {
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black box */
-    padding: 30px;
-    border-radius: 8px;
-    display: inline-block;
-    text-align: center;
-}
-
-.updates-hero h1 {
-    font-size: 3.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.updates-hero p {
-    font-size: 1.5rem;
-    line-height: 1.8;
-}
-
 /* Updates & News Section */
 .updates-news-list {
-    max-width: 1000px; /* Reduce max-width to better center content */
+    max-width: 1000px;
     margin: 40px auto;
     padding: 20px;
+    overflow-y: auto; /* Allows scrolling when content is long */
+    height: auto; /* Set height as needed */
 }
 
-.content-box {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.content-box h2 {
-    font-size: 2.2rem;
-    color: #003366;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-/* News Items */
 .news-item {
     background-color: #ffffff;
     padding: 20px;
@@ -438,32 +397,47 @@ footer {
     transform: translateY(-5px); /* Adds subtle hover effect */
 }
 
-.news-item h3 {
-    font-size: 1.8rem;
-    color: #003366;
-    margin-bottom: 10px;
+.pagination {
+    text-align: center;
+    margin-top: 40px;
 }
 
-.news-item .date {
-    font-size: 0.9rem;
-    color: #888;
-    margin-bottom: 10px;
-}
-
-.news-item .summary {
-    font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-.news-item .read-more {
-    font-size: 1rem;
+.pagination .page {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
     color: #0056b3;
     text-decoration: none;
-    display: inline-block;
-    margin-top: 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.news-item .read-more:hover {
-    text-decoration: underline;
+.pagination .page:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.pagination .page.active {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Editable Owner Section (hidden by default) */
+.owner-section {
+    display: none; /* Hidden by default */
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.owner-section input, .owner-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
