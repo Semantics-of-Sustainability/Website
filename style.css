@@ -135,61 +135,53 @@ footer {
     max-width: 1000px;
     margin: 60px auto;
     padding: 40px;
-    text-align: center;
     background-color: #ffffff; /* White background */
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
-.about-section h1 {
-    font-size: 2.5rem;
-    color: #003366;
-    margin-bottom: 30px;
-    font-weight: bold;
+/* Separate box for the About the Project */
+.about-project {
+    margin-bottom: 40px; /* Space between the two boxes */
 }
 
-.about-section h2 {
-    font-size: 2rem;
-    color: #0056b3;
+/* Collaborators Section */
+.collaborators-section {
+    background-color: #f9f9f9; /* Light grey background for contrast */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Names of Collaborators */
+.collaborators-names {
+    display: flex;
+    justify-content: space-around; /* Equal space between names */
     margin-bottom: 20px;
 }
 
-.about-section p {
+.collaborators-names p {
     font-size: 1.2rem;
-    color: #333333;
-    line-height: 1.8;
-    margin-bottom: 30px;
-    text-align: left;
+    color: #003366; /* Change to match your theme */
 }
 
-/* Goals and Methodology Grid */
-.about-methodology {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    margin-top: 40px;
+/* Collaborators Images */
+.about-collaborators {
+    display: flex;
+    justify-content: space-around; /* Equal space between images */
 }
 
-.methodology-item {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: center;
+.about-collaborators .collaborator {
+    flex: 1; /* Allow each logo to grow equally */
+    display: flex;
+    justify-content: center; /* Center the image in its container */
 }
 
-.methodology-item h3 {
-    font-size: 1.8rem;
-    color: #003366;
-    margin-bottom: 10px;
-    font-weight: bold;
+.about-collaborators img {
+    max-width: 100px; /* Ensures logos are of consistent size */
+    height: auto; /* Maintains aspect ratio */
 }
 
-.methodology-item p {
-    font-size: 1.1rem;
-    color: #666666;
-    line-height: 1.6;
-}
 
 /* =========================================
    People Section Styling
