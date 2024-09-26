@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Semantics of Sustainability - Home">
-    <title>Semantics of Sustainability</title>
+    <meta name="description" content="Semantics of Sustainability Home">
+    <title>Home - Semantics of Sustainability</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"> <!-- Link to main CSS -->
 </head>
+
 <body>
 
     <!-- Navigation Bar -->
     <header>
         <div class="navbar">
             <ul>
-                <li><a href="#">Home</a></li> <!-- Active Home Link -->
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about/index.html">About</a></li>
                 <li><a href="updates-news/index.html">Updates & News</a></li>
                 <li><a href="people/index.html">People</a></li>
@@ -23,36 +25,49 @@
         </div>
     </header>
 
-    <!-- Banner Section -->
+    <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-content">
-            <div class="hero-text-box">
-                <h1>Welcome to the Semantics of Sustainability Project</h1>
-                <p>Exploring conceptual change in sustainability using machine learning and historical texts.</p>
-            </div>
+        <div class="hero-text-box">
+            <h1>Welcome to the Semantics of Sustainability Project</h1>
+            <p>Using state-of-the-art machine learning to study conceptual change over time.</p>
         </div>
     </section>
 
-    <!-- Main Content Wrapper -->
+    <!-- Main Content Section -->
     <section class="content-wrapper">
-        <!-- About Our Project Section -->
-        <div class="content-box about-box">
+        <!-- About Section -->
+        <div class="content-box about-section">
             <h2>About Our Project</h2>
-            <p>
-                This project, funded by the NL eScience Center, uses state-of-the-art machine learning techniques to study conceptual change over time. It builds on the seminal BERT infrastructure that has in recent years caused a breakthrough in the computational understanding of language. In this project, we will re-train the base model to create multiple, chronologically ordered models based on historical Dutch textual data. 
-            </p>
-            <p>
-                With the help of the Dutch National Library’s massive archive of historical newspapers, magazines, and books, this project will show how Dutch words have changed their meaning and connotation in public discourses from the Second World War until the present day. By doing so, this project aims to study the conceptual history of one of the most urgent issues of today: global sustainability.
-            </p>
+            <p>This project, funded by the NL eScience Center, uses state-of-the-art machine learning techniques to study conceptual change over time. It builds on the BERT infrastructure to create models based on historical Dutch textual data.</p>
+            <a href="about/index.html" class="button">Learn More</a> <!-- Added About button -->
         </div>
 
-        <!-- Latest Updates & News Section -->
-        <div class="content-box updates-box">
+        <!-- Latest Updates & News -->
+        <div class="content-box updates-section">
             <h2>Latest Updates & News</h2>
-            <div id="latest-updates">
-                <!-- Latest updates will be dynamically inserted here by JavaScript -->
+            <div class="updates-list">
+                <div class="update-item">
+                    <h3 id="update-title-1">Update 1 Title</h3>
+                    <p id="update-summary-1">Summary of the first latest update.</p>
+                </div>
+                <div class="update-item">
+                    <h3 id="update-title-2">Update 2 Title</h3>
+                    <p id="update-summary-2">Summary of the second latest update.</p>
+                </div>
             </div>
-            <a href="updates-news/index.html" class="updates-link">See all updates & news</a>
+            <a href="updates-news/index.html" class="button centered-button">See All Updates & News</a> <!-- Centered Button -->
+        </div>
+
+        <!-- People Section -->
+        <div class="content-box people-section">
+            <h2>Meet Our People</h2>
+            <a href="people/index.html" class="button centered-button">See Our People</a>
+        </div>
+
+        <!-- Blog Section -->
+        <div class="content-box blog-section">
+            <h2>Visit Our Blog</h2>
+            <a href="blog/index.html" class="button centered-button">Go to Blog</a>
         </div>
     </section>
 
@@ -61,8 +76,9 @@
         <p>&copy; 2024 Semantics of Sustainability. All Rights Reserved.</p>
     </footer>
 
-    <!-- JavaScript to dynamically add latest updates -->
-    <script src="js/home-latest-updates.js"></script>
+    <!-- JavaScript for Latest Updates -->
+    <script src="js/home-updates.js"></script>
 
 </body>
+
 </html>
