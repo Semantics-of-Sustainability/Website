@@ -69,57 +69,72 @@ footer {
 /* =========================================
    Home Page Layout
 ========================================= */
-
-/* General Layout */
-.home .content-wrapper {
-    display: flex; /* Use flexbox for layout */
-    flex-wrap: wrap; /* Allow items to wrap */
-    justify-content: space-between; /* Space items evenly */
+.content-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+    gap: 20px;
     max-width: 1200px;
     margin: 40px auto;
 }
 
 /* Content Box Styling */
-.home .content-box {
+.content-box {
     background-color: white;
-    padding: 20px; /* Reduced padding for consistency */
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: calc(25% - 30px); /* 4 equal boxes in a row with spacing */
-    margin: 15px; /* Margin for spacing */
-    height: 250px; /* Fixed height to make boxes same size */
+    text-align: left;
+    position: relative;
 }
 
-/* Updated font sizes */
-.home .content-box h2 {
-    font-size: 1.8rem; /* Consistent heading size */
+/* About Section */
+.about-section {
+    grid-column: 1 / span 2; /* Full width of the grid */
+    text-align: left;
+}
+
+/* Latest Updates & News Section */
+.updates-section {
+    grid-column: 1 / span 1; /* Occupies half the grid */
+}
+
+.updates-list {
+    margin-bottom: 20px;
+}
+
+.update-item {
+    margin-bottom: 15px;
+}
+
+/* People and Blog Section */
+.people-section, .blog-section {
+    grid-column: 1 / span 1;
 }
 
 /* Button Styling */
-.home .button {
+.button {
     display: inline-block;
     background-color: #0056b3;
     color: white;
-    padding: 10px 15px;
+    padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 10px;
 }
 
-.home .button:hover {
+.button:hover {
     background-color: #003366;
 }
 
 /* Centered Button */
-.home .centered-button {
+.centered-button {
     display: block;
     margin: 0 auto;
     text-align: center;
 }
 
 /* Footer Styling */
-.home footer {
+footer {
     text-align: center;
     padding: 20px;
     background-color: #002244;
@@ -127,7 +142,7 @@ footer {
 }
 
 /* =========================================
-   About Section - General Styling
+   About Subdirectory
 ========================================= */
 .about-section {
     max-width: 1000px;
@@ -140,51 +155,136 @@ footer {
 }
 
 .about-section h1 {
-    font-size: 2rem; /* Reduced font size for the title */
+    font-size: 2.5rem;
     color: #003366;
-    margin-bottom: 20px; /* Increased space below the title */
+    margin-bottom: 30px;
     font-weight: bold;
 }
 
+.about-section h2 {
+    font-size: 2rem;
+    color: #0056b3;
+    margin-bottom: 20px;
+}
+
 .about-section p {
-    font-size: 1rem; /* Smaller paragraph font size */
+    font-size: 1.2rem;
     color: #333333;
-    line-height: 1.6;
-    margin-bottom: 30px; /* Space below paragraph */
+    line-height: 1.8;
+    margin-bottom: 30px;
+    text-align: left;
 }
 
-/* Collaborators Section */
-.collaborators-section {
-    background-color: #f0f0f0; /* Greyed out background */
-    padding: 20px; /* Padding around the section */
+/* Goals and Methodology Grid */
+.about-methodology {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.methodology-item {
+    background-color: white;
+    padding: 30px;
     border-radius: 10px;
-    margin-top: 40px; /* Space above the collaborators section */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-.collaborators-section h2 {
-    font-size: 1.5rem; /* Title size for collaborators */
+.methodology-item h3 {
+    font-size: 1.8rem;
     color: #003366;
-    margin-bottom: 20px; /* Space below title */
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
-.about-collaborators {
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-around; /* Space logos evenly */
-    align-items: center; /* Center logos vertically */
+.methodology-item p {
+    font-size: 1.1rem;
+    color: #666666;
+    line-height: 1.6;
 }
 
-.collaborator {
-    display: flex;
-    flex-direction: column; /* Stack name above logo */
-    align-items: center; /* Center align content */
-    margin: 0 20px; /* Space between each collaborator */
+/* =========================================
+   People Subdirectory
+========================================= */
+
+/* People Section Styling */
+.people-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
 }
 
-.collaborator img {
-    max-width: 100px; /* Set max width for logos */
-    max-height: 80px; /* Set max height for logos */
-    object-fit: contain; /* Maintain aspect ratio */
-    margin-top: 10px; /* Space above logos */
+.content-box {
+    margin: 0 auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.content-box h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+/* People Grid */
+.people-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns for top row */
+    gap: 40px;
+    justify-items: center;
+    position: relative;
+}
+
+/* Person Card Styling */
+.person-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+}
+
+/* Positioning Person 4 and Person 5 on the second row */
+.people-grid > .person-card:nth-child(4) {
+    grid-column: 2 / span 1; /* Place Person 4 in the gap between Person 1 and Person 2 */
+}
+
+.people-grid > .person-card:nth-child(5) {
+    grid-column: 3 / span 1; /* Place Person 5 in the gap between Person 2 and Person 3 */
+}
+
+/* Person Image */
+.person-image {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.person-card h2 {
+    font-size: 1.5rem;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.person-card .role {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.person-card .description {
+    font-size: 1rem;
+    color: #666;
 }
 
 /* =========================================
@@ -287,108 +387,6 @@ footer {
 }
 
 /* =========================================
-   Updates & News Subdirectory Styling
-========================================= */
-
-/* Updates & News Section */
-.updates-news-list {
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 20px;
-}
-
-.content-box {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: left;
-}
-
-.content-box h2 {
-    font-size: 2rem;
-    color: #003366;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-/* News Items */
-.news-item {
-    background-color: #ffffff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.news-item:hover {
-    transform: translateY(-3px);
-}
-
-.news-item h3 {
-    font-size: 1.8rem;
-    color: #003366;
-    margin-bottom: 10px;
-}
-
-.news-item .date {
-    font-size: 0.9rem;
-    color: #888;
-    margin-bottom: 10px;
-}
-
-.news-item .summary {
-    font-size: 1.1rem;
-    color: #333;
-    max-height: 100px;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-}
-
-.read-more {
-    background-color: #0056b3;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
-}
-
-.read-more:hover {
-    background-color: #003366;
-}
-
-/* Pagination */
-.pagination {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.pagination .page {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: white;
-    color: #0056b3;
-    text-decoration: none;
-    margin: 0 5px;
-    border-radius: 5px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.pagination .page:hover {
-    background-color: #0056b3;
-    color: white;
-}
-
-.pagination .page.active {
-    background-color: #0056b3;
-    color: white;
-}
-
-/* =========================================
    Home Page Updates & News Section
 ========================================= */
 
@@ -440,9 +438,6 @@ footer {
     font-weight: bold;
 }
 
-.update-link:hover {
-    text-decoration: underline;
-}
 .update-link:hover {
     text-decoration: underline;
 }
