@@ -233,8 +233,8 @@ footer {
 /* People Grid */
 .people-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Three equal columns for top row */
-    grid-gap: 40px; /* Equal spacing between rows and columns */
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns for top row */
+    gap: 40px; /* Equal spacing between rows and columns */
     justify-content: center;
     margin-bottom: 40px;
 }
@@ -246,17 +246,26 @@ footer {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 100%;
-    max-width: 250px;
+    max-width: 250px; /* Consistent width for all cards */
     text-align: center;
 }
 
-/* Positioning the second row (Person 4 and 5) centered in the gaps of the first row */
-.people-grid > .person-card:nth-child(4) {
-    grid-column: 2 / 3; /* This aligns Person 4 with the middle of the gap between Person 1 and Person 2 */
+/* Second row - Person 4 and Person 5 centered horizontally */
+.people-grid > .person-card:nth-child(4),
+.people-grid > .person-card:nth-child(5) {
+    grid-column: auto; /* Reset column positioning */
+    justify-self: center; /* Horizontally center the second row */
+    display: inline-block; /* Treat Person 4 and 5 as inline-blocks */
 }
 
-.people-grid > .person-card:nth-child(5) {
-    grid-column: 3 / 4; /* This aligns Person 5 with the middle of the gap between Person 2 and Person 3 */
+.people-grid {
+    grid-template-columns: repeat(3, 1fr); /* Top row with 3 columns */
+}
+
+.people-grid .person-card:nth-child(4),
+.people-grid .person-card:nth-child(5) {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for second row */
+    margin: 0 auto; /* Center Person 4 and 5 in the row */
 }
 
 /* Person Image */
