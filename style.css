@@ -143,11 +143,13 @@ footer {
 /* Centering titles */
 .centered {
     text-align: center; /* Centering the title */
+    margin-bottom: 30px; /* Increased margin for separation */
 }
 
 /* Justified text */
 .justified {
     text-align: justify; /* Justifying the project text */
+    margin-bottom: 30px; /* Increased margin for separation */
 }
 
 /* Collaborators Section */
@@ -174,12 +176,14 @@ footer {
 .about-collaborators {
     display: flex;
     justify-content: space-around; /* Equal space between images */
+    flex-direction: column; /* Align logos under names */
 }
 
 .about-collaborators .collaborator {
-    flex: 1; /* Allow each logo to grow equally */
     display: flex;
-    justify-content: center; /* Center the image in its container */
+    flex-direction: column; /* Align names and logos in column */
+    align-items: center; /* Center items horizontally */
+    margin-bottom: 20px; /* Space between collaborators */
 }
 
 .about-collaborators img {
@@ -187,6 +191,7 @@ footer {
     height: auto; /* Maintains aspect ratio */
     object-fit: contain; /* Prevents distortion */
 }
+
 
 /* =========================================
    People Section Styling
