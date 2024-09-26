@@ -220,7 +220,7 @@ footer {
     border-radius: 10px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 1000px; /* Adjusted for centering */
+    max-width: 1000px;
     text-align: center;
 }
 
@@ -233,17 +233,23 @@ footer {
 /* People Grid */
 .people-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns in the first row */
-    gap: 40px; /* Equal spacing between rows and columns */
-    justify-content: center; /* Center the grid */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for the first row */
+    gap: 40px; /* Space between all boxes */
+    justify-content: center;
+    position: relative;
 }
 
-/* Adjust the second row */
+/* First Row (3 items) */
+.people-grid > .person-card:nth-child(-n+3) {
+    grid-column: span 1; /* First 3 people stay in their row */
+}
+
+/* Second Row (2 items, centered under gaps) */
 .people-grid > .person-card:nth-child(4),
 .people-grid > .person-card:nth-child(5) {
-    grid-column: span 1;
-    justify-self: center; /* Center the boxes in the second row */
-    margin-left: 15%; /* Adjust to center person 4 and person 5 */
+    grid-column: span 1; /* Place the 2 cards on the second row */
+    justify-self: center; /* Center align the cards */
+    margin-left: 33%; /* Shift the second row under the gaps */
 }
 
 /* Person Card Styling */
@@ -253,7 +259,7 @@ footer {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 100%;
-    max-width: 250px; /* Ensure consistent width */
+    max-width: 250px;
     text-align: center;
 }
 
@@ -281,6 +287,7 @@ footer {
     font-size: 1rem;
     color: #666;
 }
+
 
 /* =========================================
    Blog Subdirectory
