@@ -4,7 +4,7 @@
 
 /* Global Font Styling */
 body {
-    font-family: Arial, sans-serif; /* Switch to a more readable font */
+    font-family: Arial, sans-serif;
     background-color: #F2F2F2; /* Light Gray Background */
     color: #333333; /* Dark Charcoal Text */
     line-height: 1.8;
@@ -37,7 +37,7 @@ header {
     color: white;
     font-family: 'Arial', sans-serif; /* More readable font */
     font-weight: bold; /* Bold to improve readability */
-    padding: 5px 15px; /* Reduced padding to decrease height */
+    padding: 5px 15px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
@@ -61,6 +61,7 @@ footer {
 /* =========================================
    Main Directory Styling (Home, Hero, etc.)
 ========================================= */
+
 /* Hero Section */
 .hero {
     background: url('assets/Background_Image_Website.png') no-repeat center center;
@@ -96,28 +97,15 @@ footer {
 }
 
 .hero-text-box p {
-    font-size: 1.5rem; /* Consistent text color */
+    font-size: 1.5rem;
 }
 
-/* Content Wrapper for Flexbox Layout */
+/* Content Wrapper */
 .content-wrapper {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;  /* Space between the boxes */
     max-width: 1200px;
     margin: 40px auto;
-    padding-top: 40px; /* Extra space between hero and content */
+    padding: 20px;
 }
-
-/* Content Boxes */
-.content-box {
-    background-color: white;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    width: 48%;  /* Each box takes 48% of the width */
-}
-
 
 /* =========================================
    About Subdirectory
@@ -152,7 +140,7 @@ footer {
     color: #333333;
     line-height: 1.8;
     margin-bottom: 30px;
-    text-align: left; /* Align paragraphs to the left */
+    text-align: left;
 }
 
 /* Goals and Methodology Grid */
@@ -167,7 +155,7 @@ footer {
     background-color: white;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Card-like shadow effect */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -183,30 +171,6 @@ footer {
     color: #666666;
     line-height: 1.6;
 }
-
-/* Collaborators Section */
-.about-collaborators {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap; /* Allow the collaborators to wrap if screen is too small */
-    margin-top: 40px;
-}
-
-.collaborator {
-    text-align: center;
-}
-
-.collaborator img {
-    max-width: 100px;
-    margin-bottom: 10px;
-}
-
-.collaborator p {
-    font-size: 1.1rem;
-    color: #003366;
-}
-
 
 /* =========================================
    People Subdirectory
@@ -235,16 +199,15 @@ footer {
 .content-box h1 {
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 60px; /* Increase space between heading and boxes */
+    margin-bottom: 60px;
 }
 
 /* People Grid */
 .people-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Three columns in the first row */
-    gap: 60px; /* Increase the gap for better spacing */
+    gap: 40px; /* Equal spacing between rows and columns */
     justify-content: center; /* Center the grid */
-    padding-bottom: 40px;
 }
 
 /* Person Card Styling */
@@ -261,10 +224,8 @@ footer {
 /* Staggering the second row (two people under the gaps of the first row) */
 .people-grid > .person-card:nth-child(4),
 .people-grid > .person-card:nth-child(5) {
-    grid-column: span 2; /* Ensures two boxes for the second row */
-    justify-self: center; /* Center the boxes in the second row */
-    transform: translateX(80px); /* Shift second-row boxes horizontally to the right */
-    margin-top: 60px; /* Increase vertical spacing between rows */
+    grid-column: span 1;
+    justify-self: center;
 }
 
 /* Person Image */
@@ -292,8 +253,6 @@ footer {
     color: #666;
 }
 
-
-
 /* =========================================
    Blog Subdirectory
 ========================================= */
@@ -308,7 +267,7 @@ footer {
 }
 
 .blog-hero .hero-text-box {
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black box */
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 30px;
     border-radius: 8px;
 }
@@ -343,7 +302,8 @@ footer {
     margin-bottom: 10px;
 }
 
-.blog-post .date, .blog-post .author {
+.blog-post .date,
+.blog-post .author {
     font-size: 0.9rem;
     color: #888;
     margin-bottom: 10px;
@@ -392,14 +352,11 @@ footer {
     color: white;
 }
 
-
 /* =========================================
    Updates & News Subdirectory Styling
 ========================================= */
 
-/* =========================================
-   Updates & News Section Styling
-========================================= */
+/* Updates & News Section */
 .updates-news-list {
     max-width: 1000px;
     margin: 20px auto;
@@ -414,6 +371,13 @@ footer {
     text-align: left;
 }
 
+.content-box h2 {
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 /* News Items */
 .news-item {
     background-color: #ffffff;
@@ -422,7 +386,6 @@ footer {
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    position: relative;
 }
 
 .news-item:hover {
@@ -489,4 +452,60 @@ footer {
 .pagination .page.active {
     background-color: #0056b3;
     color: white;
+}
+
+/* =========================================
+   Home Page Updates & News Section
+========================================= */
+
+/* Updates & News Section for Home Page */
+.home-updates-news {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.home-updates-list {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for the updates */
+    gap: 20px;
+}
+
+.home-news-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.home-news-item h3 {
+    font-size: 1.5rem;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.home-news-item .date {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.home-news-item .summary {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.update-link {
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.update-link:hover {
+    text-decoration: underline;
 }
