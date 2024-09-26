@@ -219,9 +219,10 @@ footer {
     text-align: center;
 }
 
+/* Grid layout for five people */
 .people-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(5, 1fr); /* Display exactly five columns */
     gap: 20px;
     justify-items: center;
 }
@@ -231,7 +232,7 @@ footer {
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    max-width: 250px;
+    max-width: 220px; /* Adjusted max-width for consistency */
     text-align: center;
 }
 
@@ -258,6 +259,17 @@ footer {
     font-size: 1rem;
     color: #666;
 }
+
+/* Adjust the content-box to center the title */
+.content-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the content box */
+    text-align: center;
 
 
 /* =========================================
