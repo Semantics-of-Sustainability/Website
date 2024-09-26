@@ -1,44 +1,30 @@
-// Simulated data from Updates & News (same data source as updates-news.js)
-const updates = [
-    { id: 1, 
-        title: 'Welcome to the project page of Semantics of Sustainability', 
-        date: '2022-11-29', 
-        summary: 'This project is using machine learning techniques to study conceptual change over time...' 
-    },
-    { id: 2, 
-        title: 'Workshop on Dutch language models for historical research', 
-        date: '2022-11-30', 
-        summary: 'This workshop, held on Dec 9th, 2022, aims to share knowledge on language models for historical research...' 
-    },
-    { id: 3, 
-        title: 'BERTing the Humanities: Exploring the Potential of Large Language Models', 
-        date: '2023-03-04', 
-        summary: 'The Open eScience project organized a workshop on December 9th, 2022, attended by data scientists and researchers...' 
-    },
-    { id: 4, 
-        title: 'Space for Newest Update', 
-        date: '2024-12-15', 
-        summary: 'Example of an upcoming update...' 
-    },
-];
+// Function to extract the first sentence from a summary
+function getFirstSentence(summary) {
+    const cleanSummary = summary.replace(/<\/?[^>]+(>|$)/g, ""); // Remove HTML tags
+    const firstSentence = cleanSummary.split('. ')[0] + '.'; // Take the first sentence
+    return firstSentence;
+}
 
-// Sort updates by date in descending order (newest first)
-updates.sort((a, b) => new Date(b.date) - new Date(a.date));
+// Function to get the latest 2 updates from the updates-news.js file
+function getLatestUpdates() {
+    // Sort updates by date (newest first) from the global "updates" array (which is in updates-news.js)
+    const sortedUpdates = updates.sort((a, b) => new Date(b.date) - new Date(a.date));
+    return sortedUpdates.slice(0, 2); // Get the latest two updates
+}
 
-// Select the top 3 latest updates
-const latestUpdates = updates.slice(0, 3);
-
-// Function to render the latest 3 updates on the home page
+// Function to render the latest 2 updates on the home page
 function renderLatestUpdates() {
-    const updateContainer = document.querySelector('.home-updates-list');
-    updateContainer.innerHTML = latestUpdates.map(update => `
+    const latestUpdates = getLatestUpdates();
+    const updatesContainer = document.querySelector('.home-updates-list');
+
+    updatesContainer.innerHTML = latestUpdates.map(update => `
         <div class="home-news-item">
-            <h3><a href="updates-news/index.html#update-${update.id}" class="update-link">${update.title}</a></h3>
+            <h3><a href="updates-news/index.html#update-${update.id}">${update.title}</a></h3>
             <p class="date">${update.date}</p>
-            <p class="summary">${update.summary}</p>
+            <p class="summary">${getFirstSentence(update.summary)}</p>
         </div>
     `).join('');
 }
 
-// Load the latest updates when the DOM is ready
+// Call the function to render updates when the page loads
 document.addEventListener('DOMContentLoaded', renderLatestUpdates);
