@@ -161,37 +161,26 @@ footer {
 }
 
 /* Names of Collaborators */
-.collaborators-names {
-    display: flex;
-    justify-content: space-around; /* Equal space between names */
-    margin-bottom: 20px;
-}
-
-.collaborators-names p {
-    font-size: 1.2rem;
-    color: #003366; /* Change to match your theme */
-}
-
-/* Collaborators Images */
 .about-collaborators {
-    display: flex;
-    justify-content: space-around; /* Equal space between images */
-    flex-direction: column; /* Align logos under names */
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: space-around; /* Equal space between names */
+    margin-top: 20px; /* Space above collaborators section */
 }
 
-.about-collaborators .collaborator {
+/* Collaborator Items */
+.collaborator {
     display: flex;
-    flex-direction: column; /* Align names and logos in column */
+    flex-direction: column; /* Stack name and logo vertically */
     align-items: center; /* Center items horizontally */
-    margin-bottom: 20px; /* Space between collaborators */
+    margin: 0 10px; /* Horizontal margin between collaborators */
 }
 
 .about-collaborators img {
     max-width: 100px; /* Ensures logos are of consistent size */
     height: auto; /* Maintains aspect ratio */
     object-fit: contain; /* Prevents distortion */
+    margin-top: 10px; /* Space between name and logo */
 }
-
 
 /* =========================================
    People Section Styling
