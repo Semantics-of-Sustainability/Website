@@ -165,7 +165,7 @@ footer {
     display: flex; /* Use flexbox for horizontal alignment */
     justify-content: center; /* Center the entire group of collaborators */
     margin-top: 20px; /* Space above collaborators section */
-    gap: 40px; /* Add space between each collaborator */
+    gap: 60px; /* Increase space between each collaborator */
 }
 
 /* Collaborator Items */
@@ -177,94 +177,26 @@ footer {
 
 /* Logo Styling */
 .about-collaborators img {
-    max-width: 80px; /* Maximum width for logos */
-    max-height: 80px; /* Maximum height for logos to keep them similar in size */
     height: auto; /* Maintains aspect ratio */
     width: auto; /* Maintains aspect ratio */
     object-fit: contain; /* Prevents distortion */
     margin-top: 10px; /* Space between name and logo */
 }
 
-/* =========================================
-   People Section Styling
-========================================= */
-
-.people-section {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
-    text-align: center;
+/* Specific logo sizes */
+.about-collaborators img:nth-child(1) {
+    max-width: 100px; /* Bigger size for Utrecht University Logo */
+    max-height: 100px; /* Bigger size for Utrecht University Logo */
 }
 
-.content-box {
-    margin: 0 auto;
-    background-color: white;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 1000px;
-    text-align: center;
+.about-collaborators img:nth-child(2) {
+    max-width: 100px; /* Bigger size for eScience Center Logo */
+    max-height: 100px; /* Bigger size for eScience Center Logo */
 }
 
-.content-box h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 80px;
-}
-
-/* People Flexbox */
-.people-grid {
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap into the next line */
-    justify-content: center; /* Center the items horizontally */
-    gap: 60px; /* Increased space between items */
-}
-
-/* Person Card Styling */
-.person-card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 250px; /* Fixed width for uniformity */
-    height: 300px; /* Increased height for all cards */
-    text-align: center;
-}
-
-/* Positioning Person 4 and Person 5 on the second row */
-.people-grid > .person-card:nth-child(4) {
-    margin-left: 0; /* Reset left margin */
-    margin-right: 60px; /* Keep space between Person 4 and 5 */
-}
-
-.people-grid > .person-card:nth-child(5) {
-    margin-left: 0; /* Reset left margin */
-}
-
-/* Person Image */
-.person-image {
-    width: 100%;
-    border-radius: 50%;
-    margin-bottom: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.person-card h2 {
-    font-size: 1.5rem;
-    color: #003366;
-    margin-bottom: 10px;
-}
-
-.person-card .role {
-    font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.person-card .description {
-    font-size: 1rem;
-    color: #666;
+.about-collaborators img:nth-child(3) {
+    max-width: 80px; /* Keep the same size for National Library Logo */
+    max-height: 80px; /* Keep the same size for National Library Logo */
 }
 
 /* =========================================
