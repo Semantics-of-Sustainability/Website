@@ -163,8 +163,9 @@ footer {
 /* Names of Collaborators */
 .about-collaborators {
     display: flex; /* Use flexbox for horizontal alignment */
-    justify-content: space-around; /* Equal space between names */
+    justify-content: center; /* Center the entire group of collaborators */
     margin-top: 20px; /* Space above collaborators section */
+    gap: 40px; /* Add space between each collaborator */
 }
 
 /* Collaborator Items */
@@ -172,12 +173,14 @@ footer {
     display: flex;
     flex-direction: column; /* Stack name and logo vertically */
     align-items: center; /* Center items horizontally */
-    margin: 0 10px; /* Horizontal margin between collaborators */
 }
 
+/* Logo Styling */
 .about-collaborators img {
-    max-width: 100px; /* Ensures logos are of consistent size */
+    max-width: 80px; /* Maximum width for logos */
+    max-height: 80px; /* Maximum height for logos to keep them similar in size */
     height: auto; /* Maintains aspect ratio */
+    width: auto; /* Maintains aspect ratio */
     object-fit: contain; /* Prevents distortion */
     margin-top: 10px; /* Space between name and logo */
 }
