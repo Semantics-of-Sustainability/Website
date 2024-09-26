@@ -32,19 +32,17 @@
             <div class="news-item">
                 <h3>Update 1: New Data Added</h3>
                 <p class="date">September 24, 2024</p>
-                <p class="summary">A new dataset has been added, offering additional insights into sustainability-related language.</p>
-                <a href="details-page-1.html" class="read-more">Read more</a>
+                <p class="summary" id="summary-1">A new dataset has been added, offering additional insights into sustainability-related language.</p>
+                <button class="read-more" data-target="summary-1">Read more</button>
             </div>
 
             <!-- News Item 2 -->
             <div class="news-item">
                 <h3>Update 2: Methodology Refinement</h3>
                 <p class="date">October 10, 2024</p>
-                <p class="summary">Our team has refined the methodology for better tracking of conceptual changes over time.</p>
-                <a href="details-page-2.html" class="read-more">Read more</a>
+                <p class="summary" id="summary-2">Our team has refined the methodology for better tracking of conceptual changes over time.</p>
+                <button class="read-more" data-target="summary-2">Read more</button>
             </div>
-
-            <!-- More updates would appear here dynamically -->
         </div>
 
         <!-- Pagination Section -->
@@ -52,11 +50,10 @@
             <a href="#" class="page">1</a>
             <a href="#" class="page">2</a>
             <a href="#" class="page">3</a>
-            <!-- Pages are added dynamically -->
         </div>
     </section>
 
-    <!-- Owner Editable Section (Hidden by default) -->
+    <!-- Owner Editable Section (Visible only to the owner) -->
     <section class="owner-section" id="owner-section">
         <div class="content-box">
             <h2>Add New Update</h2>
@@ -81,8 +78,7 @@
     </footer>
 
     <!-- JavaScript for Admin Section and Pagination -->
-    <script src="updates-news.js"></script>
+    <script src="../js/updates-news.js"></script>
 
 </body>
 </html>
-
