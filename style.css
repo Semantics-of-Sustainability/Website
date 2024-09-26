@@ -152,10 +152,11 @@ footer {
     margin-bottom: 30px; /* Increased margin for separation */
 }
 
-/* Collaborators Section */
 .collaborators-section {
     margin-top: 40px; /* Space above the section */
-    text-align: center; /* Center the title */
+    background-color: rgba(230, 230, 230, 0.7); /* Light grey background */
+    padding: 20px; /* Padding around the section */
+    border-radius: 10px; /* Rounded corners */
 }
 
 .small-title {
@@ -166,13 +167,18 @@ footer {
 .about-collaborators {
     display: flex; /* Use flexbox for horizontal layout */
     justify-content: center; /* Center the items */
-    gap: 40px; /* Equal spacing between logos */
+    gap: 60px; /* Increased spacing between logos */
 }
 
 .collaborator img {
     max-width: 80px; /* Size for all logos */
     max-height: 80px; /* Maintain aspect ratio */
     object-fit: contain; /* Ensure logos are not distorted */
+}
+
+/* Specific size for the eScience Center logo */
+.about-collaborators .collaborator:nth-child(2) img {
+    max-width: 100px; /* Increase size for eScience Center logo */
 }
 
 /* =========================================
