@@ -242,8 +242,16 @@ footer {
 .people-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Three columns in the first row */
-    gap: 40px; /* Equal spacing between rows and columns */
+    gap: 60px; /* Increase gap for better symmetry */
     justify-content: center; /* Center the grid */
+}
+
+/* Staggering the second row (two people under the gaps of the first row) */
+.people-grid > .person-card:nth-child(4),
+.people-grid > .person-card:nth-child(5) {
+    grid-column: span 1; /* Ensures two columns for the second row */
+    justify-self: center; /* Center the boxes in the second row */
+    margin-top: 60px; /* Increase vertical spacing between rows for better symmetry */
 }
 
 /* Person Card Styling */
@@ -255,13 +263,6 @@ footer {
     width: 100%;
     max-width: 250px; /* Ensure consistent width */
     text-align: center;
-}
-
-/* Staggering the second row (two people under the gaps of the first row) */
-.people-grid > .person-card:nth-child(4),
-.people-grid > .person-card:nth-child(5) {
-    grid-column: span 1; /* Ensures two columns for the second row */
-    justify-self: center; /* Center the boxes in the second row */
 }
 
 /* Person Image */
