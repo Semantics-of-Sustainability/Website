@@ -140,9 +140,14 @@ footer {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
-/* Separate box for the About the Project */
-.about-project {
-    margin-bottom: 40px; /* Space between the two boxes */
+/* Centering titles */
+.centered {
+    text-align: center; /* Centering the title */
+}
+
+/* Justified text */
+.justified {
+    text-align: justify; /* Justifying the project text */
 }
 
 /* Collaborators Section */
@@ -180,8 +185,8 @@ footer {
 .about-collaborators img {
     max-width: 100px; /* Ensures logos are of consistent size */
     height: auto; /* Maintains aspect ratio */
+    object-fit: contain; /* Prevents distortion */
 }
-
 
 /* =========================================
    People Section Styling
