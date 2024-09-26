@@ -71,45 +71,60 @@ footer {
 ========================================= */
 
 /* General Layout */
-.home-content-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
-    gap: 20px;
+.home .content-wrapper {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: space-between; /* Space items evenly */
     max-width: 1200px;
     margin: 40px auto;
 }
 
-/* Content Box Styling for Home Page */
-.home-content-box {
+/* Content Box Styling */
+.home .content-box {
     background-color: white;
-    padding: 20px; /* Consistent padding */
+    padding: 20px; /* Reduced padding for consistency */
     border-radius: 10px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Centered text for uniformity */
-    height: 200px; /* Fixed height to make boxes same size */
+    text-align: center;
+    width: calc(25% - 30px); /* 4 equal boxes in a row with spacing */
+    margin: 15px; /* Margin for spacing */
+    height: 250px; /* Fixed height to make boxes same size */
 }
 
-/* Ensure all boxes in home page have the same size */
-.home-content-box h2 {
-    font-size: 1.5rem; /* Consistent heading size */
-    margin-bottom: 10px; /* Space below headings */
+/* Updated font sizes */
+.home .content-box h2 {
+    font-size: 1.8rem; /* Consistent heading size */
 }
 
-/* Button Styling for Home Page */
-.home-button {
+/* Button Styling */
+.home .button {
     display: inline-block;
     background-color: #0056b3;
     color: white;
-    padding: 10px 20px; /* Consistent button size */
+    padding: 10px 15px;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 10px;
 }
 
-.home-button:hover {
+.home .button:hover {
     background-color: #003366;
 }
 
+/* Centered Button */
+.home .centered-button {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Footer Styling */
+.home footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #002244;
+    color: white;
+}
 
 /* =========================================
    About Subdirectory
