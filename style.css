@@ -177,7 +177,7 @@ footer {
 }
 
 /* =========================================
-   People Subdirectory
+   People Subdirectory Styling
 ========================================= */
 
 /* People Section Styling */
@@ -188,30 +188,19 @@ footer {
     text-align: center;
 }
 
-.content-box {
-    margin: 0 auto;
-    background-color: white;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 1000px;
-    text-align: center;
-}
-
-.content-box h1 {
-    text-align: center;
+.people-section h1 {
     font-size: 2.5rem;
+    color: #003366;
     margin-bottom: 40px;
 }
 
 /* People Grid */
 .people-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns for top row */
-    gap: 40px;
-    justify-items: center;
-    position: relative;
+    grid-template-columns: repeat(3, 1fr); /* Three columns for the top row */
+    gap: 20px; /* Space between cards */
+    justify-items: center; /* Center align items in their grid cells */
+    margin-bottom: 40px; /* Space below the grid */
 }
 
 /* Person Card Styling */
@@ -221,17 +210,17 @@ footer {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 100%;
-    max-width: 250px;
+    max-width: 250px; /* Ensure consistent width */
     text-align: center;
 }
 
 /* Positioning Person 4 and Person 5 on the second row */
 .people-grid > .person-card:nth-child(4) {
-    grid-column: 2 / span 1; /* Place Person 4 in the gap between Person 1 and Person 2 */
+    grid-column: 2; /* Center Person 4 */
 }
 
 .people-grid > .person-card:nth-child(5) {
-    grid-column: 3 / span 1; /* Place Person 5 in the gap between Person 2 and Person 3 */
+    grid-column: 3; /* Center Person 5 */
 }
 
 /* Person Image */
@@ -259,6 +248,12 @@ footer {
     color: #666;
 }
 
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    .people-grid {
+        grid-template-columns: 1fr; /* Stack all cards on small screens */
+    }
+}
 
 /* =========================================
    Blog Subdirectory
