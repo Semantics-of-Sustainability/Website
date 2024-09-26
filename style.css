@@ -204,12 +204,12 @@ footer {
     margin-bottom: 40px;
 }
 
-/* People Grid */
+/* People Flexbox */
 .people-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns for top row */
-    gap: 40px;
-    justify-items: center;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap into the next line */
+    justify-content: center; /* Center the items horizontally */
+    gap: 40px; /* Space between items */
 }
 
 /* Person Card Styling */
@@ -218,9 +218,17 @@ footer {
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 100%;
-    max-width: 250px;
+    width: 250px; /* Fixed width for uniformity */
     text-align: center;
+}
+
+/* Positioning Person 4 and Person 5 on the second row */
+.people-grid > .person-card:nth-child(4) {
+    margin-left: calc((250px + 40px) / 2); /* Center under Person 1 and 2 */
+}
+
+.people-grid > .person-card:nth-child(5) {
+    margin-left: calc((250px + 40px) / 2); /* Center under Person 2 and 3 */
 }
 
 /* Person Image */
@@ -247,6 +255,7 @@ footer {
     font-size: 1rem;
     color: #666;
 }
+
 
 /* =========================================
    Blog Subdirectory
