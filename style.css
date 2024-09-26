@@ -232,7 +232,13 @@ footer {
     text-align: center;
 }
 
-/* People Grid with 3 people in the first row, 2 in the second */
+.content-box h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+/* People Grid with 3 people in the first row, staggered 2 in the second */
 .people-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Three columns in the first row */
@@ -243,7 +249,7 @@ footer {
 
 .people-grid > .person-card:nth-child(4),
 .people-grid > .person-card:nth-child(5) {
-    grid-column: span 1 / span 1; /* Only 2 people in the second row */
+    grid-column: span 2; /* Stagger the second row, moving them under two columns */
 }
 
 /* Person Card Styling */
