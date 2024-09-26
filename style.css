@@ -372,28 +372,78 @@ footer {
 /* Updates & News Section */
 .updates-news-list {
     max-width: 1000px;
-    margin: 40px auto;
+    margin: 20px auto; /* Reduced margin */
     padding: 20px;
-    overflow-y: auto; /* Allows scrolling when content is long */
-    height: auto; /* Set height as needed */
 }
 
+.content-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Align the text to the left */
+}
+
+.content-box h2 {
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* News Items */
 .news-item {
     background-color: #ffffff;
     padding: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
 .news-item:hover {
-    transform: translateY(-5px); /* Adds subtle hover effect */
+    transform: translateY(-3px); /* Subtle hover effect */
 }
 
+.news-item h3 {
+    font-size: 1.8rem;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.news-item .date {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.news-item .summary {
+    font-size: 1.1rem;
+    color: #333;
+    max-height: 100px; /* Set a max height for the initial summary */
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.read-more {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #003366;
+}
+
+/* Pagination */
 .pagination {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .pagination .page {
@@ -417,9 +467,9 @@ footer {
     color: white;
 }
 
-/* Editable Owner Section (hidden by default) */
+/* Admin Section - Hidden for non-owners */
 .owner-section {
-    display: none; /* Hidden by default */
+    display: none;
     max-width: 600px;
     margin: 40px auto;
     padding: 20px;
