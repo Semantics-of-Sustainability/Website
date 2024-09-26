@@ -212,6 +212,7 @@ footer {
    People Subdirectory
 ========================================= */
 
+/* People Section Styling */
 .people-section {
     max-width: 1200px;
     margin: 40px auto;
@@ -219,12 +220,17 @@ footer {
     text-align: center;
 }
 
-/* Grid layout for five people */
+/* Dynamic grid for two rows: one with 3 people, one with 2 people */
 .people-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Display exactly five columns */
+    grid-template-columns: repeat(3, 1fr); /* First row: 3 people */
     gap: 20px;
     justify-items: center;
+}
+
+.person-card:nth-child(4),
+.person-card:nth-child(5) {
+    grid-column: span 2; /* Second row: Adjust 2 people to take up space of 3 columns */
 }
 
 .person-card {
@@ -232,7 +238,7 @@ footer {
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    max-width: 220px; /* Adjusted max-width for consistency */
+    max-width: 220px;
     text-align: center;
 }
 
@@ -259,18 +265,6 @@ footer {
     font-size: 1rem;
     color: #666;
 }
-
-/* Adjust the content-box to center the title */
-.content-box {
-    background-color: white;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto; /* Centers the content box */
-    text-align: center;
-
 
 /* =========================================
    Blog Subdirectory
