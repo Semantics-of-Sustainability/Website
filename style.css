@@ -67,72 +67,68 @@ footer {
 }
 
 /* =========================================
-   Content Wrapper
+   Home Page Layout
 ========================================= */
+
+/* Main Content Wrapper */
 .content-wrapper {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 20px; /* Space between the two sections */
     max-width: 1200px;
     margin: 40px auto;
+    padding: 20px 0;
 }
 
+/* Content Box (shared style for both sections) */
 .content-box {
     background-color: white;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    width: 48%;
-}
-
-/* =========================================
-   About Box
-========================================= */
-.about-box {
-    flex: 1;
-}
-
-/* =========================================
-   Updates & News Section for Home Page
-========================================= */
-.updates-home-box {
-    flex: 1;
-}
-
-.home-updates-list .home-news-item {
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.home-news-item h3 {
-    font-size: 1.5rem;
-    color: #003366;
-    margin-bottom: 10px;
+/* About Our Project Section */
+.about-box {
+    flex: 3; /* Takes up more space compared to the updates section */
+    text-align: left;
 }
 
-.home-news-item .date {
-    font-size: 0.9rem;
-    color: #888;
-    margin-bottom: 10px;
+/* Latest Updates & News Section */
+.updates-box {
+    flex: 2; /* Takes up less space compared to the about section */
+    text-align: left;
 }
 
-.home-news-item .summary {
-    font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 15px;
+/* Latest Updates Styling */
+#latest-updates {
+    margin-bottom: 20px;
 }
 
-.home-news-item a {
-    color: #0056b3;
+.updates-link {
+    display: inline-block;
+    background-color: #0056b3;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
     text-decoration: none;
-    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
 }
 
-.home-news-item a:hover {
-    text-decoration: underline;
+.updates-link:hover {
+    background-color: #003366;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .about-box, .updates-box {
+        flex: 1;
+    }
 }
 
 /* =========================================
