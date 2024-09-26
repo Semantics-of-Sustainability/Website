@@ -154,49 +154,25 @@ footer {
 
 /* Collaborators Section */
 .collaborators-section {
-    background-color: #f9f9f9; /* Light grey background for contrast */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 40px; /* Space above the section */
+    text-align: center; /* Center the title */
 }
 
-/* Names of Collaborators */
+.small-title {
+    font-size: 1.5rem; /* Smaller title size */
+    margin-bottom: 20px; /* Space below the title */
+}
+
 .about-collaborators {
-    display: flex; /* Use flexbox for horizontal alignment */
-    justify-content: center; /* Center the entire group of collaborators */
-    margin-top: 20px; /* Space above collaborators section */
-    gap: 110px; /* Increase space between each collaborator */
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center the items */
+    gap: 40px; /* Equal spacing between logos */
 }
 
-/* Collaborator Items */
-.collaborator {
-    display: flex;
-    flex-direction: column; /* Stack name and logo vertically */
-    align-items: center; /* Center items horizontally */
-}
-
-/* Logo Styling */
-.about-collaborators img {
-    height: auto; /* Maintains aspect ratio */
-    width: auto; /* Maintains aspect ratio */
-    object-fit: contain; /* Prevents distortion */
-    margin-top: 10px; /* Space between name and logo */
-}
-
-/* Specific logo sizes */
-.about-collaborators img:nth-child(1) {
-    max-width: 100px; /* Bigger size for Utrecht University Logo */
-    max-height: 100px; /* Bigger size for Utrecht University Logo */
-}
-
-.about-collaborators img:nth-child(2) {
-    max-width: 150px; /* Bigger size for eScience Center Logo */
-    max-height: 150px; /* Bigger size for eScience Center Logo */
-}
-
-.about-collaborators img:nth-child(3) {
-    max-width: 50px; /* Keep the same size for National Library Logo */
-    max-height: 50px; /* Keep the same size for National Library Logo */
+.collaborator img {
+    max-width: 80px; /* Size for all logos */
+    max-height: 80px; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure logos are not distorted */
 }
 
 /* =========================================
