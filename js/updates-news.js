@@ -18,7 +18,7 @@ const updates = [
             continuities and breaks in this discourse to, ultimately, gain insights into the forces at 
             play when it comes to sustainability.
             <br><br>
-            Check out the <a href="https://github.com/your-repo-link" target="_blank">GitHub page</a> 
+            Check out the <a href="https://github.com/Semantics-of-Sustainability" target="_blank">GitHub page</a> 
             for more contributions to the project.
         ` 
     },
