@@ -38,11 +38,14 @@ header {
 }
 
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #002244;
-    color: white;
-    margin-top: 60px;
+    clear: both; /* Prevents overlap with floated elements */
+    display: block; /* Ensure it's a block-level element */
+    width: 100%; /* Ensures full width */
+    padding: 20px; /* Consistent padding */
+    margin-top: 60px; /* Space above the footer */
+    background-color: #002244; /* Dark Blue Footer */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
 }
 
 /* =========================================
