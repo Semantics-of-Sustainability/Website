@@ -235,23 +235,16 @@ footer {
 .content-box h1 {
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 40px;
+    margin-bottom: 60px; /* Increase space between heading and boxes */
 }
 
 /* People Grid */
 .people-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Three columns in the first row */
-    gap: 60px; /* Increase gap for better symmetry */
+    gap: 60px; /* Increase the gap for better spacing */
     justify-content: center; /* Center the grid */
-}
-
-/* Staggering the second row (two people under the gaps of the first row) */
-.people-grid > .person-card:nth-child(4),
-.people-grid > .person-card:nth-child(5) {
-    grid-column: span 1; /* Ensures two columns for the second row */
-    justify-self: center; /* Center the boxes in the second row */
-    margin-top: 60px; /* Increase vertical spacing between rows for better symmetry */
+    padding-bottom: 40px;
 }
 
 /* Person Card Styling */
@@ -263,6 +256,15 @@ footer {
     width: 100%;
     max-width: 250px; /* Ensure consistent width */
     text-align: center;
+}
+
+/* Staggering the second row (two people under the gaps of the first row) */
+.people-grid > .person-card:nth-child(4),
+.people-grid > .person-card:nth-child(5) {
+    grid-column: span 2; /* Ensures two boxes for the second row */
+    justify-self: center; /* Center the boxes in the second row */
+    transform: translateX(80px); /* Shift second-row boxes horizontally to the right */
+    margin-top: 60px; /* Increase vertical spacing between rows */
 }
 
 /* Person Image */
@@ -289,6 +291,7 @@ footer {
     font-size: 1rem;
     color: #666;
 }
+
 
 
 /* =========================================
