@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to the Semantics of Sustainability project.">
-    <title>Home - Semantics of Sustainability</title>
+    <meta name="description" content="Welcome to the Semantics of Sustainability project homepage.">
+    <title>Semantics of Sustainability - Home</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"> <!-- Link to main CSS -->
 </head>
@@ -23,30 +23,27 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-text-box">
-            <h1>Semantics of Sustainability</h1>
-            <p>Exploring conceptual change through historical data and machine learning.</p>
-        </div>
-    </section>
-
-    <!-- Content Wrapper Section -->
+    <!-- Main Content Section -->
     <div class="content-wrapper">
-        <!-- About Our Project -->
-        <div class="content-box about-box">
-            <h2>About Our Project</h2>
-            <p>Our project leverages machine learning techniques to study conceptual changes over time. We aim to understand how sustainability-related discourse has evolved through historical data analysis.</p>
-            <a href="about/index.html" class="read-more">Learn More</a>
-        </div>
-
-        <!-- Latest Updates & News -->
-        <div class="content-box updates-home-box">
-            <h2>Latest Updates & News</h2>
-            <div class="home-updates-list">
-                <!-- Latest updates will be rendered here by JavaScript -->
+        <!-- About Section -->
+        <section class="about-section">
+            <div class="content-box">
+                <h2>About Our Project</h2>
+                <p>This project uses state-of-the-art machine learning techniques to study conceptual change over time, focusing on sustainability discourse.</p>
+                <a href="about/index.html" class="read-more">Read More</a>
             </div>
-        </div>
+        </section>
+
+        <!-- Latest Updates Section -->
+        <section class="latest-updates">
+            <div class="content-box">
+                <h2>Latest Updates & News</h2>
+                <div id="latest-updates-container">
+                    <!-- Latest updates will be populated here by JS -->
+                </div>
+                <a href="updates-news/index.html" class="read-more">View All Updates</a>
+            </div>
+        </section>
     </div>
 
     <!-- Footer -->
@@ -54,9 +51,8 @@
         <p>&copy; 2024 Semantics of Sustainability. All Rights Reserved.</p>
     </footer>
 
-    <!-- JavaScript for Latest Updates on Home Page -->
-    <script src="js/home-updates.js"></script>
+    <!-- JavaScript for Latest Updates -->
+    <script src="js/homepage-updates.js"></script>
 
 </body>
 </html>
-
