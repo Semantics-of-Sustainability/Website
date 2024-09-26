@@ -19,6 +19,7 @@ function renderUpdates(page = 1) {
             <h3>${update.title}</h3>
             <p class="date">${update.date}</p>
             <p class="summary">${update.summary}</p>
+            <button class="read-more" data-target="summary-${update.id}">Read more</button>
         </div>
     `).join('');
 
@@ -46,30 +47,42 @@ function renderPagination(totalPages, currentPage) {
     }
 }
 
-// Render the first page on load
-document.addEventListener('DOMContentLoaded', () => {
-    renderUpdates(1);
+// Read More Button Functionality
+document.querySelectorAll('.read-more').forEach(button => {
+    button.addEventListener('click', () => {
+        const target = document.getElementById(button.getAttribute('data-target'));
+        if (target.style.maxHeight === 'none') {
+            target.style.maxHeight = '100px';
+            button.textContent = 'Read more';
+        } else {
+            target.style.maxHeight = 'none';
+            button.textContent = 'Read less';
+        }
+    });
 });
 
-// Admin login logic for adding updates (dummy example for simplicity)
-const ownerSection = document.getElementById('owner-section');
-
-// Placeholder for owner login check
+// Owner login check
 function isOwner() {
-    return true; // Replace with actual login logic
+    return sessionStorage.getItem('isOwner') === 'true'; // Placeholder for login logic
 }
 
-// If owner is logged in, show the owner section
-if (isOwner()) {
-    ownerSection.style.display = 'block';
-    document.getElementById('new-update-form').addEventListener('submit', (e) => {
-        e.preventDefault();
-        const title = document.getElementById('title').value;
-        const date = document.getElementById('date').value;
-        const summary = document.getElementById('summary').value;
+document.addEventListener('DOMContentLoaded', () => {
+    renderUpdates(1); // Render the first page on load
 
-        updates.push({ title, date, summary });
-        renderUpdates(1); // Re-render the first page with new updates
-        e.target.reset();
-    });
-}
+    const ownerSection = document.getElementById('owner-section');
+    if (isOwner()) {
+        ownerSection.style.display = 'block';
+        document.getElementById('new-update-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const title = document.getElementById('title').value;
+            const date = document.getElementById('date').value;
+            const summary = document.getElementById('summary').value;
+
+            updates.push({ title, date, summary });
+            renderUpdates(1); // Re-render the first page with new updates
+            e.target.reset();
+        });
+    } else {
+        ownerSection.style.display = 'none';
+    }
+});
