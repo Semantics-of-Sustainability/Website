@@ -165,7 +165,7 @@ footer {
     display: flex; /* Use flexbox for horizontal alignment */
     justify-content: center; /* Center the entire group of collaborators */
     margin-top: 20px; /* Space above collaborators section */
-    gap: 60px; /* Increase space between each collaborator */
+    gap: 85px; /* Increase space between each collaborator */
 }
 
 /* Collaborator Items */
@@ -190,13 +190,13 @@ footer {
 }
 
 .about-collaborators img:nth-child(2) {
-    max-width: 100px; /* Bigger size for eScience Center Logo */
-    max-height: 100px; /* Bigger size for eScience Center Logo */
+    max-width: 120px; /* Bigger size for eScience Center Logo */
+    max-height: 120px; /* Bigger size for eScience Center Logo */
 }
 
 .about-collaborators img:nth-child(3) {
-    max-width: 80px; /* Keep the same size for National Library Logo */
-    max-height: 80px; /* Keep the same size for National Library Logo */
+    max-width: 60px; /* Keep the same size for National Library Logo */
+    max-height: 60px; /* Keep the same size for National Library Logo */
 }
 
 /* =========================================
