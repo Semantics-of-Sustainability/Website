@@ -127,58 +127,64 @@ footer {
 }
 
 /* =========================================
-   About Subdirectory
+   About Section - General Styling
 ========================================= */
-
-/* About Section - General Styling */
 .about-section {
     max-width: 1000px;
     margin: 60px auto;
     padding: 40px;
+    text-align: center;
     background-color: #ffffff; /* White background */
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
-/* Centering titles */
-.centered {
-    text-align: center; /* Centering the title */
-    margin-bottom: 30px; /* Increased margin for separation */
+.about-section h1 {
+    font-size: 2rem; /* Reduced font size for the title */
+    color: #003366;
+    margin-bottom: 20px; /* Increased space below the title */
+    font-weight: bold;
 }
 
-/* Justified text */
-.justified {
-    text-align: justify; /* Justifying the project text */
-    margin-bottom: 30px; /* Increased margin for separation */
+.about-section p {
+    font-size: 1rem; /* Smaller paragraph font size */
+    color: #333333;
+    line-height: 1.6;
+    margin-bottom: 30px; /* Space below paragraph */
 }
 
+/* Collaborators Section */
 .collaborators-section {
-    margin-top: 40px; /* Space above the section */
-    background-color: rgba(230, 230, 230, 0.7); /* Light grey background */
+    background-color: #f0f0f0; /* Greyed out background */
     padding: 20px; /* Padding around the section */
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 10px;
+    margin-top: 40px; /* Space above the collaborators section */
 }
 
-.small-title {
-    font-size: 1.5rem; /* Smaller title size */
-    margin-bottom: 20px; /* Space below the title */
+.collaborators-section h2 {
+    font-size: 1.5rem; /* Title size for collaborators */
+    color: #003366;
+    margin-bottom: 20px; /* Space below title */
 }
 
 .about-collaborators {
-    display: flex; /* Use flexbox for horizontal layout */
-    justify-content: center; /* Center the items */
-    gap: 60px; /* Increased spacing between logos */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Space logos evenly */
+    align-items: center; /* Center logos vertically */
+}
+
+.collaborator {
+    display: flex;
+    flex-direction: column; /* Stack name above logo */
+    align-items: center; /* Center align content */
+    margin: 0 20px; /* Space between each collaborator */
 }
 
 .collaborator img {
-    max-width: 80px; /* Size for all logos */
-    max-height: 80px; /* Maintain aspect ratio */
-    object-fit: contain; /* Ensure logos are not distorted */
-}
-
-/* Specific size for the eScience Center logo */
-.about-collaborators .collaborator:nth-child(2) img {
-    max-width: 100px; /* Increase size for eScience Center logo */
+    max-width: 100px; /* Set max width for logos */
+    max-height: 80px; /* Set max height for logos */
+    object-fit: contain; /* Maintain aspect ratio */
+    margin-top: 10px; /* Space above logos */
 }
 
 /* =========================================
