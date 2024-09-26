@@ -59,7 +59,6 @@ footer {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 30px;
     display: inline-block;
-    border-radius: 8px;
 }
 
 .hero-text-box h1, .hero-text-box p {
@@ -85,14 +84,14 @@ footer {
     padding: 20px; /* Reduced padding for consistency */
     border-radius: 10px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: left;
+    text-align: center; /* Centered text for uniformity */
     height: 200px; /* Fixed height to make boxes same size */
-    position: relative;
 }
 
 /* Updated font sizes */
 .content-box h2 {
-    font-size: 1.8rem; /* Consistent heading size */
+    font-size: 1.5rem; /* Consistent heading size */
+    margin-bottom: 10px; /* Space below headings */
 }
 
 /* Button Styling */
@@ -113,8 +112,7 @@ footer {
 /* Centered Button */
 .centered-button {
     display: block;
-    margin: 0 auto;
-    text-align: center;
+    margin: 10px auto; /* Center button */
 }
 
 /* Footer Styling */
@@ -124,7 +122,6 @@ footer {
     background-color: #002244;
     color: white;
 }
-
 
 /* =========================================
    About Subdirectory
@@ -273,7 +270,6 @@ footer {
     font-size: 1rem;
     color: #666;
 }
-
 
 /* =========================================
    Blog Subdirectory
@@ -476,58 +472,3 @@ footer {
     color: white;
 }
 
-/* =========================================
-   Home Page Updates & News Section
-========================================= */
-
-/* Updates & News Section for Home Page */
-.home-updates-news {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.home-updates-list {
-    display: grid;
-    grid-template-columns: 1fr; /* Single column for the updates */
-    gap: 20px;
-}
-
-.home-news-item {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: left;
-}
-
-.home-news-item h3 {
-    font-size: 1.5rem;
-    color: #003366;
-    margin-bottom: 10px;
-}
-
-.home-news-item .date {
-    font-size: 0.9rem;
-    color: #888;
-    margin-bottom: 10px;
-}
-
-.home-news-item .summary {
-    font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-.update-link {
-    color: #0056b3;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.update-link:hover {
-    text-decoration: underline;
-}
