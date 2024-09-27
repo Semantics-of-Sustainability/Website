@@ -7,7 +7,6 @@
     <title>Blog - Semantics of Sustainability</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css"> <!-- Link to main CSS -->
-    <link rel="stylesheet" href="style.css"> <!-- Link to blog-specific CSS -->
 </head>
 <body>
 
@@ -25,39 +24,24 @@
     </header>
 
     <!-- Blog Posts Section -->
-<section class="blog-posts-list">
-    <h2 class="page-title">Latest Blog Posts</h2>
+    <section id="blog-posts-list" class="blog-posts-list">
+        <h2 class="page-title">Latest Blog Posts</h2>
 
-    <!-- Blog Post 1 -->
-    <div class="blog-post">
-        <h3>Post Title 1</h3>
-        <p class="date">September 24, 2024</p>
-        <p class="author">by John Doe</p>
-        <p class="summary">This is an excerpt from the first blog post. Learn more about sustainability and language evolution in our latest update.</p>
-        <a href="post1.html" class="read-more">Read More</a>
-    </div>
+        <!-- Blog Posts will be dynamically loaded here by JS -->
+    </section>
 
-    <!-- Blog Post 2 -->
-    <div class="blog-post">
-        <h3>Post Title 2</h3>
-        <p class="date">October 10, 2024</p>
-        <p class="author">by Jane Smith</p>
-        <p class="summary">In this post, we delve into the machine learning techniques used to track conceptual changes in sustainability.</p>
-        <a href="post2.html" class="read-more">Read More</a>
-    </div>
-</section>
-
-
-   <!-- Pagination Section -->
-<section class="pagination">
-    <a href="#" class="page active">1</a>
-</section>
+    <!-- Pagination Section -->
+    <section id="pagination" class="pagination">
+        <!-- Pagination buttons will be dynamically added here -->
+    </section>
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 Semantics of Sustainability. All Rights Reserved.</p>
     </footer>
 
+    <!-- Link to external JavaScript -->
+    <script src="pagination.js"></script>
 </body>
 </html>
 
