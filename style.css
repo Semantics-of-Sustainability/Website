@@ -113,12 +113,12 @@ footer {
 
 /* Content Wrapper Adjustments for Home Page */
 .home .content-wrapper {
-    display: grid; /* Use grid for layout */
-    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-    grid-template-rows: repeat(2, auto); /* Two rows */
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap into rows */
+    justify-content: space-between; /* Space boxes evenly */
+    max-width: 1200px; /* Limit the total width */
+    margin: 40px auto; /* Center the content */
     gap: 20px; /* Equal spacing between boxes */
-    max-width: 1200px;
-    margin: 40px auto;
 }
 
 /* Content Box Styling for Home Page */
@@ -128,12 +128,10 @@ footer {
     border-radius: 10px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
-    height: 250px; /* Ensure the boxes are square */
-}
-
-/* Special handling for the 2 boxes in the second row */
-.home .content-box:nth-child(4), .home .content-box:nth-child(5) {
-    grid-column: span 2; /* Span 2 columns for the second row */
+    width: calc(33.33% - 20px); /* 3 boxes in the top row */
+    height: calc(33.33vw - 40px); /* Ensure the boxes are square by using vw */
+    max-width: 250px; /* Prevent the boxes from getting too large */
+    max-height: 250px; /* Ensure boxes are squares */
 }
 
 /* Button Styling Inside the Boxes */
