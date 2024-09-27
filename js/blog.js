@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const posts = [
-        { title: 'Post Title 1', date: '2024-09-24', author: 'John Doe', summary: 'This is a short summary...', content: 'This is the full content of the first blog post.' },
-        { title: 'Post Title 2', date: '2024-10-10', author: 'Jane Smith', summary: 'This is another short summary...', content: 'This is the full content of the second blog post.' },
-        { title: 'Post Title 3', date: '2024-10-20', author: 'Alice Johnson', summary: 'Yet another summary...', content: 'This is the full content of the third blog post.' }
+        { title: 'A Start', date: '2024-09-27', author: 'Pablo Merayo', summary: 'Here the blog begins', content: 'This week was mostly dedicated to the construction of the website you now see. The development involved several design stages, prioritizing functionality, aesthetics, and ease of navigation. After much playing with the layouts I employed a mix of flexbox and grid formats to ensure a clean, responsive design, particularly on the home page. Each page features consistent styling, with an emphasis on clarity and visual harmony. With this one of my first tasks as an intern is complete.' },
+        
     ];
 
     const postsPerPage = 2;
