@@ -113,11 +113,10 @@ footer {
 
 .home .content-wrapper {
     display: flex;
-    flex-wrap: wrap; /* Allow boxes to wrap into rows */
-    justify-content: space-between; /* Ensure equal space between boxes */
+    justify-content: center; /* Ensure equal space between boxes */
     align-items: flex-start;
     max-width: 1000px;
-    margin: 40px auto;
+    margin: 40px auto
     gap: 20px; /* Ensure proper spacing */
 }
 
