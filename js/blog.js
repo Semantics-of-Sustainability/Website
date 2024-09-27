@@ -2,23 +2,22 @@ document.addEventListener("DOMContentLoaded", function() {
     const posts = [
         { title: 'Post Title 1', date: '2024-09-24', author: 'John Doe', summary: 'This is a short summary...', content: 'This is the full content of the first blog post.' },
         { title: 'Post Title 2', date: '2024-10-10', author: 'Jane Smith', summary: 'This is another short summary...', content: 'This is the full content of the second blog post.' },
-        { title: 'Post Title 3', date: '2024-10-20', author: 'Alice Johnson', summary: 'Yet another summary...', content: 'This is the full content of the third blog post.' },
-        // Add more posts here if needed
+        { title: 'Post Title 3', date: '2024-10-20', author: 'Alice Johnson', summary: 'Yet another summary...', content: 'This is the full content of the third blog post.' }
     ];
 
-    const postsPerPage = 2; // Number of posts to display per page
+    const postsPerPage = 2;
     let currentPage = 1;
 
-    const postsList = document.getElementById('blog-posts-list'); // The container for the posts
-    const pagination = document.getElementById('pagination'); // The container for pagination buttons
+    const postsList = document.getElementById('posts-container'); // Separate posts container inside blog-posts-list
+    const pagination = document.getElementById('pagination');
 
     // Function to render posts for the current page
     function renderPosts(page) {
-        postsList.innerHTML = ''; // Clear previous posts
+        postsList.innerHTML = ''; // Clear only the posts, not the title
 
         const start = (page - 1) * postsPerPage;
         const end = start + postsPerPage;
-        const pagePosts = posts.slice(start, end); // Get the posts for this page
+        const pagePosts = posts.slice(start, end);
 
         pagePosts.forEach(post => {
             const postElement = document.createElement('div');
@@ -50,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function createPagination() {
         pagination.innerHTML = ''; // Clear previous pagination
 
-        const totalPages = Math.ceil(posts.length / postsPerPage); // Total number of pages
+        const totalPages = Math.ceil(posts.length / postsPerPage);
 
         for (let i = 1; i <= totalPages; i++) {
             const pageButton = document.createElement('button');
@@ -58,13 +57,13 @@ document.addEventListener("DOMContentLoaded", function() {
             pageButton.classList.add('page');
 
             if (i === currentPage) {
-                pageButton.classList.add('active'); // Highlight current page
+                pageButton.classList.add('active');
             }
 
             pageButton.addEventListener('click', function() {
                 currentPage = i;
-                renderPosts(currentPage); // Re-render posts for the selected page
-                createPagination(); // Re-create pagination to reflect active page
+                renderPosts(currentPage);
+                createPagination();
             });
 
             pagination.appendChild(pageButton);
@@ -77,11 +76,9 @@ document.addEventListener("DOMContentLoaded", function() {
         createPagination();
     }
 
-    // Show/hide pagination based on the number of posts
     if (posts.length <= postsPerPage) {
-        pagination.style.display = 'none'; // Hide pagination if not needed
+        pagination.style.display = 'none';
     } else {
-        pagination.style.display = 'block'; // Show pagination if needed
+        pagination.style.display = 'block';
     }
 });
-
