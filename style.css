@@ -101,7 +101,6 @@ footer {
    Home Page Specific Styling
 ========================================= */
 
-/* Navigation Bar - Hiding Links */
 .home .navbar ul {
     display: none; /* Hide the links */
 }
@@ -126,15 +125,16 @@ footer {
     border-radius: 10px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: calc(32% - 20px); /* Keeps all boxes the same width */
-    height: 250px; /* Ensures all boxes are square */
+    width: calc(32% - 20px); /* Ensure all boxes have the same width */
+    height: 250px; /* Keep boxes square */
     margin-bottom: 20px;
 }
 
-
+/* Remove custom width for bottom row */
 .home .content-wrapper .content-box:nth-child(4),
 .home .content-wrapper .content-box:nth-child(5) {
-    width: calc(48% - 20px); /* Ensures two equal-sized boxes in the second row */
+    width: calc(32% - 20px); /* Same width as the top row */
+}
 
 /* Button Styling Inside the Boxes */
 .home .button {
@@ -144,13 +144,12 @@ footer {
     padding: 10px 15px;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 20px; /* Space between text and button */
+    margin-top: 20px;
 }
 
 .home .button:hover {
     background-color: #003366;
 }
-
 
 /* =========================================
    About Subdirectory
