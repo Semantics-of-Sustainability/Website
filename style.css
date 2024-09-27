@@ -278,7 +278,7 @@ footer {
 /* Blog Post Section Enhancements */
 .blog-posts-list {
     max-width: 1000px;
-    margin: 40px auto;
+    margin: 20px auto; /* Reduced margin to move section higher */
     padding: 40px;
     background-color: #fff;
     border-radius: 10px;
@@ -323,15 +323,16 @@ footer {
     line-height: 1.7;
 }
 
-/* Read More Button */
+/* "Read More" Button Styled Like Updates & News */
 .blog-post .read-more {
-    font-size: 1rem;
     background-color: #0056b3;
     color: white;
-    padding: 10px 15px;
-    text-decoration: none;
+    padding: 10px;
+    border: none;
     border-radius: 5px;
+    cursor: pointer;
     transition: background-color 0.3s ease;
+    display: inline-block;
 }
 
 .blog-post .read-more:hover {
@@ -363,6 +364,16 @@ footer {
 .pagination .page.active {
     background-color: #003366;
 }
+
+/* Hide Pagination if There Are 2 or Fewer Posts */
+.pagination {
+    display: none; /* Hide by default */
+}
+
+.blog-post-count-3 .pagination {
+    display: block; /* Show pagination only when more than 2 posts */
+}
+
 
 
 /* =========================================
