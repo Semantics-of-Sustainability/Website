@@ -230,6 +230,7 @@ footer {
     text-align: center; /* Center the title */
     margin-bottom: 40px; /* Increased margin for spacing */
     font-weight: bold; /* Make it stand out */
+    color: #003366
 }
 
 /* People Grid Layout */
