@@ -113,12 +113,12 @@ footer {
 
 /* Content Wrapper Adjustments for Home Page */
 .home .content-wrapper {
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap into two rows */
-    justify-content: space-between; /* Space the boxes evenly horizontally */
-    max-width: 1200px; /* Set a maximum width */
-    margin: 40px auto; /* Center the wrapper */
-    gap: 20px; /* Ensure consistent spacing between the boxes */
+    display: grid; /* Use grid for layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    grid-template-rows: repeat(2, auto); /* Two rows */
+    gap: 20px; /* Equal spacing between boxes */
+    max-width: 1200px;
+    margin: 40px auto;
 }
 
 /* Content Box Styling for Home Page */
@@ -128,16 +128,13 @@ footer {
     border-radius: 10px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: calc(33.33% - 20px); /* 3 equal boxes in the top row */
-    height: 250px; /* Square box size */
+    height: 250px; /* Ensure the boxes are square */
 }
 
-/* Adjust width for the two boxes in the second row */
-.home .content-wrapper .content-box:nth-child(4),
-.home .content-wrapper .content-box:nth-child(5) {
-    width: calc(50% - 20px); /* 2 equal boxes on the bottom row */
+/* Special handling for the 2 boxes in the second row */
+.home .content-box:nth-child(4), .home .content-box:nth-child(5) {
+    grid-column: span 2; /* Span 2 columns for the second row */
 }
-
 
 /* Button Styling Inside the Boxes */
 .home .button {
