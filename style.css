@@ -123,11 +123,11 @@ footer {
 /* Bottom Row - Flexbox Centered 2 Boxes */
 .home .bottom-row {
     display: flex;
-    justify-content: space-between; /* Space boxes equally between edges */
-    width: 100%;
-    max-width: 1000px; /* Limit the maximum width */
+    justify-content: space-between; /* Centers the boxes horizontally */
     gap: 20px; /* Space between the two boxes */
-    padding: 0 40px; /* Padding to add space from the website edges */
+    margin-top: 20px; /* Space between top and bottom rows */
+    width: 100%;
+}
 
 
 /* Content Box Styling */
