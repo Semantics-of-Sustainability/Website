@@ -70,36 +70,42 @@ footer {
 }
 
 /* =========================================
-   Home Page Layout
+   Home Page Specific Styling
 ========================================= */
 
-/* General Layout */
-.home .content-wrapper {
-    display: flex; /* Use flexbox for layout */
-    flex-wrap: wrap; /* Allow items to wrap */
-    justify-content: space-between; /* Space items evenly */
-    max-width: 1200px;
-    margin: 40px auto;
+/* Navigation Bar - Hiding Links */
+.home .navbar ul {
+    display: none; /* Hide the links */
 }
 
-/* Content Box Styling */
+.home .navbar {
+    background-color: #002244; /* Keep the blue ribbon */
+    height: 50px; /* Adjust height to maintain the ribbon size */
+}
+
+/* Content Wrapper Adjustments for Home Page */
+.home .content-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Ensure boxes wrap if needed */
+    justify-content: space-around; /* Space evenly */
+    max-width: 1200px;
+    margin: 40px auto;
+    gap: 20px; /* Add spacing between the boxes */
+}
+
+/* Content Box Styling for Home Page */
 .home .content-box {
     background-color: white;
-    padding: 20px; /* Reduced padding for consistency */
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: calc(25% - 30px); /* 4 equal boxes in a row with spacing */
-    margin: 15px; /* Margin for spacing */
-    height: 250px; /* Fixed height to make boxes same size */
+    width: 250px; /* Smaller square size */
+    height: 250px; /* Make it a square */
+    margin: 15px;
 }
 
-/* Updated font sizes */
-.home .content-box h2 {
-    font-size: 1.8rem; /* Consistent heading size */
-}
-
-/* Button Styling */
+/* Button Styling Inside the Boxes */
 .home .button {
     display: inline-block;
     background-color: #0056b3;
@@ -107,26 +113,11 @@ footer {
     padding: 10px 15px;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 10px;
+    margin-top: 20px; /* Space between text and button */
 }
 
 .home .button:hover {
     background-color: #003366;
-}
-
-/* Centered Button */
-.home .centered-button {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-}
-
-/* Footer Styling */
-.home footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #002244;
-    color: white;
 }
 
 /* =========================================
