@@ -64,20 +64,6 @@ footer {
 .blog-posts-list .page-title {
     margin-bottom: 60px !important; /* Add more space between the title and blog posts */
 }
-/* =========================================
-   Consistent Wrapper Box Placement for Subdirectories
-   (Excludes Home Page)
-========================================= */
-
-/* Center the content and ensure consistent distance from the navigation bar */
-.subdirectory-wrapper {
-    max-width: 1200px; /* Ensure consistent max width for all subdirectories */
-    margin: 100px auto 0 auto; /* Ensure content starts 100px below the navigation bar */
-    padding: 40px; /* Padding inside the content wrapper */
-    background-color: #fff; /* Optional background color for the content box */
-    border-radius: 10px; /* Optional rounding for the wrapper */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional box shadow */
-}
 
 
 /* =========================================
@@ -129,7 +115,7 @@ footer {
 .home .content-wrapper {
     display: flex;
     flex-wrap: wrap; /* Ensure boxes wrap if needed */
-    justify-content: space-around; /* Space evenly */
+    justify-content: space-between; /* Space evenly */
     max-width: 1200px;
     margin: 40px auto;
     gap: 20px; /* Add spacing between the boxes */
@@ -142,9 +128,20 @@ footer {
     border-radius: 10px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 250px; /* Smaller square size */
-    height: 250px; /* Make it a square */
-    margin: 15px;
+    width: calc(33.33% - 20px); /* 3 boxes in the top row */
+    margin: 15px 0; /* Ensure vertical spacing */
+    height: auto; /* Keep dynamic height if the content increases */
+}
+
+/* Specific Styling for the Bottom Row */
+.home .content-wrapper .content-box:nth-child(4) {
+    width: calc(33.33% - 20px); /* Same width as top row */
+    margin-left: calc(16.66% + 10px); /* Center first box in the gap */
+}
+
+.home .content-wrapper .content-box:nth-child(5) {
+    width: calc(33.33% - 20px); /* Same width as top row */
+    margin-right: calc(16.66% + 10px); /* Center second box in the other gap */
 }
 
 /* Button Styling Inside the Boxes */
@@ -161,6 +158,7 @@ footer {
 .home .button:hover {
     background-color: #003366;
 }
+
 
 /* =========================================
    About Subdirectory
