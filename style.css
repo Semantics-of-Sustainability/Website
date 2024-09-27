@@ -305,33 +305,50 @@ footer {
 
 
 /* =========================================
-   Blog Subdirectory - Ensure Single Background
+   Blog Section Specific Styling
 ========================================= */
 
-/* Main Blog Posts Section */
+/* Wrapper for blog posts and title */
 .blog-posts-list {
     max-width: 1000px;
     margin: 40px auto;
-    padding: 40px;
-    background-color: #fff; /* This will be the only background box */
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* One consistent shadow for the whole section */
+    padding: 20px;
+    background-color: #fff; /* Optional: White background */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional: Shadow for a clean look */
 }
 
-/* Blog Post Boxes (unchanged) */
+/* Title Styling */
+.page-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px; /* Space between the title and the posts */
+    color: #003366; /* Optional: Darker color for the title */
+}
+
+/* Blog post styling */
 .blog-post {
-    background-color: #f9f9f9; /* Keep the background for individual posts */
-    padding: 30px;
     margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1); /* Keep the shadow for individual posts */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow around each post */
 }
 
-.blog-post:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.2);
+/* Read more button */
+.read-more {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
 }
+
+.read-more:hover {
+    background-color: #003366;
+}
+
 
 /* =========================================
    Updates & News Subdirectory Styling
