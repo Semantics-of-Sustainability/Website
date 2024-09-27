@@ -504,47 +504,41 @@ footer {
 }
 /* Default layout for desktops/laptops */
 @media (min-width: 1024px) {
-    .home .content-wrapper {
-        max-width: 1000px;
-        margin: 40px auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 30px;
-    }
-
-    .home .content-box {
-        width: 250px;
-        height: 250px;
-    }
+    /* Keep the existing styles for desktop */
 }
 
 /* Tablet layout */
 @media (max-width: 1023px) and (min-width: 768px) {
-    .home .content-wrapper {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-
-    .home .content-box {
-        width: 45%; /* Adjust width for tablets */
-        height: auto; /* Adjust height if needed */
+    .content-box, .button {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin: 10px auto;
     }
 }
 
 /* Mobile layout */
 @media (max-width: 767px) {
-    .home .content-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
+    body {
+        padding: 10px; /* Ensure content doesn't touch the edges */
     }
 
-    .home .content-box {
-        width: 90%; /* Make boxes wider for mobile */
-        height: auto;
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-box {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+        height: auto; /* Let the box resize according to the content */
+    }
+
+    .button {
+        width: 100%;
+        text-align: center;
+        padding: 15px;
     }
 }
 
