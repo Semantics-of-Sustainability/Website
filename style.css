@@ -97,6 +97,20 @@ footer {
 }
 
 
+=========================================
+   Home Page Specific Styling
+========================================= */
+
+/* Navigation Bar - Hiding Links */
+.home .navbar ul {
+    display: none; /* Hide the links */
+}
+
+.home .navbar {
+    background-color: #002244; /* Keep the blue ribbon */
+    height: 50px; /* Adjust height to maintain the ribbon size */
+}
+
 /* Main Container */
 .home .content-wrapper {
     display: flex;
@@ -112,6 +126,7 @@ footer {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    max-width: 1000px; /* Ensure boxes stay in one row */
     gap: 20px; /* Space between boxes */
 }
 
@@ -119,8 +134,8 @@ footer {
 .home .bottom-row {
     display: flex;
     justify-content: center;
+    width: 100%;
     gap: 20px; /* Space between the two boxes */
-    margin-top: 20px;
 }
 
 /* Content Box Styling */
@@ -130,13 +145,11 @@ footer {
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 250px;
-    height: 250px; /* Ensure boxes are square */
+    height: 250px; /* Keep boxes square */
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    padding: 20px;
+    align-items: center;
 }
-
 
 /* Button Styling Inside the Boxes */
 .home .button {
@@ -151,7 +164,6 @@ footer {
 .home .button:hover {
     background-color: #003366;
 }
-
 /* =========================================
    About Subdirectory
 ========================================= */
