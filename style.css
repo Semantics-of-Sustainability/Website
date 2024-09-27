@@ -196,9 +196,10 @@ footer {
 
 
 /* =========================================
-   People Section Styling
+   People Section
 ========================================= */
 
+/* People Section */
 .people-section {
     max-width: 1200px;
     margin: 40px auto;
@@ -206,29 +207,12 @@ footer {
     text-align: center;
 }
 
-.content-box {
-    margin: 0 auto;
-    background-color: white;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 1000px;
-    text-align: center;
-}
-
-.content-box h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 80px;
-}
-
-/* People Flexbox */
+/* People Grid Layout */
 .people-grid {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap into the next line */
-    justify-content: center; /* Center the items horizontally */
-    gap: 60px; /* Increased space between items */
+    flex-wrap: wrap;
+    justify-content: center; /* Center the items */
+    gap: 30px; /* Add more space between cards */
 }
 
 /* Person Card Styling */
@@ -237,44 +221,44 @@ footer {
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 250px; /* Fixed width for uniformity */
-    height: 300px; /* Increased height for all cards */
+    width: 300px; /* Increase card width */
+    height: auto; /* Let height adapt to content */
     text-align: center;
+    transition: transform 0.3s ease;
 }
 
-/* Positioning Person 4 and Person 5 on the second row */
-.people-grid > .person-card:nth-child(4) {
-    margin-left: 0; /* Reset left margin */
-    margin-right: 60px; /* Keep space between Person 4 and 5 */
-}
-
-.people-grid > .person-card:nth-child(5) {
-    margin-left: 0; /* Reset left margin */
+.person-card:hover {
+    transform: translateY(-5px); /* Slight hover effect */
 }
 
 /* Person Image */
 .person-image {
-    width: 100%;
-    border-radius: 50%;
-    margin-bottom: 15px;
+    width: 150px; /* Resize image */
+    height: 150px; /* Keep it square */
+    border-radius: 50%; /* Make it circular */
+    margin-bottom: 20px; /* Add space below the image */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Person Name */
 .person-card h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem; /* Standardized font size for names */
     color: #003366;
     margin-bottom: 10px;
 }
 
+/* Person Role */
 .person-card .role {
-    font-size: 1.1rem;
-    color: #333;
+    font-size: 1.2rem; /* Uniform font size for role */
+    color: #666;
     margin-bottom: 10px;
 }
 
+/* Person Description */
 .person-card .description {
-    font-size: 1rem;
-    color: #666;
+    font-size: 1rem; /* Standardized font size for descriptions */
+    color: #333;
+    line-height: 1.6; /* Improved readability */
 }
 
 /* =========================================
