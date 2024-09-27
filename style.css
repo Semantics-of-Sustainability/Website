@@ -101,6 +101,7 @@ footer {
    Home Page Specific Styling
 ========================================= */
 
+/* Navigation Bar - Hiding Links */
 .home .navbar ul {
     display: none; /* Hide the links */
 }
@@ -112,14 +113,15 @@ footer {
 
 .home .content-wrapper {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap: wrap; /* Allow boxes to wrap into rows */
+    justify-content: space-between; /* Ensure equal space between boxes */
     align-items: flex-start;
     max-width: 1000px;
     margin: 40px auto;
-    gap: 20px;
+    gap: 20px; /* Ensure proper spacing */
 }
 
+/* Content Box Styling */
 .home .content-box {
     background-color: white;
     border-radius: 10px;
@@ -128,23 +130,20 @@ footer {
     width: calc(32% - 20px); /* Ensure all boxes have the same width */
     height: 250px; /* Keep boxes square */
     margin-bottom: 20px;
-}
-
-/* Remove custom width for bottom row */
-.home .content-wrapper .content-box:nth-child(4),
-.home .content-wrapper .content-box:nth-child(5) {
-    width: calc(32% - 20px); /* Same width as the top row */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Keeps text and button well aligned */
+    padding: 20px;
 }
 
 /* Button Styling Inside the Boxes */
 .home .button {
-    display: inline-block;
     background-color: #0056b3;
     color: white;
     padding: 10px 15px;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 20px;
+    align-self: center; /* Keep the button centered */
 }
 
 .home .button:hover {
