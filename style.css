@@ -256,9 +256,9 @@ footer {
 
 /* Person Name */
 .person-card h2 {
-    font-size: 1.0rem; /* Reduced size for balance */
+    font-size: 0.5rem; /* Reduced size for balance */
     color: #003366;
-    margin-bottom: 7px;
+    margin-bottom: 5px;
     font-weight: bold;
 }
 
