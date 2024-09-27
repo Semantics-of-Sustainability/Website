@@ -111,25 +111,14 @@ footer {
     height: 50px; /* Adjust height to maintain the ribbon size */
 }
 
-/* Main Container */
 .home .content-wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 equal columns for the top row */
-    gap: 20px; /* Space between boxes */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the items */
+    gap: 30px; /* Space between boxes */
     max-width: 1000px;
     margin: 40px auto;
 }
-
-/* Bottom Row - Flexbox Centered 2 Boxes */
-.home .bottom-row {
-    display: flex;
-    justify-content: space-between; /* Centers the boxes horizontally */
-    gap: 20px; /* Space between the two boxes */
-    margin-top: 20px; /* Space between top and bottom rows */
-    width: 100%;
-}
-
-
 /* Content Box Styling */
 .home .content-box {
     background-color: white;
