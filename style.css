@@ -120,13 +120,13 @@ footer {
     margin: 40px auto;
 }
 
-/* Bottom Row - Centered 2 Boxes */
+/* Bottom Row - Flexbox Centered 2 Boxes */
 .home .bottom-row {
-    display: grid;
-    grid-template-columns: 1fr 250px 250px 1fr; /* Center the boxes and space them */
-    gap: 20px;
-    justify-items: center;
-    margin-top: 20px; /* Space between top and bottom row */
+    display: flex;
+    justify-content: center; /* Centers the boxes horizontally */
+    gap: 20px; /* Space between the two boxes */
+    margin-top: 20px; /* Space between top and bottom rows */
+    width: 100%;
 }
 
 
