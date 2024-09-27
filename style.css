@@ -49,39 +49,48 @@ footer {
 }
 
 /* =========================================
-   Hero Section Update
+   Hero Section
 ========================================= */
+.hero {
+    background: url('assets/Background_Image_Website.png') no-repeat center center;
+    background-size: cover;
+    padding: 100px 20px;
+    text-align: center;
+}
 
 .hero-text-box {
-    background-color: rgba(0, 0, 0, 0.5); /* Slightly darker grey */
-    padding: 50px; /* Bigger padding for larger box */
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
     display: inline-block;
     border-radius: 8px;
-    max-width: 80%; /* Ensure the box is not too wide */
 }
 
-.hero-text-box h1 {
+.hero-text-box h1, .hero-text-box p {
     color: #fff;
-    font-size: 3rem; /* Larger title */
-}
-
-.hero-text-box p {
-    color: #fff;
-    font-size: 1.5rem; /* Slightly larger text for the subtitle */
 }
 
 /* =========================================
-   Home Page Layout for New Github Box
+   Home Page Specific Styling
 ========================================= */
 
-/* Adjusting the layout for 5 content boxes */
+/* Navigation Bar - Hiding Links */
+.home .navbar ul {
+    display: none; /* Hide the links */
+}
+
+.home .navbar {
+    background-color: #002244; /* Keep the blue ribbon */
+    height: 50px; /* Adjust height to maintain the ribbon size */
+}
+
+/* Content Wrapper Adjustments for Home Page */
 .home .content-wrapper {
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-around; /* Space items evenly */
+    flex-wrap: wrap; /* Ensure boxes wrap if needed */
+    justify-content: space-around; /* Space evenly */
     max-width: 1200px;
     margin: 40px auto;
-    gap: 20px;
+    gap: 20px; /* Add spacing between the boxes */
 }
 
 /* Content Box Styling for Home Page */
@@ -91,25 +100,12 @@ footer {
     border-radius: 10px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: calc(33% - 30px); /* Adjust to fit 3 boxes per row */
-    height: 250px; /* Make them all squares */
+    width: 250px; /* Smaller square size */
+    height: 250px; /* Make it a square */
     margin: 15px;
 }
 
-/* Github Box Styling */
-.github-section {
-    background-color: #f9f9f9;
-}
-
-.github-section .button {
-    background-color: #6e5494; /* Github purple */
-}
-
-.github-section .button:hover {
-    background-color: #453359;
-}
-
-/* Adjust Button Styling Inside the Boxes */
+/* Button Styling Inside the Boxes */
 .home .button {
     display: inline-block;
     background-color: #0056b3;
