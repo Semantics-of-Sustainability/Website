@@ -111,13 +111,14 @@ footer {
     height: 50px; /* Adjust height to maintain the ribbon size */
 }
 
+/* Content Wrapper Adjustments */
 .home .content-wrapper {
     display: flex;
-    justify-content: space-between; /* Ensure equal space between boxes */
-    align-items: flex-start;
+    flex-wrap: wrap; /* Allow boxes to wrap into rows */
+    justify-content: center; /* Center boxes */
+    gap: 20px; /* Ensure equal spacing */
     max-width: 1000px;
-    margin: 40px auto
-    gap: 20px; /* Ensure proper spacing */
+    margin: 40px auto;
 }
 
 /* Content Box Styling */
@@ -126,14 +127,15 @@ footer {
     border-radius: 10px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: calc(32% - 20px); /* Ensure all boxes have the same width */
-    height: 250px; /* Keep boxes square */
+    width: 250px; /* Fixed width for square boxes */
+    height: 250px; /* Fixed height for square boxes */
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Keeps text and button well aligned */
+    justify-content: space-between;
     padding: 20px;
 }
+
 
 /* Button Styling Inside the Boxes */
 .home .button {
