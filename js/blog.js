@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const posts = [
-        { title: 'A Start', date: '2024-09-27', author: 'Pablo Merayo', summary: 'Here the blog begins', content: 'This week was mostly dedicated to the construction of the website you now see. The development involved several design stages, prioritizing functionality, aesthetics, and ease of navigation. After much playing with the layouts I employed a mix of flexbox and grid formats to ensure a clean, responsive design, particularly on the home page. Each page features consistent styling, with an emphasis on clarity and visual harmony. With this one of my first tasks as an intern is complete.' },
+        { title: 'The Blog Begins:', date: '2024-09-27', author: 'Pablo Merayo', summary: 'Here the blog begins.', content: 'This week was mostly dedicated to the construction of the website you now see. The development involved several design stages, prioritizing functionality, aesthetics, and ease of navigation. After much playing with the layouts I employed a mix of flexbox and grid formats to ensure a clean, responsive design, particularly on the home page. Each page features consistent styling, with an emphasis on clarity and visual harmony. With this one of my first tasks as an intern is complete.' },
         
     ];
 
