@@ -64,10 +64,24 @@ footer {
 .blog-posts-list .page-title {
     margin-bottom: 60px !important; /* Add more space between the title and blog posts */
 }
+/* =========================================
+   Consistent Wrapper Box Placement for Subdirectories
+   (Excludes Home Page)
+========================================= */
+
+/* Center the content and ensure consistent distance from the navigation bar */
+.subdirectory-wrapper {
+    max-width: 1200px; /* Ensure consistent max width for all subdirectories */
+    margin: 100px auto 0 auto; /* Ensure content starts 100px below the navigation bar */
+    padding: 40px; /* Padding inside the content wrapper */
+    background-color: #fff; /* Optional background color for the content box */
+    border-radius: 10px; /* Optional rounding for the wrapper */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional box shadow */
+}
 
 
 /* =========================================
-   Hero Section
+   Hero Section Home Page
 ========================================= */
 
 .hero {
