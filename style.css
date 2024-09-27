@@ -51,6 +51,7 @@ footer {
 /* =========================================
    Hero Section
 ========================================= */
+
 .hero {
     background: url('assets/Background_Image_Website.png') no-repeat center center;
     background-size: cover;
@@ -59,15 +60,24 @@ footer {
 }
 
 .hero-text-box {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.6); /* Keep the same transparency */
+    padding: 30px; /* Keep the padding as before */
     display: inline-block;
     border-radius: 8px;
+    max-width: 80%; /* Ensure the box doesn't get too wide */
 }
 
-.hero-text-box h1, .hero-text-box p {
+.hero-text-box h1 {
     color: #fff;
+    font-size: 3rem; /* Increase the size of the title */
+    margin-bottom: 10px;
 }
+
+.hero-text-box p {
+    color: #fff;
+    font-size: 1.5rem; /* Slightly larger for the subtitle */
+}
+
 
 /* =========================================
    Home Page Specific Styling
