@@ -49,7 +49,13 @@ const updates = [
             and researchers interested in developing advanced natural language processing (NLP) models.
         `
     },
-    { id: 4, title: 'Space for Newest Update', date: '2024-12-15', summary: 'Example here' },
+    { id: 4, 
+     title: 'New Website Update', 
+     date: '2024-09-27', 
+     summary: `
+        'The Website of the project has recieved and update for better access and easy future updates.' 
+        `
+        },
 ];
 
 // Sort updates by date in descending order (newest first)
