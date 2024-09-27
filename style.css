@@ -194,11 +194,6 @@ footer {
     margin: 0 20px; /* Space between logos */
 }
 
-
-/* =========================================
-   People Section
-========================================= */
-
 /* =========================================
    People Section
 ========================================= */
@@ -254,33 +249,25 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Person Name */
+/* Ensure Person Name is Smaller and Margin is Reduced */
 .person-card h2 {
-    font-size: 0.5rem; /* Reduced size for balance */
+    font-size: 1.2rem !important; /* Force a smaller font size */
     color: #003366;
-    margin-bottom: 5px;
-    font-weight: bold;
+    margin-bottom: 5px !important; /* Reduce space below the name */
 }
 
-/* Person Name - Smaller size and reduced margin */
-.person-card h2 {
-    font-size: 1.2rem; /* Smaller font size for names */
-    color: #003366;
-    margin-bottom: 5px; /* Reduced space below the name */
-}
-
-/* Person Role */
+/* Ensure Person Role has Small Font and Margin */
 .person-card .role {
-    font-size: 1.1rem; /* Maintain consistent size with slight difference */
+    font-size: 1.1rem !important; /* Smaller font for the role */
     color: #555;
-    margin-bottom: 5px; /* Adjust the margin for better spacing */
+    margin-bottom: 5px !important; /* Reduced spacing */
 }
 
-/* Person Description */
+/* Ensure Description has a Consistent Size and Line Height */
 .person-card .description {
-    font-size: 1rem; /* Description size remains consistent */
+    font-size: 1rem !important; /* Standard font size */
     color: #333;
-    line-height: 1.5; /* Ensure readability */
+    line-height: 1.5; /* Readable line height */
 }
 
 
