@@ -47,6 +47,10 @@ footer {
     color: white; /* Text color */
     text-align: center; /* Center text */
 }
+/* Add this to ensure consistent padding from the navbar */
+.content-wrapper {
+    padding-top: 80px; /* Adjust the value as needed */
+}
 /* =========================================
    Standard Title Styling for All Subdirectories
    (Excludes Home and Updates & News)
