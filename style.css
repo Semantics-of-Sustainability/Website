@@ -111,37 +111,29 @@ footer {
     height: 50px; /* Adjust height to maintain the ribbon size */
 }
 
-/* Content Wrapper Adjustments for Home Page */
 .home .content-wrapper {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap into multiple rows */
-    justify-content: space-between; /* Evenly space the boxes horizontally */
-    gap: 15px; /* Smaller spacing between the boxes */
-    max-width: 1000px; /* Limit the total width */
-    margin: 40px auto; /* Center the content */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 40px auto;
+    gap: 20px; /* Space between the boxes */
 }
 
-/* Content Box Styling for Home Page */
 .home .content-box {
     background-color: white;
-    padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: calc(33.33% - 10px); /* Keep 3 boxes in the top row */
-    height: 250px; /* Ensure the boxes are square */
-    max-width: 250px; /* Fixed width */
-    max-height: 250px; /* Fixed height */
+    width: calc(32% - 20px); /* Ensures 3 equal-sized boxes in a row */
+    height: 250px; /* Keeps boxes square */
+    margin-bottom: 20px;
 }
 
-/* Adjust the width for the two boxes in the second row */
 .home .content-wrapper .content-box:nth-child(4),
 .home .content-wrapper .content-box:nth-child(5) {
-    width: calc(33.33% - 10px); /* Keep them the same size */
-    max-width: 250px; /* Fixed width */
-    max-height: 250px; /* Fixed height */
-}
-
+    width: calc(48% - 20px); /* Ensures two equal-sized boxes in the second row */
 
 /* Button Styling Inside the Boxes */
 .home .button {
