@@ -97,56 +97,30 @@ footer {
 }
 
 
-/* =========================================
-   Home Page Specific Styling
-========================================= */
-
-/* Navigation Bar - Hiding Links */
-.home .navbar ul {
-    display: none; /* Hide the links */
-}
-
-.home .navbar {
-    background-color: #002244; /* Keep the blue ribbon */
-    height: 50px; /* Adjust height to maintain the ribbon size */
-}
-
-/* Content Wrapper Adjustments */
-.home .content-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 20px;
-    max-width: 1200px;
-    margin: 40px auto;
-}
-
-/* Content Wrapper - Main Container */
+/* Main Container */
 .home .content-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px; /* Space between the top and bottom rows */
+    gap: 40px; /* Space between the top and bottom rows */
     max-width: 1000px;
     margin: 40px auto;
 }
 
-/* Top Row Flexbox - 3 Boxes */
+/* Top Row - 3 Boxes */
 .home .top-row {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 1000px;
-    gap: 20px; /* Spacing between the boxes */
+    gap: 20px; /* Space between boxes */
 }
 
-/* Bottom Row Flexbox - 2 Boxes */
+/* Bottom Row - 2 Boxes */
 .home .bottom-row {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    width: 100%;
-    max-width: 1000px;
+    gap: 20px; /* Space between the two boxes */
+    margin-top: 20px;
 }
 
 /* Content Box Styling */
@@ -159,9 +133,10 @@ footer {
     height: 250px; /* Ensure boxes are square */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     padding: 20px;
 }
+
 
 /* Button Styling Inside the Boxes */
 .home .button {
