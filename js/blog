@@ -1,0 +1,12 @@
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const blogPosts = document.querySelectorAll('.blog-post').length;
+    const pagination = document.querySelector('.pagination');
+
+    if (blogPosts > 2) {
+        pagination.style.display = 'block'; // Show pagination if more than 2 posts
+    } else {
+        pagination.style.display = 'none'; // Hide pagination if 2 or fewer posts
+    }
+});
+</script>
