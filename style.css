@@ -47,6 +47,24 @@ footer {
     color: white; /* Text color */
     text-align: center; /* Center text */
 }
+/* =========================================
+   Standard Title Styling for All Subdirectories
+   (Excludes Home and Updates & News)
+========================================= */
+
+.page-title {
+    font-size: 2.5rem !important; /* Make sure it's big and consistent */
+    text-align: center !important; /* Center the title */
+    margin-bottom: 40px !important; /* Consistent spacing below the title */
+    font-weight: bold;
+    color: #003366 !important; /* Consistent color */
+}
+
+/* Additional spacing for Blog title */
+.blog-posts-list .page-title {
+    margin-bottom: 60px !important; /* Add more space between the title and blog posts */
+}
+
 
 /* =========================================
    Hero Section
