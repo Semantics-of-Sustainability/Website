@@ -122,13 +122,13 @@ footer {
 
 /* Bottom Row - Centered 2 Boxes */
 .home .bottom-row {
-    grid-column: 1 / -1; /* Span the entire width */
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 equal columns for the bottom row */
-    justify-content: center;
+    grid-template-columns: 1fr 250px 250px 1fr; /* Center the boxes and space them */
     gap: 20px;
+    justify-items: center;
     margin-top: 20px; /* Space between top and bottom row */
 }
+
 
 /* Content Box Styling */
 .home .content-box {
