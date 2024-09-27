@@ -114,10 +114,10 @@ footer {
 /* Content Wrapper Adjustments */
 .home .content-wrapper {
     display: flex;
-    flex-wrap: wrap; /* Allow boxes to wrap into rows */
-    justify-content: space-evenly; /* Center boxes */
-    gap: 20px; /* Ensure equal spacing */
-    max-width: 1000px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    max-width: 1200px;
     margin: 40px auto;
 }
 
@@ -127,15 +127,22 @@ footer {
     border-radius: 10px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 250px; /* Fixed width for square boxes */
-    height: 250px; /* Fixed height for square boxes */
-    margin-bottom: 20px;
+    width: 300px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     padding: 20px;
+    margin-bottom: 20px;
 }
 
+/* Only for the top row */
+.home .content-box:nth-child(1),
+.home .content-box:nth-child(2),
+.home .content-box:nth-child(3) {
+    align-self: flex-start; /* Align only the top three boxes at the top */
+}
 
 /* Button Styling Inside the Boxes */
 .home .button {
