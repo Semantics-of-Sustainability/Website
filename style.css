@@ -272,109 +272,33 @@ footer {
 
 
 /* =========================================
-   Blog Subdirectory Styling
+   Blog Subdirectory - Ensure Single Background
 ========================================= */
 
-/* Blog Post Section Enhancements */
+/* Main Blog Posts Section */
 .blog-posts-list {
     max-width: 1000px;
-    margin: 20px auto; /* Reduced margin to move section higher */
+    margin: 40px auto;
     padding: 40px;
-    background-color: #fff;
+    background-color: #fff; /* This will be the only background box */
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* One consistent shadow for the whole section */
 }
 
-/* Blog Post Cards */
+/* Blog Post Boxes (unchanged) */
 .blog-post {
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; /* Keep the background for individual posts */
     padding: 30px;
     margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1); /* Keep the shadow for individual posts */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .blog-post:hover {
-    transform: translateY(-5px); /* Slight hover effect */
+    transform: translateY(-5px);
     box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.2);
 }
-
-/* Blog Post Title */
-.blog-post h3 {
-    font-size: 1.6rem; /* Slightly smaller for balance */
-    color: #002244;
-    margin-bottom: 10px;
-}
-
-/* Date and Author */
-.blog-post .date,
-.blog-post .author {
-    font-size: 0.9rem;
-    color: #666;
-    margin-bottom: 15px;
-}
-
-/* Blog Post Summary */
-.blog-post .summary {
-    font-size: 1.2rem;
-    color: #333;
-    margin-bottom: 20px;
-    line-height: 1.7;
-}
-
-/* "Read More" Button Styled Like Updates & News */
-.blog-post .read-more {
-    background-color: #0056b3;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    display: inline-block;
-}
-
-.blog-post .read-more:hover {
-    background-color: #003366;
-}
-
-/* Pagination Section */
-.pagination {
-    text-align: center;
-    margin-top: 40px;
-}
-
-.pagination .page {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #0056b3;
-    color: white;
-    text-decoration: none;
-    margin: 0 5px;
-    border-radius: 5px;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-}
-
-.pagination .page:hover {
-    background-color: #003366;
-}
-
-.pagination .page.active {
-    background-color: #003366;
-}
-
-/* Hide Pagination if There Are 2 or Fewer Posts */
-.pagination {
-    display: none; /* Hide by default */
-}
-
-.blog-post-count-3 .pagination {
-    display: block; /* Show pagination only when more than 2 posts */
-}
-
-
 
 /* =========================================
    Updates & News Subdirectory Styling
