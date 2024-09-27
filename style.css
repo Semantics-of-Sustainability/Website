@@ -263,14 +263,16 @@ footer {
     transform: translateY(-5px); /* Slight hover effect */
 }
 
-/* Person Image - Maintain Aspect Ratio */
+/* Person Image - Keep same size, maintain aspect ratio */
 .person-image {
     width: 200px; /* Fixed width */
-    height: auto; /* Auto height to maintain aspect ratio */
+    height: 200px; /* Fixed height to ensure uniformity */
+    object-fit: cover; /* Ensure the image covers the area while keeping aspect ratio */
     border-radius: 50%; /* Circular image */
     margin-bottom: 20px; /* Space between image and text */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 /* Ensure Person Name is Smaller and Margin is Reduced */
 .person-card h2 {
