@@ -105,16 +105,6 @@ footer {
    Home Page Specific Styling
 ========================================= */
 
-/* Ensure the nav links are hidden only on the home page */
-.home .navbar ul {
-    display: none !important; /* Force hiding the links */
-}
-
-.home .navbar {
-    background-color: #002244; /* Keep the blue ribbon */
-    height: 50px; /* Ensure the ribbon height is maintained */
-}
-}
 .home .content-wrapper {
     display: flex;
     flex-wrap: wrap;
