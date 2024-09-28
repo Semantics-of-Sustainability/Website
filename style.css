@@ -106,15 +106,14 @@ footer {
 ========================================= */
 
 /* Navigation Bar - Hiding Links */
-.home .navbar ul {
-    display: none; /* Hide the links */
+body.home .navbar ul {
+    display: none; /* Hides the links on homepage */
 }
 
-.home .navbar {
+body.home .navbar {
     background-color: #002244; /* Keep the blue ribbon */
-    height: 50px; /* Adjust height to maintain the ribbon size */
+    height: 50px; /* Ribbon height */
 }
-
 .home .content-wrapper {
     display: flex;
     flex-wrap: wrap;
