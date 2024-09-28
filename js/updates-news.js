@@ -53,7 +53,7 @@ const updates = [
      title: 'New Website Update', 
      date: '2024-09-27', 
      summary: `
-        'The Website of the project has recieved an update to its look and functionalities allowing for better access and easier future changes.' 
+        The website of the project has recieved an <strong>update to its look and functionalities</strong> allowing for better access and easier future changes. 
         `
         },
 ];
