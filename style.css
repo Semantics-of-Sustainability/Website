@@ -531,7 +531,7 @@ footer {
 }
 
 /* =========================================
-   Mobile Adjustments - Fixing Content Box Alignment and Pagination Overlap
+   Mobile Adjustments - Fixing Shrinking of Content Boxes
    ======================================== */
 
 /* Mobile layout adjustments for screens 767px or smaller */
@@ -579,10 +579,11 @@ footer {
 
     /* Adjust content boxes for mobile layout */
     .content-box {
-        width: calc(100% - 40px); /* Ensure full width minus padding for mobile */
-        max-width: 300px; /* Limit maximum width */
+        width: 100%; /* Take full width of the available space */
+        max-width: 600px; /* Set a reasonable max-width for larger phones */
         margin: 0 auto 20px; /* Center the box and add space below */
-        box-sizing: border-box; /* Make sure the padding is included in the width */
+        padding: 20px; /* Add padding inside the content box */
+        box-sizing: border-box; /* Ensure padding is included in the width */
     }
 
     /* Button adjustments for mobile */
@@ -641,3 +642,4 @@ footer {
         color: white;
     }
 }
+
