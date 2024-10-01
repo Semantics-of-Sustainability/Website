@@ -531,7 +531,7 @@ footer {
 }
 
 /* =========================================
-   Mobile Adjustments - Fixing Shrinking of Content Boxes
+   Mobile Adjustments
    ======================================== */
 
 /* Mobile layout adjustments for screens 767px or smaller */
@@ -545,14 +545,38 @@ footer {
 
     /* Adjust the navigation bar layout on mobile */
     .navbar ul {
-        flex-direction: column; /* Stack the navigation links vertically */
+        display: none; /* Hide the menu initially */
+        flex-direction: column; /* Stack links vertically */
         padding: 0; /* Remove extra padding for better fit */
-        gap: 10px; /* Reduce space between links */
+        background-color: #002244; /* Same color as the navigation bar */
+        width: 100%; /* Full width on mobile */
+        position: absolute;
+        top: 50px; /* Position below the navbar */
+        left: 0;
+    }
+
+    .navbar ul li {
+        text-align: center; /* Center the links */
+        padding: 10px;
     }
 
     .navbar ul li a {
         padding: 10px; /* Ensure the links fit well on small screens */
         font-size: 1rem; /* Make font size smaller for readability */
+    }
+
+    /* Show the hamburger icon on smaller screens */
+    .menu-toggle {
+        display: block; /* Show the hamburger icon on mobile */
+        font-size: 2rem;
+        cursor: pointer;
+        color: white;
+        padding: 10px;
+    }
+
+    /* Show the menu when the navbar is active (hamburger clicked) */
+    .navbar.active ul {
+        display: flex;
     }
 
     /* Adjust the hero section to fit better on mobile */
