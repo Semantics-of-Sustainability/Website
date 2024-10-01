@@ -533,71 +533,84 @@ footer {
 /* =========================================
    Mobile Adjustments
    ======================================== */
-   
-/* Mobile layout */
+
+/* Mobile layout adjustments for screens 767px or smaller */
 @media (max-width: 767px) {
-    /* Adjust the body padding for mobile */
+
+    /* General padding adjustments for mobile */
     body {
         padding: 10px; /* Ensure content doesn't touch the edges */
     }
 
-    /* Navigation Bar adjustments for mobile */
+    /* Adjust the navigation bar layout on mobile */
     .navbar ul {
-        flex-direction: column; /* Stack the nav links vertically */
-        padding: 0; /* Remove extra padding */
-        gap: 10px; /* Reduce the gap between links */
+        flex-direction: column; /* Stack the navigation links vertically */
+        padding: 0; /* Remove extra padding for better fit */
+        gap: 10px; /* Reduce space between links */
     }
 
     .navbar ul li a {
-        padding: 10px; /* Ensure the links fit comfortably */
-        font-size: 1rem; /* Smaller font for better fit */
+        padding: 10px; /* Ensure the links fit well on small screens */
+        font-size: 1rem; /* Make font size smaller for readability */
     }
 
-    /* Content Wrapper adjustments for mobile */
+    /* Adjust the hero section to fit better on mobile */
+    .hero {
+        padding: 50px 15px; /* Reduce padding for mobile */
+        background-position: center; /* Ensure background image stays centered */
+        background-size: cover; /* Make sure the image covers the section */
+    }
+
+    .hero-text-box {
+        padding: 20px; /* Reduce padding for text box on mobile */
+        max-width: 90%; /* Ensure the text box fits within the mobile screen */
+    }
+
+    .hero-text-box h1 {
+        font-size: 2rem; /* Reduce the title size for better fit on mobile */
+        line-height: 1.2; /* Tighten line spacing */
+    }
+
+    .hero-text-box p {
+        font-size: 1.2rem; /* Adjust subtitle size for mobile */
+        line-height: 1.5; /* Improve readability */
+    }
+
+    /* Adjust content wrapper for mobile layout */
     .content-wrapper {
-        flex-direction: column;
-        align-items: center; /* Center all elements */
+        flex-direction: column; /* Stack the content boxes vertically */
+        align-items: center; /* Center the content */
     }
 
-    /* Content Box adjustments for mobile */
+    /* Content boxes for mobile */
     .content-box {
-        width: 100%;
-        max-width: 300px;
-        margin-bottom: 20px;
-        height: auto; /* Let the box resize according to the content */
+        width: 100%; /* Ensure full width on mobile */
+        max-width: 300px; /* Limit maximum width */
+        margin-bottom: 20px; /* Add space between content boxes */
     }
 
     /* Button adjustments for mobile */
     .button {
-        width: 100%;
-        text-align: center;
-        padding: 15px;
+        width: 100%; /* Full width for buttons on mobile */
+        padding: 15px; /* Add more padding for better clickability */
+        text-align: center; /* Center the text in the button */
     }
 
     /* Footer adjustments for mobile */
     footer {
-        padding: 10px; /* Reduce padding to fit the screen */
-        font-size: 0.9rem; /* Smaller font size */
+        padding: 10px; /* Reduce padding for footer */
+        font-size: 0.9rem; /* Smaller font size for footer on mobile */
     }
 
-    /* Collaborator images adjustments for mobile */
+    /* Collaborators Section on mobile */
     .about-collaborators {
         flex-direction: column; /* Stack the images vertically */
-        align-items: center; /* Center the collaborators */
+        align-items: center; /* Center the collaborators section */
     }
 
     .collaborator img {
-        max-width: 80%; /* Set a percentage width for smaller screens */
+        max-width: 80%; /* Adjust image size for smaller screens */
         margin: 10px auto; /* Ensure spacing and center alignment */
     }
-
-    /* About Section adjustments for mobile */
-    .about-section {
-        padding: 20px; /* Reduce padding to fit the content */
-        font-size: 1rem; /* Adjust font size for readability */
-    }
-
-    .collaborators-section {
-        padding: 15px; /* Reduce padding for mobile */
-    }
 }
+
