@@ -531,7 +531,7 @@ footer {
 }
 
 /* =========================================
-   Mobile Adjustments - Fixing Footer and Content Boxes Centering
+   Mobile Adjustments - Fixing Content Box Alignment and Pagination Overlap
    ======================================== */
 
 /* Mobile layout adjustments for screens 767px or smaller */
@@ -582,6 +582,7 @@ footer {
         width: calc(100% - 40px); /* Ensure full width minus padding for mobile */
         max-width: 300px; /* Limit maximum width */
         margin: 0 auto 20px; /* Center the box and add space below */
+        box-sizing: border-box; /* Make sure the padding is included in the width */
     }
 
     /* Button adjustments for mobile */
@@ -616,5 +617,27 @@ footer {
         margin: 0 auto; /* Ensure the people-section wrapper is centered */
         text-align: center; /* Center all elements inside */
         max-width: 100%; /* Ensure the wrapper takes full width */
+    }
+
+    /* Fix pagination buttons from overlapping footer */
+    .pagination {
+        margin-bottom: 40px; /* Add space between the pagination and the footer */
+        text-align: center; /* Center the pagination */
+    }
+
+    .pagination .page {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 0 5px;
+        background-color: white;
+        color: #0056b3;
+        text-decoration: none;
+        border-radius: 5px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .pagination .page:hover {
+        background-color: #0056b3;
+        color: white;
     }
 }
