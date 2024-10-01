@@ -531,7 +531,7 @@ footer {
 }
 
 /* =========================================
-   Mobile Adjustments - Fixing Footer and Wrappers Centering
+   Mobile Adjustments - Fixing Footer and Content Boxes Centering
    ======================================== */
 
 /* Mobile layout adjustments for screens 767px or smaller */
@@ -540,6 +540,7 @@ footer {
     /* General padding adjustments for mobile */
     body {
         padding: 10px; /* Ensure content doesn't touch the edges */
+        overflow-x: hidden; /* Prevent horizontal scrolling due to overflow */
     }
 
     /* Adjust the navigation bar layout on mobile */
@@ -576,20 +577,11 @@ footer {
         line-height: 1.5; /* Improve readability */
     }
 
-    /* Adjust content wrapper for mobile layout */
-    .content-wrapper {
-        display: flex;
-        flex-direction: column; /* Stack the content boxes vertically */
-        align-items: center; /* Center the content */
-        margin: 0 auto; /* Ensure the wrapper is centered */
-        max-width: 100%; /* Ensure the wrapper takes full width */
-    }
-
-    /* Content boxes for mobile */
+    /* Adjust content boxes for mobile layout */
     .content-box {
-        width: 100%; /* Ensure full width on mobile */
+        width: calc(100% - 40px); /* Ensure full width minus padding for mobile */
         max-width: 300px; /* Limit maximum width */
-        margin-bottom: 20px; /* Add space between content boxes */
+        margin: 0 auto 20px; /* Center the box and add space below */
     }
 
     /* Button adjustments for mobile */
@@ -604,6 +596,8 @@ footer {
         padding: 10px; /* Reduce padding for footer */
         font-size: 0.9rem; /* Smaller font size for footer on mobile */
         text-align: center; /* Ensure the footer is centered */
+        width: calc(100% - 40px); /* Ensure footer doesn't overflow horizontally */
+        margin: 0 auto; /* Center the footer */
     }
 
     /* Collaborators Section on mobile */
@@ -624,4 +618,3 @@ footer {
         max-width: 100%; /* Ensure the wrapper takes full width */
     }
 }
-
