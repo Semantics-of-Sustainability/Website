@@ -530,17 +530,36 @@ footer {
     }
 }
 
+/* =========================================
+   Mobile Adjustments
+   ======================================== */
+   
 /* Mobile layout */
 @media (max-width: 767px) {
+    /* Adjust the body padding for mobile */
     body {
         padding: 10px; /* Ensure content doesn't touch the edges */
     }
 
-    .content-wrapper {
-        flex-direction: column;
-        align-items: center;
+    /* Navigation Bar adjustments for mobile */
+    .navbar ul {
+        flex-direction: column; /* Stack the nav links vertically */
+        padding: 0; /* Remove extra padding */
+        gap: 10px; /* Reduce the gap between links */
     }
 
+    .navbar ul li a {
+        padding: 10px; /* Ensure the links fit comfortably */
+        font-size: 1rem; /* Smaller font for better fit */
+    }
+
+    /* Content Wrapper adjustments for mobile */
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center; /* Center all elements */
+    }
+
+    /* Content Box adjustments for mobile */
     .content-box {
         width: 100%;
         max-width: 300px;
@@ -548,10 +567,37 @@ footer {
         height: auto; /* Let the box resize according to the content */
     }
 
+    /* Button adjustments for mobile */
     .button {
         width: 100%;
         text-align: center;
         padding: 15px;
     }
-}
 
+    /* Footer adjustments for mobile */
+    footer {
+        padding: 10px; /* Reduce padding to fit the screen */
+        font-size: 0.9rem; /* Smaller font size */
+    }
+
+    /* Collaborator images adjustments for mobile */
+    .about-collaborators {
+        flex-direction: column; /* Stack the images vertically */
+        align-items: center; /* Center the collaborators */
+    }
+
+    .collaborator img {
+        max-width: 80%; /* Set a percentage width for smaller screens */
+        margin: 10px auto; /* Ensure spacing and center alignment */
+    }
+
+    /* About Section adjustments for mobile */
+    .about-section {
+        padding: 20px; /* Reduce padding to fit the content */
+        font-size: 1rem; /* Adjust font size for readability */
+    }
+
+    .collaborators-section {
+        padding: 15px; /* Reduce padding for mobile */
+    }
+}
