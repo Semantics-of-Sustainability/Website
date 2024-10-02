@@ -101,7 +101,7 @@ footer {
    Home Page Specific Styling
 ========================================= */
 .home .navbar ul {
-    display: none;
+    display: flex; /* Make links visible on the home page again */
 }
 
 .home .navbar {
@@ -220,10 +220,10 @@ footer {
 }
 
 /* =========================================
-   People Section
+   People Section - Grid Layout with 3 Rows of 3 Cards
 ========================================= */
 .people-section {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 40px auto;
     padding: 20px;
     text-align: center;
@@ -239,9 +239,11 @@ footer {
 
 .people-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 30px;
-    justify-items: center;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-gap: 30px; /* Space between cards */
+    justify-items: center; /* Center the cards within each grid column */
+    max-width: 1000px; /* Set a maximum width for the grid */
+    margin: 0 auto; /* Center the entire grid on the page */
 }
 
 .person-card {
@@ -249,7 +251,8 @@ footer {
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 300px;
+    width: 100%;
+    max-width: 300px; /* Set a maximum width for the cards */
     text-align: center;
     transition: transform 0.3s ease;
     display: flex;
@@ -286,6 +289,36 @@ footer {
     font-size: 1rem !important;
     color: #333;
     line-height: 1.5;
+}
+
+/* =========================================
+   Updates & News Section - Content Boxes Adjusted for Larger Screens
+========================================= */
+.updates-news-list {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust to fit more columns on larger screens */
+    grid-gap: 20px; /* Spacing between boxes */
+}
+
+.content-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 100%; /* Allow boxes to occupy full width */
+    width: 100%; /* Ensure the box width adjusts correctly */
+    box-sizing: border-box;
+}
+
+.content-box h2 {
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 /* =========================================
@@ -326,162 +359,6 @@ footer {
 
 .read-more:hover {
     background-color: #003366;
-}
-
-/* =========================================
-   Updates & News Subdirectory Styling
-========================================= */
-.updates-news-list {
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 20px;
-}
-
-.content-box {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: left;
-}
-
-.content-box h2 {
-    font-size: 2rem;
-    color: #003366;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.news-item {
-    background-color: #ffffff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.news-item:hover {
-    transform: translateY(-3px);
-}
-
-.news-item h3 {
-    font-size: 1.8rem;
-    color: #003366;
-    margin-bottom: 10px;
-}
-
-.news-item .date {
-    font-size: 0.9rem;
-    color: #888;
-    margin-bottom: 10px;
-}
-
-.news-item .summary {
-    font-size: 1.1rem;
-    color: #333;
-    max-height: 100px;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-}
-
-.read-more {
-    background-color: #0056b3;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
-}
-
-.read-more:hover {
-    background-color: #003366;
-}
-
-.pagination {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.pagination .page {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: white;
-    color: #0056b3;
-    text-decoration: none;
-    margin: 0 5px;
-    border-radius: 5px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.pagination .page:hover {
-    background-color: #0056b3;
-    color: white;
-}
-
-.pagination .page.active {
-    background-color: #0056b3;
-    color: white;
-}
-
-/* =========================================
-   Home Page Updates & News Section
-========================================= */
-.home-updates-news {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.home-updates-list {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-}
-
-.home-news-item {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: left;
-}
-
-.home-news-item h3 {
-    font-size: 1.5rem;
-    color: #003366;
-    margin-bottom: 10px;
-}
-
-.home-news-item .date {
-    font-size: 0.9rem;
-    color: #888;
-    margin-bottom: 10px;
-}
-
-.home-news-item .summary {
-    font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-.update-link {
-    color: #0056b3;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.update-link:hover {
-    text-decoration: underline;
-}
-
-.update-link:hover {
-    text-decoration: underline;
 }
 
 /* =========================================
