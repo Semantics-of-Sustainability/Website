@@ -291,7 +291,12 @@ footer {
 
 /* =========================================
    Blog Section Specific Styling
+   (Blog hidden for now)
 ========================================= */
+.blog-section {
+    display: none;
+}
+
 .blog-posts-list {
     max-width: 1000px;
     margin: 40px auto;
@@ -428,6 +433,50 @@ footer {
 }
 
 /* =========================================
+   Output Directory Styling
+========================================= */
+.output-section {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 40px;
+    text-align: center;
+}
+
+.output-section .content-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.output-section h2 {
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.output-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.output-section ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.output-section ul li a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.output-section ul li a:hover {
+    text-decoration: underline;
+}
+
+/* =========================================
    Mobile Adjustments for Screens 767px or Smaller
 ========================================= */
 @media (max-width: 767px) {
@@ -549,9 +598,11 @@ footer {
         color: white;
     }
 }
+
 /* Hide the hamburger menu on screens larger than 767px */
 @media (min-width: 768px) {
     .menu-toggle {
         display: none;
     }
 }
+
