@@ -1,5 +1,9 @@
-**About the Project**
+# About the Project
 
-This project, funded by the NL eScience Center, uses state-of-the-art machine learning techniques to study conceptual change over time. It builds on the seminal BERT infrastructure that has in recent years caused a breakthrough in the computational understanding of language. In this project, we will re-train the base model to create multiple, chronologically ordered models based on historical Dutch textual data. With the help of the Dutch National Library’s massive archive of historical newspapers, magazines, and books, this project will, thus, show how Dutch words have changed their meaning and connotation in public discourses from the Second World War until the present day.
+This project, funded by the **NL eScience Center**, applies state-of-the-art **machine learning** techniques to study conceptual change over time. Building on the **BERT** architecture, which has recently revolutionized computational language understanding, we aim to create a series of **chronologically ordered models** based on historical Dutch textual data. Using vast archives from the **Dutch National Library**—including newspapers, magazines, and books—this project traces the evolution of Dutch words and their meanings in public discourse from the **Second World War** to the present day.Our primary goal is to study the **conceptual history** of one of today’s most pressing issues: **global sustainability**. By analyzing historical shifts in discourse, we aim to uncover the continuities and disruptions that shape the conversation around sustainability. Through these insights, we seek to better understand the forces influencing how sustainability has been discussed over time.
 
-By doing so, this project aims to study the conceptual history of one of the most urgent issues of today: global sustainability. With the help of this technique, we are able to trace continuities and breaks in this discourse to, ultimately, gain insights into the forces at play when it comes to sustainability.
+
+
+## Contact
+
+For inquiries, please reach out via email: **p.huijnen@uu.nl**
