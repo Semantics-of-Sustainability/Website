@@ -252,10 +252,10 @@ footer {
 
 /* People Grid Layout */
 .people-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Center the items */
-    gap: 30px; /* Add more space between cards */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    grid-gap: 30px;
+    justify-items: center;
 }
 
 /* Person Card Styling */
