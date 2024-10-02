@@ -38,42 +38,39 @@ header {
 }
 
 footer {
-    clear: both; /* Prevents overlap with floated elements */
-    display: block; /* Ensure it's a block-level element */
-    width: 100%; /* Ensures full width */
-    padding: 20px; /* Consistent padding */
-    margin-top: 60px; /* Space above the footer */
-    background-color: #002244; /* Dark Blue Footer */
-    color: white; /* Text color */
-    text-align: center; /* Center text */
+    clear: both;
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin-top: 60px;
+    background-color: #002244;
+    color: white;
+    text-align: center;
 }
-/* Add this to ensure consistent padding from the navbar */
+
 .content-wrapper {
-    padding-top: 80px; /* Adjust the value as needed */
+    padding-top: 80px;
 }
+
 /* =========================================
    Standard Title Styling for All Subdirectories
    (Excludes Home and Updates & News)
 ========================================= */
-
 .page-title {
-    font-size: 2.5rem !important; /* Make sure it's big and consistent */
-    text-align: center !important; /* Center the title */
-    margin-bottom: 40px !important; /* Consistent spacing below the title */
+    font-size: 2.5rem !important;
+    text-align: center !important;
+    margin-bottom: 40px !important;
     font-weight: bold;
-    color: #003366 !important; /* Consistent color */
+    color: #003366 !important;
 }
 
-/* Additional spacing for Blog title */
 .blog-posts-list .page-title {
-    margin-bottom: 60px !important; /* Add more space between the title and blog posts */
+    margin-bottom: 60px !important;
 }
-
 
 /* =========================================
    Hero Section Home Page
 ========================================= */
-
 .hero {
     background: url('assets/Background_Image_Website2.png') no-repeat center center;
     background-size: cover;
@@ -82,74 +79,71 @@ footer {
 }
 
 .hero-text-box {
-    background-color: rgba(0, 0, 0, 0.6); /* Keep the same transparency */
-    padding: 30px; /* Keep the padding as before */
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
     display: inline-block;
     border-radius: 8px;
-    max-width: 80%; /* Ensure the box doesn't get too wide */
+    max-width: 80%;
 }
 
 .hero-text-box h1 {
     color: #fff;
-    font-size: 3rem; /* Increase the size of the title */
+    font-size: 3rem;
     margin-bottom: 10px;
 }
 
 .hero-text-box p {
     color: #fff;
-    font-size: 1.5rem; /* Slightly larger for the subtitle */
+    font-size: 1.5rem;
 }
 
-
-=========================================
+/* =========================================
    Home Page Specific Styling
 ========================================= */
-
-/* Navigation Bar - Hiding Links */
 .home .navbar ul {
-    display: none; /* Hide the links */
+    display: none;
 }
 
 .home .navbar {
-    background-color: #002244; /* Keep the blue ribbon */
-    height: 50px; /* Adjust height to maintain the ribbon size */
+    background-color: #002244;
+    height: 50px;
 }
 
 .home .content-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center the items */
-    gap: 30px; /* Space between boxes */
+    justify-content: center;
+    gap: 30px;
     max-width: 1000px;
     margin: 20px auto;
     padding-top: 20px;
 }
-/* Content Box Styling */
+
 .home .content-box {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 250px; /* Fixed width */
-    height: auto; /* Allow height to adjust based on content */
+    width: 250px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 20px;
-    margin: 0 auto; /* Center the boxes */
+    margin: 0 auto;
 }
 
 .home .content-box h2 {
-    margin-bottom: 10px; /* Space between title and icon */
+    margin-bottom: 10px;
 }
 
 .home .content-icon {
-    width: 80px; /* Increased icon size */
-    height: auto; /* Maintain aspect ratio */
-    margin: 10px 0; /* Space around the icon */
+    width: 80px;
+    height: auto;
+    margin: 10px 0;
     display: block;
-    margin-left: auto; /* Center icon */
-    margin-right: auto; /* Center icon */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .home .button {
@@ -158,82 +152,76 @@ footer {
     padding: 10px 15px;
     text-decoration: none;
     border-radius: 5px;
-    align-self: center; /* Keep the button centered */
-    margin-top: 10px; /* Space between icon and button */
+    align-self: center;
+    margin-top: 10px;
 }
 
 .home .button:hover {
     background-color: #003366;
 }
+
 /* =========================================
    About Subdirectory
 ========================================= */
-
-/* About Section - General Styling */
 .about-section {
     max-width: 1000px;
     margin: 60px auto;
     padding: 40px;
-    background-color: #ffffff; /* White background */
+    background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
 .about-section h1 {
-    font-size: 2rem; /* Smaller title size */
+    font-size: 2rem;
     color: #003366;
-    margin-bottom: 40px; /* Increased space below the title */
+    margin-bottom: 40px;
     font-weight: bold;
 }
 
 .about-section h2 {
-    font-size: 1.8rem; /* Slightly smaller than the main title */
+    font-size: 1.8rem;
     color: #0056b3;
-    margin-bottom: 20px; /* Space between title and logos */
+    margin-bottom: 20px;
 }
 
 .about-section p {
-    font-size: 1.2rem; /* Consistent font size for text */
+    font-size: 1.2rem;
     color: #333333;
     line-height: 1.8;
-    margin-bottom: 30px; /* Space below the paragraph */
-    text-align: justify; /* Justified text for readability */
+    margin-bottom: 30px;
+    text-align: justify;
 }
 
-/* Collaborators Section */
 .collaborators-section {
-    background-color: #f9f9f9; /* Light gray background for contrast */
-    padding: 20px; /* Padding for the section */
-    border-radius: 10px; /* Rounded corners */
-    margin-top: 30px; /* Space from the About section */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
 }
 
 .collaborators-section h2 {
-    font-size: 1.8rem; /* Title size */
+    font-size: 1.8rem;
     color: #003366;
-    margin-bottom: 30px; /* Space between title and logos */
+    margin-bottom: 30px;
 }
 
-/* About Collaborators */
 .about-collaborators {
     display: flex;
-    justify-content: space-around; /* Equal space around the items */
-    align-items: center; /* Center items vertically */
+    justify-content: space-around;
+    align-items: center;
 }
 
-/* Collaborator Logo Styling */
 .collaborator img {
-    max-width: 150px; /* Set a maximum width for logos */
-    height: auto; /* Maintain aspect ratio */
-    margin: 0 20px; /* Space between logos */
+    max-width: 150px;
+    height: auto;
+    margin: 0 20px;
 }
 
 /* =========================================
    People Section
 ========================================= */
-
-/* People Section */
 .people-section {
     max-width: 1200px;
     margin: 40px auto;
@@ -241,106 +229,92 @@ footer {
     text-align: center;
 }
 
-/* Meet Our Team Title */
 .people-section h1 {
-    font-size: 2.5rem; /* Larger title */
-    text-align: center; /* Center the title */
-    margin-bottom: 40px; /* Increased margin for spacing */
-    font-weight: bold; /* Make it stand out */
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
     color: #003366
 }
 
-/* People Grid Layout */
 .people-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 30px;
     justify-items: center;
 }
 
-/* Person Card Styling */
 .person-card {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 300px; /* Keep card size uniform */
+    width: 300px;
     text-align: center;
     transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center all card elements */
+    align-items: center;
 }
 
 .person-card:hover {
-    transform: translateY(-5px); /* Slight hover effect */
+    transform: translateY(-5px);
 }
 
-/* Person Image - Keep same size, maintain aspect ratio */
 .person-image {
-    width: 200px; /* Fixed width */
-    height: 200px; /* Fixed height to ensure uniformity */
-    object-fit: cover; /* Ensure the image covers the area while keeping aspect ratio */
-    border-radius: 50%; /* Circular image */
-    margin-bottom: 20px; /* Space between image and text */
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
-/* Ensure Person Name is Smaller and Margin is Reduced */
 .person-card h2 {
-    font-size: 1.5rem !important; /* Force a smaller font size */
+    font-size: 1.5rem !important;
     color: #003366;
-    margin-bottom: 5px !important; /* Reduce space below the name */
+    margin-bottom: 5px !important;
 }
 
-/* Ensure Person Role has Small Font and Margin */
 .person-card .role {
-    font-size: 1rem !important; /* Smaller font for the role */
+    font-size: 1rem !important;
     color: #555;
-    margin-bottom: 5px !important; /* Reduced spacing */
+    margin-bottom: 5px !important;
 }
 
-/* Ensure Description has a Consistent Size and Line Height */
 .person-card .description {
-    font-size: 1rem !important; /* Standard font size */
+    font-size: 1rem !important;
     color: #333;
-    line-height: 1.5; /* Readable line height */
+    line-height: 1.5;
 }
-
 
 /* =========================================
    Blog Section Specific Styling
 ========================================= */
-
-/* Wrapper for blog posts and title */
 .blog-posts-list {
     max-width: 1000px;
     margin: 40px auto;
     padding: 20px;
-    background-color: #fff; /* Optional: White background */
-    border-radius: 8px; /* Optional: Rounded corners */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional: Shadow for a clean look */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Title Styling */
 .page-title {
     font-size: 2.5rem;
     text-align: center;
-    margin-bottom: 30px; /* Space between the title and the posts */
-    color: #003366; /* Optional: Darker color for the title */
+    margin-bottom: 30px;
+    color: #003366;
 }
 
-/* Blog post styling */
 .blog-post {
     margin-bottom: 20px;
     padding: 15px;
     background-color: #f9f9f9;
     border-radius: 6px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow around each post */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Read more button */
 .read-more {
     background-color: #0056b3;
     color: white;
@@ -354,12 +328,9 @@ footer {
     background-color: #003366;
 }
 
-
 /* =========================================
    Updates & News Subdirectory Styling
 ========================================= */
-
-/* Updates & News Section */
 .updates-news-list {
     max-width: 1000px;
     margin: 20px auto;
@@ -381,7 +352,6 @@ footer {
     text-align: center;
 }
 
-/* News Items */
 .news-item {
     background-color: #ffffff;
     padding: 20px;
@@ -430,7 +400,6 @@ footer {
     background-color: #003366;
 }
 
-/* Pagination */
 .pagination {
     text-align: center;
     margin-top: 20px;
@@ -460,8 +429,6 @@ footer {
 /* =========================================
    Home Page Updates & News Section
 ========================================= */
-
-/* Updates & News Section for Home Page */
 .home-updates-news {
     max-width: 1000px;
     margin: 40px auto;
@@ -473,7 +440,7 @@ footer {
 
 .home-updates-list {
     display: grid;
-    grid-template-columns: 1fr; /* Single column for the updates */
+    grid-template-columns: 1fr;
     gap: 20px;
 }
 
@@ -512,142 +479,115 @@ footer {
 .update-link:hover {
     text-decoration: underline;
 }
+
 .update-link:hover {
     text-decoration: underline;
-}
-/* Default layout for desktops/laptops */
-@media (min-width: 1024px) {
-    /* Keep the existing styles for desktop */
-}
-
-/* Tablet layout */
-@media (max-width: 1023px) and (min-width: 768px) {
-    .content-box, .button {
-        width: 100%;
-        max-width: 300px;
-        height: auto;
-        margin: 10px auto;
-    }
 }
 
 /* =========================================
    Mobile Adjustments
-   ======================================== */
-
-/* Mobile layout adjustments for screens 767px or smaller */
+========================================= */
 @media (max-width: 767px) {
-
-    /* General padding adjustments for mobile */
     body {
-        padding: 10px; /* Ensure content doesn't touch the edges */
-        overflow-x: hidden; /* Prevent horizontal scrolling due to overflow */
+        padding: 10px;
+        overflow-x: hidden;
     }
 
-    /* Adjust the navigation bar layout on mobile */
     .navbar ul {
-        display: none; /* Hide the menu initially */
-        flex-direction: column; /* Stack links vertically */
-        padding: 0; /* Remove extra padding for better fit */
-        background-color: #002244; /* Same color as the navigation bar */
-        width: 100%; /* Full width on mobile */
+        display: none;
+        flex-direction: column;
+        padding: 0;
+        background-color: #002244;
+        width: 100%;
         position: absolute;
-        top: 50px; /* Position below the navbar */
+        top: 50px;
         left: 0;
     }
 
     .navbar ul li {
-        text-align: center; /* Center the links */
+        text-align: center;
         padding: 10px;
     }
 
     .navbar ul li a {
-        padding: 10px; /* Ensure the links fit well on small screens */
-        font-size: 1rem; /* Make font size smaller for readability */
+        padding: 10px;
+        font-size: 1rem;
     }
 
-    /* Show the hamburger icon on smaller screens */
     .menu-toggle {
-        display: block; /* Show the hamburger icon on mobile */
+        display: block;
         font-size: 2rem;
         cursor: pointer;
         color: white;
         padding: 10px;
     }
 
-    /* Show the menu when the navbar is active (hamburger clicked) */
     .navbar.active ul {
         display: flex;
     }
 
-    /* Adjust the hero section to fit better on mobile */
     .hero {
-        padding: 50px 15px; /* Reduce padding for mobile */
-        background-position: center; /* Ensure background image stays centered */
-        background-size: cover; /* Make sure the image covers the section */
+        padding: 50px 15px;
+        background-position: center;
+        background-size: cover;
     }
 
     .hero-text-box {
-        padding: 20px; /* Reduce padding for text box on mobile */
-        max-width: 90%; /* Ensure the text box fits within the mobile screen */
+        padding: 20px;
+        max-width: 90%;
     }
 
     .hero-text-box h1 {
-        font-size: 2rem; /* Reduce the title size for better fit on mobile */
-        line-height: 1.2; /* Tighten line spacing */
+        font-size: 2rem;
+        line-height: 1.2;
     }
 
     .hero-text-box p {
-        font-size: 1.2rem; /* Adjust subtitle size for mobile */
-        line-height: 1.5; /* Improve readability */
+        font-size: 1.2rem;
+        line-height: 1.5;
     }
 
-    /* Adjust content boxes for mobile layout */
     .content-box {
-        width: 100%; /* Take full width of the available space */
-        max-width: 600px; /* Set a reasonable max-width for larger phones */
-        margin: 0 auto 20px; /* Center the box and add space below */
-        padding: 20px; /* Add padding inside the content box */
-        box-sizing: border-box; /* Ensure padding is included in the width */
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto 20px;
+        padding: 20px;
+        box-sizing: border-box;
     }
 
-    /* Button adjustments for mobile */
     .button {
-        width: 100%; /* Full width for buttons on mobile */
-        padding: 15px; /* Add more padding for better clickability */
-        text-align: center; /* Center the text in the button */
+        width: 100%;
+        padding: 15px;
+        text-align: center;
     }
 
-    /* Footer adjustments for mobile */
     footer {
-        padding: 10px; /* Reduce padding for footer */
-        font-size: 0.9rem; /* Smaller font size for footer on mobile */
-        text-align: center; /* Ensure the footer is centered */
-        width: calc(100% - 40px); /* Ensure footer doesn't overflow horizontally */
-        margin: 0 auto; /* Center the footer */
+        padding: 10px;
+        font-size: 0.9rem;
+        text-align: center;
+        width: calc(100% - 40px);
+        margin: 0 auto;
     }
 
-    /* Collaborators Section on mobile */
     .about-collaborators {
-        flex-direction: column; /* Stack the images vertically */
-        align-items: center; /* Center the collaborators section */
+        flex-direction: column;
+        align-items: center;
     }
 
     .collaborator img {
-        max-width: 80%; /* Adjust image size for smaller screens */
-        margin: 10px auto; /* Ensure spacing and center alignment */
+        max-width: 80%;
+        margin: 10px auto;
     }
 
-    /* Center the "Meet Our Team" wrapper on People page */
     .people-section {
-        margin: 0 auto; /* Ensure the people-section wrapper is centered */
-        text-align: center; /* Center all elements inside */
-        max-width: 100%; /* Ensure the wrapper takes full width */
+        margin: 0 auto;
+        text-align: center;
+        max-width: 100%;
     }
 
-    /* Fix pagination buttons from overlapping footer */
     .pagination {
-        margin-bottom: 40px; /* Add space between the pagination and the footer */
-        text-align: center; /* Center the pagination */
+        margin-bottom: 40px;
+        text-align: center;
     }
 
     .pagination .page {
@@ -666,4 +606,22 @@ footer {
         color: white;
     }
 }
+
+/* =========================================
+   Desktop Adjustments
+========================================= */
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .navbar ul {
+        display: flex;
+    }
+
+    .content-box {
+        max-width: 250px;
+    }
+}
+
 
