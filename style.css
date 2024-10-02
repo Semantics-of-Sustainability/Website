@@ -549,3 +549,9 @@ footer {
         color: white;
     }
 }
+/* Hide the hamburger menu on screens larger than 767px */
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+}
