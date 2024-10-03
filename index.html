@@ -76,25 +76,22 @@
         <p>&copy; 2024 Semantics of Sustainability. All Rights Reserved.</p>
     </footer>
 
-    <!-- JavaScript for Latest Updates -->
-    <script src="js/home-updates.js"></script>
+
     <script>
- document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
+    // Call the displayLatestUpdates function
+    displayLatestUpdates();
+
+    // Your existing hamburger menu code
     const menuToggle = document.querySelector('.menu-toggle');
     const navbar = document.querySelector('.navbar');
+    const navbarMenu = navbar.querySelector('ul');
 
-    // Ensure the 'active' class is not present initially
-    if (navbar.classList.contains('active')) {
-        navbar.classList.remove('active'); // Remove the 'active' class if present
-    }
+    navbarMenu.style.display = 'none'; // Force hide menu on load
 
-    // Console log to check if 'active' class is being added unintentionally
-    console.log("Page loaded. Navbar active class status:", navbar.classList.contains('active'));
-
-    // Add event listener for clicking the hamburger menu
+    // Toggle the menu when clicking the hamburger icon
     menuToggle.addEventListener('click', function() {
-        navbar.classList.toggle('active');
-        console.log("Menu toggled. Navbar active class status:", navbar.classList.contains('active'));
+        navbarMenu.style.display = (navbarMenu.style.display === 'none') ? 'flex' : 'none';
     });
 });
 
