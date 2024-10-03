@@ -79,16 +79,21 @@
     <!-- JavaScript for Latest Updates -->
     <script src="js/home-updates.js"></script>
     <script>
-   // JavaScript for hamburger menu toggle
- document.addEventListener('DOMContentLoaded', function() {
+   document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.querySelector('.menu-toggle');
     const navbar = document.querySelector('.navbar');
+
+    // Ensure the 'active' class is not present initially
+    if (navbar.classList.contains('active')) {
+        navbar.classList.remove('active');
+    }
 
     // Toggle the 'active' class on the navbar when the menu toggle is clicked
     menuToggle.addEventListener('click', function() {
         navbar.classList.toggle('active');
     });
 });
+
 
 
 </script>
