@@ -79,18 +79,25 @@
     <!-- JavaScript for Latest Updates -->
     <script src="js/home-updates.js"></script>
     <script>
-  document.addEventListener('DOMContentLoaded', function() {
+ document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.querySelector('.menu-toggle');
     const navbar = document.querySelector('.navbar');
 
     // Ensure the 'active' class is not present initially
-    navbar.classList.remove('active');  // Remove any instance of the 'active' class on load
+    if (navbar.classList.contains('active')) {
+        navbar.classList.remove('active'); // Remove the 'active' class if present
+    }
 
-    // Toggle the 'active' class on the navbar when the menu toggle is clicked
+    // Console log to check if 'active' class is being added unintentionally
+    console.log("Page loaded. Navbar active class status:", navbar.classList.contains('active'));
+
+    // Add event listener for clicking the hamburger menu
     menuToggle.addEventListener('click', function() {
         navbar.classList.toggle('active');
+        console.log("Menu toggled. Navbar active class status:", navbar.classList.contains('active'));
     });
 });
+
 
 
 
