@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<body class="home">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,19 +9,18 @@
     <link rel="stylesheet" href="style.css"> <!-- Link to main CSS -->
 </head>
 
-<body>
+<body class="home">
     <!-- Navigation Bar -->
     <header class="header">
         <div class="navbar home-nav">
-             <span class="menu-toggle">&#9776;</span>
+            <span class="menu-toggle">&#9776;</span>
             <ul>
-    <li><a href="index.html">Home</a></li> <!-- Home is in the root directory -->
-    <li><a href="about/index.html">About</a></li> <!-- About is in the 'about' subdirectory -->
-    <li><a href="news/index.html">News</a></li> <!-- News (renamed from Updates & News) is in the 'news' subdirectory -->
-    <li><a href="people/index.html">People</a></li> <!-- People is in the 'people' subdirectory -->
-    <li><a href="output/index.html">Output</a></li> <!-- Output is in the 'output' subdirectory -->
-    </ul>
-
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about/index.html">About</a></li>
+                <li><a href="news/index.html">News</a></li>
+                <li><a href="people/index.html">People</a></li>
+                <li><a href="output/index.html">Output</a></li>
+            </ul>
         </div>
     </header>
 
@@ -43,7 +41,7 @@
             <a href="about/index.html" class="button">Learn More</a>
         </div>
 
-        <!-- Latest Updates & News -->
+        <!-- News Section -->
         <div class="content-box updates-section">
             <h2>Check out the News</h2>
             <img src="assets/updates.png" alt="Updates Icon" class="content-icon">
@@ -57,13 +55,14 @@
             <a href="people/index.html" class="button centered-button">See Our People</a>
         </div>
 
-        <!-- Add this section inside the content-wrapper in the home page -->
-<div class="content-box output-section">
-    <h2>Find our Output</h2>
-    <img src="assets/blog.png" alt="Output Icon" class="content-icon">
-    <a href="output/index.html" class="button centered-button">Go to Output</a>
-</div>
-        <!-- New Github Box -->
+        <!-- Output Section -->
+        <div class="content-box output-section">
+            <h2>Find our Output</h2>
+            <img src="assets/blog.png" alt="Output Icon" class="content-icon">
+            <a href="output/index.html" class="button centered-button">Go to Output</a>
+        </div>
+
+        <!-- Github Section -->
         <div class="content-box github-section">
             <h2>Visit Our Github</h2>
             <img src="assets/git.png" alt="Github Icon" class="content-icon">
@@ -76,31 +75,21 @@
         <p>&copy; 2024 Semantics of Sustainability. All Rights Reserved.</p>
     </footer>
 
-
+    <!-- JavaScript for Hamburger Menu -->
     <script>
-document.addEventListener('DOMContentLoaded', function() {
-    // Call the displayLatestUpdates function
-    displayLatestUpdates();
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navbar = document.querySelector('.navbar');
+            const navbarMenu = navbar.querySelector('ul');
 
-    // Your existing hamburger menu code
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navbar = document.querySelector('.navbar');
-    const navbarMenu = navbar.querySelector('ul');
+            // Ensure the menu is hidden on load
+            navbarMenu.style.display = 'none';
 
-    navbarMenu.style.display = 'none'; // Force hide menu on load
-
-    // Toggle the menu when clicking the hamburger icon
-    menuToggle.addEventListener('click', function() {
-        navbarMenu.style.display = (navbarMenu.style.display === 'none') ? 'flex' : 'none';
-    });
-});
-
-
-
-
-</script>
-
-
+            // Toggle the menu visibility when clicking the hamburger icon
+            menuToggle.addEventListener('click', function() {
+                navbarMenu.style.display = (navbarMenu.style.display === 'none') ? 'flex' : 'none';
+            });
+        });
+    </script>
 </body>
 </html>
-
