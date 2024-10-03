@@ -102,8 +102,11 @@ footer {
    Home Page Specific Styling
 ========================================= */
 .home .navbar ul {
-    display: flex;
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
 }
+
 
 .home .navbar {
     background-color: #002244;
