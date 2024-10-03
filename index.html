@@ -80,13 +80,15 @@
     <script src="js/home-updates.js"></script>
     <script>
    // JavaScript for hamburger menu toggle
-const menuToggle = document.querySelector('.menu-toggle');
-const navbar = document.querySelector('.navbar');
+ document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navbar = document.querySelector('.navbar');
 
-// Ensure no class is added initially
-menuToggle.addEventListener('click', function() {
-    navbar.classList.toggle('active');
-});
+            // Add event listener for click
+            menuToggle.addEventListener('click', function() {
+                navbar.classList.toggle('active');
+            });
+        });
 
 
 </script>
