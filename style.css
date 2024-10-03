@@ -476,7 +476,7 @@ footer {
     text-decoration: underline;
 }
 
-//* =========================================
+/* =========================================
    Mobile Adjustments for Screens 767px or Smaller
 ========================================= */
 @media (max-width: 767px) {
@@ -497,6 +497,20 @@ footer {
         left: 0;
     }
 
+    /* Display the hamburger menu button on mobile */
+    .menu-toggle {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        color: white;
+        padding: 10px;
+    }
+
+    /* Show the menu when the 'active' class is applied */
+    .navbar.active ul {
+        display: flex; /* Show the menu when active */
+    }
+
     /* Menu items styling */
     .navbar ul li {
         text-align: center;
@@ -506,23 +520,10 @@ footer {
     .navbar ul li a {
         padding: 10px;
         font-size: 1rem;
-    }
-
-    /* Display hamburger menu icon on small screens */
-    .menu-toggle {
-        display: block;
-        font-size: 2rem;
-        cursor: pointer;
         color: white;
-        padding: 10px;
     }
 
-    /* Show the navigation menu when the 'active' class is applied */
-    .navbar.active ul {
-        display: flex; /* Show the menu when active */
-    }
-
-    /* Hero section styling for mobile */
+    /* Additional mobile adjustments */
     .hero {
         padding: 50px 15px;
         background-position: center;
@@ -544,7 +545,6 @@ footer {
         line-height: 1.5;
     }
 
-    /* Content box adjustments for mobile */
     .content-box {
         width: 100%;
         max-width: 600px;
@@ -559,7 +559,6 @@ footer {
         text-align: center;
     }
 
-    /* Footer adjustments for mobile */
     footer {
         padding: 10px;
         font-size: 0.9rem;
@@ -568,7 +567,6 @@ footer {
         margin: 0 auto;
     }
 
-    /* About collaborators section adjustments */
     .about-collaborators {
         flex-direction: column;
         align-items: center;
@@ -579,14 +577,12 @@ footer {
         margin: 10px auto;
     }
 
-    /* People section adjustments */
     .people-section {
         margin: 0 auto;
         text-align: center;
         max-width: 100%;
     }
 
-    /* Pagination adjustments */
     .pagination {
         margin-bottom: 40px;
         text-align: center;
@@ -608,6 +604,14 @@ footer {
         color: white;
     }
 }
+
+/* Hide the hamburger menu on screens larger than 767px */
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
 
 /* Hide the hamburger menu on screens larger than 767px */
 @media (min-width: 768px) {
