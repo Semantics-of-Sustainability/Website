@@ -476,7 +476,7 @@ footer {
     text-decoration: underline;
 }
 
-/* =========================================
+//* =========================================
    Mobile Adjustments for Screens 767px or Smaller
 ========================================= */
 @media (max-width: 767px) {
@@ -485,8 +485,9 @@ footer {
         overflow-x: hidden;
     }
 
+    /* Hide the navigation menu by default */
     .navbar ul {
-        display: none;
+        display: none; /* Ensure the menu is hidden by default */
         flex-direction: column;
         padding: 0;
         background-color: #002244;
@@ -496,6 +497,7 @@ footer {
         left: 0;
     }
 
+    /* Menu items styling */
     .navbar ul li {
         text-align: center;
         padding: 10px;
@@ -506,6 +508,7 @@ footer {
         font-size: 1rem;
     }
 
+    /* Display hamburger menu icon on small screens */
     .menu-toggle {
         display: block;
         font-size: 2rem;
@@ -514,10 +517,12 @@ footer {
         padding: 10px;
     }
 
+    /* Show the navigation menu when the 'active' class is applied */
     .navbar.active ul {
-        display: flex;
+        display: flex; /* Show the menu when active */
     }
 
+    /* Hero section styling for mobile */
     .hero {
         padding: 50px 15px;
         background-position: center;
@@ -539,6 +544,7 @@ footer {
         line-height: 1.5;
     }
 
+    /* Content box adjustments for mobile */
     .content-box {
         width: 100%;
         max-width: 600px;
@@ -553,6 +559,7 @@ footer {
         text-align: center;
     }
 
+    /* Footer adjustments for mobile */
     footer {
         padding: 10px;
         font-size: 0.9rem;
@@ -561,6 +568,7 @@ footer {
         margin: 0 auto;
     }
 
+    /* About collaborators section adjustments */
     .about-collaborators {
         flex-direction: column;
         align-items: center;
@@ -571,12 +579,14 @@ footer {
         margin: 10px auto;
     }
 
+    /* People section adjustments */
     .people-section {
         margin: 0 auto;
         text-align: center;
         max-width: 100%;
     }
 
+    /* Pagination adjustments */
     .pagination {
         margin-bottom: 40px;
         text-align: center;
