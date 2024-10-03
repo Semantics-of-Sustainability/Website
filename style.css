@@ -74,9 +74,7 @@ footer {
 ========================================= */
 .hero {
     background: url('assets/Background_Image_Website4.png') no-repeat center center;
-    background-size: contain; /* Ensures aspect ratio is preserved */
-    background-attachment: fixed; /* Optional: keeps the image fixed while scrolling */
-    background-position: center center;
+    background-size: cover;
     padding: 100px 20px;
     text-align: center;
 }
@@ -98,7 +96,6 @@ footer {
 .hero-text-box p {
     color: #fff;
     font-size: 1.5rem;
-}
 
 /* =========================================
    Home Page Specific Styling
