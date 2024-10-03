@@ -74,7 +74,9 @@ footer {
 ========================================= */
 .hero {
     background: url('assets/Background_Image_Website4.png') no-repeat center center;
-    background-size: cover;
+    background-size: contain; /* Ensures aspect ratio is preserved */
+    background-attachment: fixed; /* Optional: keeps the image fixed while scrolling */
+    background-position: center center;
     padding: 100px 20px;
     text-align: center;
 }
