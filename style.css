@@ -102,9 +102,7 @@ footer {
    Home Page Specific Styling
 ========================================= */
 .home .navbar ul {
-    display: flex !important;
-    visibility: visible !important;
-    opacity: 1 !important;
+    display: flex 
 }
 
 
@@ -608,10 +606,14 @@ footer {
     }
 }
 
-/* Hide the hamburger menu on screens larger than 767px */
+/* Larger Screens */
 @media (min-width: 768px) {
+    .navbar ul {
+        display: flex; /* Always show the menu on larger screens */
+    }
+
     .menu-toggle {
-        display: none;
+        display: none; /* Hide the hamburger menu on larger screens */
     }
 }
 
