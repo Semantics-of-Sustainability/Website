@@ -78,18 +78,21 @@
     <!-- JavaScript for Hamburger Menu -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const menuToggle = document.querySelector('.menu-toggle');
-            const navbar = document.querySelector('.navbar');
-            const navbarMenu = navbar.querySelector('ul');
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navbar = document.querySelector('.navbar');
+    const navbarMenu = navbar.querySelector('ul');
 
-            // Ensure the menu is hidden on load
-            navbarMenu.style.display = 'none';
+    // Toggle the menu visibility on mobile when clicking the hamburger icon
+    menuToggle.addEventListener('click', function() {
+        navbarMenu.style.display = (navbarMenu.style.display === 'none') ? 'flex' : 'none';
+    });
 
-            // Toggle the menu visibility when clicking the hamburger icon
-            menuToggle.addEventListener('click', function() {
-                navbarMenu.style.display = (navbarMenu.style.display === 'none') ? 'flex' : 'none';
-            });
-        });
+    // Only hide the menu on small screens (mobile)
+    if (window.innerWidth <= 767) {
+        navbarMenu.style.display = 'none';
+    }
+});
+
     </script>
 </body>
 </html>
