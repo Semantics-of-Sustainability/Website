@@ -93,7 +93,7 @@ const updates = [
         7. Overheid.nl. “Informatie over 0000208308 | Overheid.nl > Officiële Bekendmakingen.” Officielebekendmakingen.nl, 2020. <a href="https://zoek.officielebekendmakingen.nl/0000208308" target="_blank">https://zoek.officielebekendmakingen.nl/0000208308</a>.<br>
         8. Overheid.nl. “Informatie over 0000128079 | Overheid.nl > Officiële Bekendmakingen.” Officielebekendmakingen.nl, 2020. <a href="https://zoek.officielebekendmakingen.nl/0000128079" target="_blank">https://zoek.officielebekendmakingen.nl/0000128079</a>.
     `
-}
+},
 
    { 
     id: 6, 
