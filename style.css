@@ -432,6 +432,15 @@ footer {
     background-color: #0056b3;
     color: white;
 }
+.news-item img {
+    max-width: 100%;        /* Scale down to fit the container width */
+    height: auto;           /* Maintain aspect ratio */
+    max-height: 300px;      /* Adjust max height as needed */
+    display: block;         /* Ensure no extra padding or margins are added */
+    margin: 10px auto;      /* Center images horizontally */
+    object-fit: contain;    /* Preserve aspect ratio without cropping */
+}
+
 
 /* =========================================
    Output Directory Styling
