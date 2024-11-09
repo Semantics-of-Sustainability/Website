@@ -53,75 +53,46 @@ const updates = [
      title: 'New Website Update', 
      date: '2024-09-27', 
      summary: `
-        The website of the project has recieved an <strong>update to its look and functionalities</strong> allowing for better access and easier future changes. 
+        The website of the project has received an <strong>update to its look and functionalities</strong> allowing for better access and easier future changes. 
         `
-        },
+    },
     { 
-    id: 5, 
-    title: 'Research Blog 1: Milieuhygiëne and Environmental Hygiene', 
-    date: '2024-11-08', 
-    summary: `
-        <strong>Milieuhygiëne</strong> or <strong>Environmental Hygiene</strong> seems to be one of the most relevant examples of an early intersection between environmental concerns and public health that have appeared during my research. Let us carry out a deeper investigation.
-        <br><br>
-        Environmental hygiene as a concept is polysemic and wide-encompassing. It is also referred to in multiple ways, such as environmental health or environmental sanitation. The origins of the contemporary understanding of the concept seem to lie in the medical field, appearing in Dutch-language medical journals, research, inspections, and parliamentary records starting in the 60s.<sup>1</sup> In its most basic form, it refers to the hygiene and sanitation of human-inhabited environments and spaces for medical practice and their relationship to health.<sup>2</sup> However, it is in the early 70s that we start seeing its use and application at various governance levels. In the Netherlands, the “Ministerie van Volksgezondheid en Milieuhygiëne (Vomil)” was created in 1971 and tasked with the care of the quality of the air, water, soil, and living environment for public health.<sup>3</sup> At the international level, in 1972, the UN environment program was created to create structures for global environmental governance.<sup>4</sup>
-        <br><br>
-        In practice, the activities carried out by such institutions included forest and water management, pest control, pollution monitoring, and the relationship between chemical use and health or management of industry.<sup>5</sup> We thus find in the late 60s and early 70s an intersection at the governance level and political discourse between two pillars that constitute the core of the concept of sustainability. Firstly, the social pillar, in the form of a concern for public health, and the environmental pillar as a concern for the cleanliness and the effects of the living environment on said public health.
-        <br><br>
-        Looking at parliamentary documents, it becomes clear that the chief concern was a social one, with public health being the ultimate goal. The environment and its preservation had an important role, but it was a subordinate one. For example, in this note on the environmental hygiene norms from 1976, we can see the minister of Vomil expressing a necessity to reduce the negative physical impact of human activity on the environment:
-        <br><br>
-        “De milieuhygiëne heeft ten doel het voorkomen dan wel het binnen te tolereren grenzen houden van de ongunstige invloeden van activiteiten van de mens op het fysieke milieu.”<sup>6</sup>
-        <br><br>
-        Of note here is the focus on limiting unfavorable influences on the environment rather than ensuring the absolute and direct protection of the environment. Perhaps more clearly, we can see it in this memorandum from 1974:
-        <br><br>
-        “Toenemende materiële welvaart kan voor de hoog geindustrialiseerde landen niet het enige maatschappelijke doel meer zijn. Door milieuvervuilende produktieprocessen, door onze omgeving belastende, al dan niet nuttige gebruiksgoederen en door een gelijktijdig toenemende schaarste aan grondstoffen wordt het welbevinden van ons allen, zo niet ons voortbestaan, bedreigd. Ook dit welbevinden behoort een fundamentele maatschappelijke doelstelling te zijn. Om deze twee maatschappelijke doelstellingen in evenwicht tot elkaar te brengen behoort de kwaliteit van het bestaan op een voor individu en voor maatschappij aanvaardbaar niveau te zijn en dient verdere uitplundering van de aarde te worden tegengegaan.”<sup>7</sup>
-        <br><br>
-        In short, the harm to the environment is a concern as it hurts the quality of human life, not on its own. Therefore, the exploitation of the environment is not necessarily bad just when it directly and visibly affects human life. Additionally, while there is a concern for the immediate threats, there does not seem to be yet an understanding of the long-term environmental damage of human activity to the extent that future concepts of sustainability or climate change would have. Therefore, environmental hygiene in the late sixties and seventies can be seen as one of the pieces in the puzzle of the conceptual origins of sustainability in the Netherlands. This puzzle would be enlarged over the years as, like most concepts, environmental hygiene kept evolving.
-        <br><br>
-        By the 80s, the environmental aspects had gained greater importance in the policy of the Dutch government. For instance, the environmental management plan for 1985-1989 establishes the following objectives, among which the preservation and disruption of the environment, for example, is already something to be avoided:
-        <br><br>
-        “Met dit IMP-Milieubeheer 1985-1989 wordt een belangrijke stap gezet in de richting van de geïntegreerde planning van het milieubeleid zoals die in de nota «Meer dan de som der delen» in het vooruitzicht is gesteld. Het eerste IMP-Milieubeheer bevat een terugblik op de Urgentienota Milieu hygiëne 1972 en op de ontwikkeling van het milieubeleid en van de kijk op de milieuproblematiek sindsdien. Zes thema's die centraal staan in het beleid, te weten: de verzuring van het milieu; de vermesting van het milieu; de verspreiding van milieugevaarlijke stoffen in het milieu; de verwijdering van afvalstoffen; de verstoring van het milieu; de verbetering van het instrumentarium.”<sup>8</sup>
-        <br><br>
-        Additionally, as a result of such regulations about environmental hygiene, parliamentary documents start showing debates about the third pillar of sustainability, which is the economic pillar, though rather than focusing on ideas for sustainable growth, the documents express debates over the economic cost of environmental policies, in a critical manner. Furthermore, these economic concerns do not form a part of the environmental hygiene policy itself. They are a reaction to it. Thus, we see the concept receiving a few more of the pieces of the puzzle of sustainability, though still missing its truly holistic incorporation of the three pillars. Moreover, it also lacks forward-looking implications, given how environmental hygiene policy focuses more on the reduction of harms and risks than on long-term sustainable economic activity. In this sense, it is a partial precursor to sustainability, and it covers topics that fall under the sustainable umbrella today.
-        <br><br>
-        <strong>References:</strong><br>
-        1. Rijksinstituut voor Volksgezondheid en Milieu Ministerie van Volksgezondheid, Welzijn en Sport. “Historisch Overzicht.” Rivm.nl, 2018. <a href="https://www.rivm.nl/sites/default/files/2018-11/Brochure%20Historisch%20overzicht%20100%20jaar%20RIVM.pdf" target="_blank">https://www.rivm.nl/sites/default/files/2018-11/Brochure%20Historisch%20overzicht%20100%20jaar%20RIVM.pdf</a>.<br>
-        2. Edwin. “Milieuhygiene.” Tijdschrift Voor Sociale Geneeskunde: Magazine for Social Medicine Jrg.47-Suppl.4 Bij Nr.24 - 28 November 1969, no. 24 (1969): 1–64. <a href="https://pesquisa.bvsalud.org/portal/resource/pt/med-2200" target="_blank">https://pesquisa.bvsalud.org/portal/resource/pt/med-2200</a>.<br>
-        3. Parlement.com. “Ministerie van Volksgezondheid En Milieuhygiëne (Vomil).” Parlement.com, 2021. <a href="https://www.parlement.com/id/vjqpgk17ejzy/ministerie_van_volksgezondheid_en" target="_blank">https://www.parlement.com/id/vjqpgk17ejzy/ministerie_van_volksgezondheid_en</a>.<br>
-        4. UNEP. “About the United Nations Environment Programme.” UNEP - UN Environment Programme, 2024. <a href="https://www.unep.org/who-we-are/about-us" target="_blank">https://www.unep.org/who-we-are/about-us</a>.<br>
-        5. Parlement.com. “Ministerie van Volksgezondheid En Milieuhygiëne (Vomil).” Parlement.com, 2021. <a href="https://www.parlement.com/id/vjqpgk17ejzy/ministerie_van_volksgezondheid_en" target="_blank">https://www.parlement.com/id/vjqpgk17ejzy/ministerie_van_volksgezondheid_en</a>.<br>
-        6. Overheid.nl. “Informatie over 0000176922 | Overheid.nl > Officiële Bekendmakingen.” Officielebekendmakingen.nl, 2020. <a href="https://zoek.officielebekendmakingen.nl/0000176922" target="_blank">https://zoek.officielebekendmakingen.nl/0000176922</a>.<br>
-        7. Overheid.nl. “Informatie over 0000208308 | Overheid.nl > Officiële Bekendmakingen.” Officielebekendmakingen.nl, 2020. <a href="https://zoek.officielebekendmakingen.nl/0000208308" target="_blank">https://zoek.officielebekendmakingen.nl/0000208308</a>.<br>
-        8. Overheid.nl. “Informatie over 0000128079 | Overheid.nl > Officiële Bekendmakingen.” Officielebekendmakingen.nl, 2020. <a href="https://zoek.officielebekendmakingen.nl/0000128079" target="_blank">https://zoek.officielebekendmakingen.nl/0000128079</a>.
-    `
-},
-
-   { 
-    id: 6, 
-    title: 'Research Blog 2: Experiments on Milieuhygiëne and Duurzaamheid', 
-    date: '2024-11-09', 
-    summary: `
-        With this in mind, I have started to run some experiments with the computer tools of the project, where I extracted the frequency of use and clusters related to <strong>Milieuhygiëne</strong> over time and how these may compare to <strong>Duurzaamheid</strong> between 1950 and the year 2000. This was done using newspaper data, which is currently available, and a series of Jupyter notebooks, which provide the opportunity to study word frequencies over time and explore the word clusters associated with a particular keyword. I arrived at the following conclusions about the term and also the tools.
-        <br><br>
-        To begin with, it can be confirmed that Milieuhygiëne started appearing in the data and, therefore, in the public sphere in the late 1960s and became most frequent in use between the early 70s and early 80s. While it does not disappear, it is also interesting how, in the late 80s, the frequency of use was much reduced and never really went back to the frequencies of the prior decades. Simultaneously, Duurzaamheid sees an increase in use in the late 80s, as shown in Figures 1 and 2. This could be an indication of it perhaps taking part of the meaning and use associated previously with Milieuhygiëne, which would make sense given the timing, as the concept of Duurzaamheid was created in 1987. Moreover, it also matches the previously discussed content of the parliamentary documents, which suggest the concept of Milieuhygiëne was a precursor in some form to Duurzaamheid. That said, the scales on the charts are very different and are plotted separately. Thus, in future, it would be useful to have the possibility of showcasing the frequency charts of two keywords at the same time to get a more accurate understanding of the scale and relevance of these observations.
-        <br><br>
-        <img src="assets/Figure1.png">
-        <em>Figure 1. Frequency plot of Milieuhygiëne from 1950 to 2000 in Dutch Newspapers.</em>
-        <br><br>
-        <img src="assets/Figure2.png">
-        <em>Figure 2. Frequency plot of Duurzaamheid from 1950 to 2000 in Dutch Newspapers.</em>
-        <br><br>
-        In addition to this, I took a look at the clusters seen in Figures 3 for Duurzaamheid and 4 for Milieuhygiëne. There, I noticed that the indication given by the frequencies of a relationship between the two concepts could be further reinforced. Currently, there is no way to demonstrate a specific statistical similarity or connection between the clusters or the keywords themselves. However, there are noticeable similarities to the naked eye. For example, the results indicate that when Duurzaamheid appears in text, it often appears with words such as <strong>milieubeleid</strong> or <strong>energie</strong>. These are words and clusters that are also related to Milieuhygiëne in its own clusters, something which again coincides with the texts of the Second Chamber. In that sense, one could infer from the data that these words do in fact have similar and perhaps overlapping meanings, which is all the more interesting considering the frequency data. It also could further confirm the idea that Milieuhygiëne could be considered as a precursor of Duurzaamheid in some capacity. It is also interesting how Milieuhygiëne does not appear among the clusters of Duurzaamheid. This could be due to the concept just not being very frequent in the larger scheme of things, but it could also showcase how Duurzaamheid may have taken over in use and replaced Milieuhygiëne. Of course, given the lack of actual statistical proof, this is speculative, but it is promising, and it also provides ideas for future tools to be developed, which could demonstrate the similarity, overlap or replacement between two or more keywords.
-        <br><br>
-        <img src="assets/Figure3.png">
-        <em>Figure 3. Clusters associated with Duurzaamheid between 1950 and 2000 in Dutch Newspapers.</em>
-        <br><br>
-        <img src="assets/Figure4.png">
-        <em>Figure 4. Clusters associated with Milieuhygiëne between 1950 and 2000 in Dutch Newspapers.</em>
-        <br><br>
-        Lastly, I also experimented with the results of other keywords, but the results were more inconclusive here. A deeper investigation into additional related concepts to Duurzaamheid is therefore also necessary to continue testing the waters with the computer tools in order to continue their refinement for humanities research such as this.
-    `
-}
-
+        id: 5, 
+        title: 'Research Blog 1: Milieuhygiëne and Environmental Hygiene', 
+        date: '2024-11-08', 
+        summary: `
+            <strong>Milieuhygiëne</strong> or <strong>Environmental Hygiene</strong> seems to be one of the most relevant examples of an early intersection between environmental concerns and public health that have appeared during my research. Let us carry out a deeper investigation.
+            <br><br>
+            Environmental hygiene as a concept is polysemic and wide-encompassing. It is also referred to in multiple ways, such as environmental health or environmental sanitation. The origins of the contemporary understanding of the concept seem to lie in the medical field, appearing in Dutch-language medical journals, research, inspections, and parliamentary records starting in the 60s.<sup>1</sup> In its most basic form, it refers to the hygiene and sanitation of human-inhabited environments and spaces for medical practice and their relationship to health.<sup>2</sup> However, it is in the early 70s that we start seeing its use and application at various governance levels. In the Netherlands, the “Ministerie van Volksgezondheid en Milieuhygiëne (Vomil)” was created in 1971 and tasked with the care of the quality of the air, water, soil, and living environment for public health.<sup>3</sup> At the international level, in 1972, the UN environment program was created to create structures for global environmental governance.<sup>4</sup>
+            <br><br>
+            In practice, the activities carried out by such institutions included forest and water management, pest control, pollution monitoring, and the relationship between chemical use and health or management of industry.<sup>5</sup> We thus find in the late 60s and early 70s an intersection at the governance level and political discourse between two pillars that constitute the core of the concept of sustainability. Firstly, the social pillar, in the form of a concern for public health, and the environmental pillar as a concern for the cleanliness and the effects of the living environment on said public health.
+            <br><br>
+            Looking at parliamentary documents, it becomes clear that the chief concern was a social one, with public health being the ultimate goal. The environment and its preservation had an important role, but it was a subordinate one. For example, in this note on the environmental hygiene norms from 1976, we can see the minister of Vomil expressing a necessity to reduce the negative physical impact of human activity on the environment:
+            <br><br>
+            “De milieuhygiëne heeft ten doel het voorkomen dan wel het binnen te tolereren grenzen houden van de ongunstige invloeden van activiteiten van de mens op het fysieke milieu.”<sup>6</sup>
+            <br><br>
+            Of note here is the focus on limiting unfavorable influences on the environment rather than ensuring the absolute and direct protection of the environment. Perhaps more clearly, we can see it in this memorandum from 1974:
+            <br><br>
+            “Toenemende materiële welvaart kan voor de hoog geindustrialiseerde landen niet het enige maatschappelijke doel meer zijn. Door milieuvervuilende produktieprocessen, door onze omgeving belastende, al dan niet nuttige gebruiksgoederen en door een gelijktijdig toenemende schaarste aan grondstoffen wordt het welbevinden van ons allen, zo niet ons voortbestaan, bedreigd. Ook dit welbevinden behoort een fundamentele maatschappelijke doelstelling te zijn. Om deze twee maatschappelijke doelstellingen in evenwicht tot elkaar te brengen behoort de kwaliteit van het bestaan op een voor individu en voor maatschappij aanvaardbaar niveau te zijn en dient verdere uitplundering van de aarde te worden tegengegaan.”<sup>7</sup>
+            <br><br>
+            <strong>References:</strong> ...
+        `
+    },
+    { 
+        id: 6, 
+        title: 'Research Blog 2: Experiments on Milieuhygiëne and Duurzaamheid', 
+        date: '2024-11-09', 
+        summary: `
+            With this in mind, I have started to run some experiments with the computer tools of the project, where I extracted the frequency of use and clusters related to <strong>Milieuhygiëne</strong> over time and how these may compare to <strong>Duurzaamheid</strong> between 1950 and the year 2000.
+            <br><br>
+            <img src="assets/Figure1.png">
+            <em>Figure 1. Frequency plot of Milieuhygiëne from 1950 to 2000 in Dutch Newspapers.</em>
+            <br><br>
+            <img src="assets/Figure2.png">
+            <em>Figure 2. Frequency plot of Duurzaamheid from 1950 to 2000 in Dutch Newspapers.</em>
+            ...
+        `
+    }
 ];
 
 // Sort updates by date in descending order (newest first)
@@ -152,13 +123,8 @@ function renderUpdates(page = 1) {
     document.querySelectorAll('.read-more').forEach(button => {
         button.addEventListener('click', function () {
             const summary = this.previousElementSibling;
-            if (summary.style.maxHeight) {
-                summary.style.maxHeight = null;
-                this.textContent = "Read More";
-            } else {
-                summary.style.maxHeight = "1000px";
-                this.textContent = "Read Less";
-            }
+            summary.style.maxHeight = "none"; // Expand to full height
+            this.style.display = "none";      // Hide "Read More" button
         });
     });
 }
@@ -187,3 +153,4 @@ function renderPagination(totalPages, currentPage) {
 document.addEventListener('DOMContentLoaded', () => {
     renderUpdates(1); // Render the first page on load
 });
+
