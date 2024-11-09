@@ -59,7 +59,7 @@ const updates = [
     { 
     id: 5, 
     title: 'Research Blog 1: Milieuhygiëne and Environmental Hygiene', 
-    date: '2024-11-09', 
+    date: '2024-11-08', 
     summary: `
         <strong>Milieuhygiëne</strong> or <strong>Environmental Hygiene</strong> seems to be one of the most relevant examples of an early intersection between environmental concerns and public health that have appeared during my research. Let us carry out a deeper investigation.
         <br><br>
