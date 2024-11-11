@@ -104,7 +104,7 @@ const updates = [
         <br><br>
         To begin with, it can be confirmed that Milieuhygiëne started appearing in the data and, therefore, in the public sphere in the late 1960s and became most frequent in use between the early 70s and early 80s. While it does not disappear, it is also interesting how, in the late 80s, the frequency of use was much reduced and never really went back to the frequencies of the prior decades. Simultaneously, Duurzaamheid sees an increase in use in the late 80s, as shown in Figures 1 and 2. This could be an indication of it perhaps taking part of the meaning and use associated previously with Milieuhygiëne, which would make sense given the timing, as the concept of Duurzaamheid was created in 1987. Moreover, it also matches the previously discussed content of the parliamentary documents, which suggest the concept of Milieuhygiëne was a precursor in some form to Duurzaamheid. That said, the scales on the charts are very different and are plotted separately. Thus, in future, it would be useful to have the possibility of showcasing the frequency charts of two keywords at the same time to get a more accurate understanding of the scale and relevance of these observations.
         <br><br>
-        <img src="../assets/Figure1.png" alt="Figure 1. Frequency plot of Milieuhygiëne">
+        <img src="../assets/Figure1.1.png" alt="Figure 1. Frequency plot of Milieuhygiëne">
         <em>Figure 1. Frequency plot of Milieuhygiëne from 1950 to 2000 in Dutch Newspapers.</em>
         <br><br>
         <img src="../assets/Figure2.png" alt="Figure 2. Frequency plot of Duurzaamheid">
