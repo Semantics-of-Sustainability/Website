@@ -120,7 +120,8 @@ const updates = [
         <br><br>
         Lastly, I also experimented with the results of other keywords, but the results were more inconclusive here. A deeper investigation into additional related concepts to Duurzaamheid is therefore also necessary to continue testing the waters with the computer tools in order to continue their refinement for humanities research such as this.
     `
-}
+},
+    
 { 
     id: 7,
     title: 'Call for Participation: Workshop on Using AI to Analyse Historical Texts',
@@ -149,10 +150,7 @@ const updates = [
         <strong>Contact</strong><br>
         Pim Huijnen: <a href="mailto:p.huijnen@uu.nl">p.huijnen@uu.nl</a><br>
     `
-}
-
-       
-}
+},
 ];
 
 // Sort updates by date in descending order (newest first)
