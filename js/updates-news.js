@@ -121,7 +121,38 @@ const updates = [
         Lastly, I also experimented with the results of other keywords, but the results were more inconclusive here. A deeper investigation into additional related concepts to Duurzaamheid is therefore also necessary to continue testing the waters with the computer tools in order to continue their refinement for humanities research such as this.
     `
 }
+{ 
+    id: 7,
+    title: 'Call for Participation: Workshop on Using AI to Analyse Historical Texts',
+    date: '2025-01-08',
+    summary: `
+        Recent years have seen great advances in the development of models that allow for the study of language in exciting ways.<br>
+        Yet, despite the availability of these tools and the enormous potential of their application to historical and other humanities data, <br>
+        their utilisation for research in the humanities has been challenging. This workshop, taking place on March 20, 2025, <br>
+        offers a gentle introduction to the use of contextual language models for humanities research. <br>
+        We invite all scholars and graduate students to use our infrastructure for text analysis on their own research questions and/or data.<br><br>
 
+        <strong>Description and Objectives</strong><br>
+        The workshop will introduce researchers to the infrastructure developed in the Open eScience project Semantics of Sustainability, <br>
+        which allows users to do advanced text analysis on Dutch Parliamentary Data (1813-2022) and data provided by the National Library (KB) <br>
+        in The Hague: newspapers, books, magazines, and the ANP (20th Century). The infrastructure will be accessible in a Jupyter Notebooks format, <br>
+        a simple environment through which participants will be able to explore and analyse these Dutch historical textual data. <br><br>
+
+        <strong>Target Audience</strong><br>
+        This workshop is aimed at scholars and graduate students interested in using cutting-edge language models for humanities research. <br>
+        However, it is also open to any interested prospective participant. The workshop is free of charge. <br><br>
+
+        <strong>Date and Location</strong><br>
+        The workshop will take place at the National Library in The Hague on March 20, 2025. <br>
+        More details will be provided to confirmed participants via email.<br><br>
+
+        <strong>Contact</strong><br>
+        Pim Huijnen: <a href="mailto:p.huijnen@uu.nl">p.huijnen@uu.nl</a><br>
+    `
+}
+
+       
+}
 ];
 
 // Sort updates by date in descending order (newest first)
