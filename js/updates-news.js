@@ -127,30 +127,54 @@ const updates = [
     title: 'Call for Participation: Workshop on Using AI to Analyse Historical Texts',
     date: '2025-01-08',
     summary: `
-        Recent years have seen great advances in the development of models that allow for the study of language in exciting ways.<br>
-        Yet, despite the availability of these tools and the enormous potential of their application to historical and other humanities data, <br>
-        their utilisation for research in the humanities has been challenging. This workshop, taking place on March 20, 2025, <br>
-        offers a gentle introduction to the use of contextual language models for humanities research. <br>
-        We invite all scholars and graduate students to use our infrastructure for text analysis on their own research questions and/or data.<br><br>
-
+        Recent years have seen great advances in the development of models that allow for the study of language in exciting ways. Yet, despite the availability of these tools and the enormous potential of their application to historical and other humanities data, their utilisation for research in the humanities has been challenging. This workshop, taking place on March 20, 2025, offers a gentle introduction to the use of contextual language models for humanities research. We invite all scholars and graduate students to use our infrastructure for text analysis on their own research questions and/or data.
+        <br><br>
         <strong>Description and Objectives</strong><br>
-        The workshop will introduce researchers to the infrastructure developed in the Open eScience project Semantics of Sustainability, <br>
-        which allows users to do advanced text analysis on Dutch Parliamentary Data (1813-2022) and data provided by the National Library (KB) <br>
-        in The Hague: newspapers, books, magazines, and the ANP (20th Century). The infrastructure will be accessible in a Jupyter Notebooks format, <br>
-        a simple environment through which participants will be able to explore and analyse these Dutch historical textual data. <br><br>
-
+        The workshop will introduce researchers to the infrastructure developed in the Open eScience project Semantics of Sustainability, which allows users to do advanced text analysis on Dutch Parliamentary Data (1813-2022) and data provided by the National Library (KB) in The Hague: newspapers, books, magazines, and the ANP (20th Century). The infrastructure will be accessible in a Jupyter Notebooks format, a simple environment through which participants will be able to explore and analyse these Dutch historical textual data. The aim of the workshop is to teach participants how to work on their own research questions during the workshop, while also creating a space for sharing, testing and discussing the use of AI tools for humanities research. Besides working with the named datasets, participants may use the provided infrastructure to work with data of their own (see sign-up and submissions section for requirements). 
+        <br><br>
+        Our infrastructure offers functionalities such as:<br>
+        • Generating personalised corpora from the original project data through a list of seed words.<br>
+        • Generating search functionality based on (a) specific keyword(s), and semantically related passages.<br>
+        • Visualising these passages as semantic clusters, providing a sense of the various uses of the keyword(s).<br>
+        • Adding chronological information to the clusters, so that the change in content and frequency of the clusters can be studied over time.<br>
+        • Adding other metadata filters, so that the (change in) clusters can be studied in comparison between different political parties, newspaper titles, etc.<br>
+        • Visualising word frequency over time of one or more keywords.<br>
+        <br>
+        Depending on the provided data and keywords, these functionalities could allow for a variety of research questions, such as:<br>
+        • How does parliamentary discourse showcase the conceptual origins of Sustainability in the Netherlands before its formal definition in 1987?<br>
+        • How did Dutch newspapers from different ideologies frame women’s rights during the 1960s and 1970s?<br>
+        • How did Dutch political parties react in parliament to the Maastricht treaty of 1992 and its implications?<br>
+        <br>
         <strong>Target Audience</strong><br>
-        This workshop is aimed at scholars and graduate students interested in using cutting-edge language models for humanities research. <br>
-        However, it is also open to any interested prospective participant. The workshop is free of charge. <br><br>
+        This workshop is aimed at scholars and graduate students interested in using cutting-edge language models for humanities research. However, it is also open to any interested prospective participant. We highly recommend prior (basic) skills and experience with Python and Jupyter Notebooks, though an introduction to both will be provided for those who have never worked with Python or Jupyter before the workshop. Members of the Semantics of Sustainability project, the Utrecht University’s Centre for Digital Humanities, and the KB will provide help and guidance during the workshop itself.<br>
+        The workshop is free of charge. Lunch and beverages will be provided.<br><br>
 
         <strong>Date and Location</strong><br>
-        The workshop will take place at the National Library in The Hague on March 20, 2025. <br>
-        More details will be provided to confirmed participants via email.<br><br>
+        The workshop will take place at the National Library in The Hague on the 20th of March 2025. More details will be provided to confirmed participants via email.<br><br>
 
-        <strong>Contact</strong><br>
+        <strong>Organisation</strong><br>
+        This workshop is organised in tandem with a conference on AI and Dutch historical texts that will take place at the National Library at The Hague on the 21st of March 2025. Both of these events are organised by the Semantics of Sustainability project in collaboration with the Koninklijke Bibliotheek at The Hague, the Netherlands eScience Centre, and the Centre for Digital Humanities at Utrecht University.<br><br>
+
+        <strong>Sign up and Submitting Datasets</strong><br>
+        Submissions are now open, though there is a limited number of spots available. Interested participants should sign up by sending an email to <a href="mailto:p.huijnen@uu.nl">p.huijnen@uu.nl</a> on 20th of January 2025 at the latest. The email should contain:<br>
+        - Name,<br>
+        - Contact email,<br>
+        - Organisation/Affiliation,<br>
+        - Background/Current Position,<br>
+        - Level of experience with programming software or using language models,<br>
+        - Abstract of research idea (200-300 words),<br>
+        - A list of keywords related to the research question from which the personalised corpora will be generated.<br><br>
+        In addition, for those participants who wish to submit their own data to use during the workshop, the email will also need to include a description of the dataset. All prospective datasets will need to conform to the following requirements:<br>
+        - The data must be contained in files in CSV format.<br>
+        - Relevant metadata must be present and included.<br>
+        Further details will be provided after the end of the deadline.<br><br>
+
+        <strong>Contact Details</strong><br>
         Pim Huijnen: <a href="mailto:p.huijnen@uu.nl">p.huijnen@uu.nl</a><br>
+        
     `
 },
+
 ];
 
 // Sort updates by date in descending order (newest first)
