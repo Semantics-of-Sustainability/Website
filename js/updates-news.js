@@ -174,6 +174,22 @@ const updates = [
         
     `
 },
+    { 
+    id: 8,
+    title: 'Upcoming Conference at the National Library in The Hague',
+    date: '2025-02-14',
+    summary: `
+       
+        The conference "Historical Newspapers in the AI Era" will take place at the National Library (KB) in The Hague on March 21. This event will explore the possibilities and limitations of machine learning and (generative) artificial intelligence applied to large digital heritage collections, such as the historical newspapers in Delpher.<br><br>
+        Scholars will share their experiences using such collections as training and research data, while heritage professionals will demonstrate how AI can be utilized to improve access to their collections. This will be the final conference of the Semantics of Sustainability project, organized in collaboration with the KB.<br><br>
+        This will be the third conference in the "Historical Newspapers as Big Data" series, following well-attended editions in 2015 and 2017.<br><br>
+
+        <strong>Registration</strong><br>
+        Interested participants can register at the conference website:  
+        <a href="https://lab.kb.nl/agenda/historische-kranten-het-ai-tijdperk">https://lab.kb.nl/agenda/historische-kranten-het-ai-tijdperk</a><br><br>
+
+    `
+},
 
 ];
 
